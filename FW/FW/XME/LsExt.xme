@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<STAYRESOURCE version="2.0">
+	<FIELD name="LE_Nls" type="STAYUI4" comm="Номер О.Р. АСОПД" />
+	<FIELD name="LE_PFUNls" type="STAYUI8" comm="Номер О.Р. ППВП" />
+	<FIELD name="LE_Nomig" type="STAYUI6" />
+	<FIELD name="AdrE_PFUNls" type="STAYUI8" comm="Номер О.Р. ППВП" />
+	<FIELD name="AdrE_Stlm" type="STAYUI8" comm="ІД населеного пункту" />
+	<FIELD name="AdrE_Ul" type="STAYUI8" comm="ІД вулиці" />
+	<FIELD name="AdrE_Bld" type="STR" size="10" comm="Будинок" />
+	<FIELD name="AdrE_Corp" type="STR" size="10" comm="Корпус" />
+	<FIELD name="AdrE_App" type="STR" size="10" comm="Квартира" />
+	<FIELD name="AdrE_Txt" type="STR" size="250" comm="Адреса у текстовому вигляді" />
+	<FIELD name="PdE_Num" type="UI2" comm="номер кормильца" />
+	<FIELD name="PdE_Fam" type="STR" size="50" comm="Пр_звище" />
+	<FIELD name="PdE_Name" type="STR" size="50" comm="_м&apos;я" />
+	<FIELD name="PdE_Otch" type="STR" size="50" comm="По-батьков_" />
+	<FIELD name="PdE_IdCd" type="STAYUI6" comm="_дентиф_кац_йний номер пенс_онера" />
+	<FIELD name="ZrbsE_Dendz" type="STAYDATE" comm="Дата последнего заработка (кон" />
+	<FIELD name="ZrbsE_Mes" type="UI1" comm="Кол-во месяцев" />
+	<FIELD name="ZrbsE_Nepol" type="UI1" comm="Вид заработка" />
+	<FIELD name="ZrbsE_Nr" type="UI1" comm="Номер родителя" />
+	<FIELD name="ZrbsE_Nrs" type="UI1" comm="Номер расчета заработка" />
+	<FIELD name="ZrbsE_Zar" type="STAYI6" scale="5" comm="Среднемесячный заработок" />
+	<FIELD name="ZrbsE_Zregr" type="STAYI6" scale="5" comm="Заработок для примен." />
+	<FIELD name="ZrbsE_DateVZ" type="STAYDATE" comm="Дата внесення заробітку" />
+	<FIELD name="ZrbsE_SRNX" type="STAYI6" scale="5" comm="середній заробіток" />
+	<FIELD name="ZrbsE_GdSRNX" type="STAYUI4" comm="Рік середньої" />
+	<FIELD name="ZrbsE_MaxDOpt" type="STAYDATE" comm="Максимальна дата для оптимізації" />
+	<FIELD name="ZrbsE_SKfDoOp" type="STAYI6" scale="5" comm="Сума кофіц. до оптимізації" />
+	<FIELD name="ZrbsE_NMsDoOp" type="STAYUI4" comm="Кількість місяців до оптимізації" />
+	<FIELD name="ZrbsE_SKfRas" type="STAYI6" scale="5" comm="Сума коеф. після оптимізації" />
+	<FIELD name="ZrbsE_NMsRas" type="STAYUI4" comm="кількість місяців після оптимізації" />
+	<FIELD name="ZrbsE_NMesNep" type="STAYUI4" comm="кількість неповних місяців" />
+	<FIELD name="ZrbsE_ZAR1SKL" type="STAYI6" scale="5" comm="Заробіток по першій складовій" />
+	<FIELD name="ZrbsE_ZAR2SKL" type="STAYI6" scale="5" comm="Середньмісячний заробіток для обчислення" />
+	<FIELD name="ZrbsE_PRC1SKL" type="STAYUI4" comm="Загальний відсоток розрах пенсії від заробітку" />
+	<FIELD name="ZrbsE_OSN1SKL" type="STAYI6" scale="5" comm="Основний розмір пенсії від середнього заробітку" />
+	<FIELD name="T1" type="STAYUI4" comm="Номер утриманця" />
+	<FIELD name="T2" type="STAYUI4" comm="Номер годувальника" />
+	<FIELD name="T3" type="STAYUI4" comm="Вид розрахунку" />
+	<FIELD name="T4" type="STAYI6" scale="5" comm="Коефіцієнт стажу" />
+	<FIELD name="T5" type="STAYI6" scale="5" comm="Коефіцієнт заробітної плати" />
+	<FIELD name="T6" type="UI1" comm="Неповний стаж" />
+	<FIELD name="T7" type="STAYUI4" comm="Рік показника середньорічного розміру заробітної плати" />
+	<FIELD name="T8" type="STAYUI4" comm="Рік показника середньорічного розміру заробітної плати для спецпенсій" />
+	<FIELD name="T9" type="STAYI6" scale="5" comm="Розмір прожиткового мінімуму для розрахунку" />
+	<FIELD name="T10" type="UI2" comm="Кількість понаднормативних років" />
+	<FIELD name="T11" type="UI2" comm="Відсот розрах пенс за віком інв" />
+	<FIELD name="T12" type="STAYI6" scale="5" comm="Відсот розрах пенс за віком помер годув" />
+	<FIELD name="T13" type="UI2" comm="Вид заробітку" />
+	<FIELD name="T14" type="STAYDATE" comm="Дата вводу коригування заробітку" />
+	<FIELD name="T15" type="UI1" comm="Ознака оптимізації по методиці з 01.07.2013 року" />
+	<FIELD name="T16" type="STAYUI4" comm="Рік середн зарпл для розрах заробітків для обчислення" />
+	<FIELD name="T17" type="STAYDATE" comm="Максимальна дата оптимізації заробітку" />
+	<FIELD name="T18" type="STAYUI4" comm="Кількість місяців розрахунку зарплати до оптимізації" />
+	<FIELD name="T19" type="STAYI6" scale="5" comm="Сума коефіцієнтів зарплати до оптимізації" />
+	<FIELD name="T20" type="STAYI6" scale="5" comm="Індивідуальний коефіцієнт заплати до оптимізації" />
+	<FIELD name="T21" type="STAYUI4" comm="Кількість місяців розрахунку зарплати після оптимізації" />
+	<FIELD name="T22" type="STAYI6" scale="5" comm="Індивідуальний коефіцієнт заплати після оптимізації" />
+	<FIELD name="T23" type="STAYI6" scale="5" comm="Сума коефіцієнтів зарплати після оптимізації" />
+	<FIELD name="T24" type="STAYDATE" comm="Перший період оптимізації початок" />
+	<FIELD name="T25" type="STAYDATE" comm="Перший період оптимізації кінець" />
+	<FIELD name="T26" type="STAYUI4" comm="Перший період оптимізації кількість місяців" />
+	<FIELD name="T27" type="STAYDATE" comm="Другий період оптимізації початок" />
+	<FIELD name="T28" type="STAYDATE" comm="Другий період оптимізації кінець" />
+	<FIELD name="T29" type="STAYUI4" comm="Другий період оптимізації кількість місяців" />
+	<FIELD name="T30" type="STAYUI4" comm="Вилучено додаткових місяців" />
+	<FIELD name="T31" type="STAYUI4" comm="Вилучено місяців по безробіттю" />
+	<FIELD name="T32" type="STAYUI4" comm="Кількість неоптимізованих неповних місяців" />
+	<FIELD name="T33" type="STAYUI4" comm="Кількість неопт непов міс для розрах коеф заробітку" />
+	<FIELD name="T34" type="STAYUI4" comm="Кількість днів неоптимізованих неповних місяців" />
+	<FIELD name="T35" type="STAYI6" scale="5" comm="Індивідуальний коефіцієнт зарплати після оптимізації" />
+	<FIELD name="T36" type="STAYI6" scale="5" comm="Сума коефіцієнтів зарплати(для двоскладової)" />
+	<FIELD name="T37" type="STAYI6" scale="5" comm="Індивідуальний коефіцієнт зарплати(для двосладової)" />
+	<FIELD name="T38" type="STAYI6" scale="5" comm="Середньомісячний заробіток для обчислення(для двоскладової)" />
+	<FIELD name="T39" type="STAYI6" scale="5" comm="Кількість місяців зарплати" />
+	<FIELD name="T40" type="STAYI6" scale="5" comm="Сума зарплати" />
+	<FIELD name="T41" type="STAYUI4" comm="Додатк стаж для оптим(по інвалідності та втраті годувальника), міс" />
+	<FIELD name="T42" type="STAYUI4" comm="Стаж для оптимізації, міс" />
+	<FIELD name="T43" type="UI1" />
+	<FIELD name="T44" type="UI1" />	
+	<FIELD name="IgdE_Num" type="UI2" />
+	<FIELD name="IgdE_Nomig" type="STAYUI8" />
+	<FIELD name="KorE_Num" type="UI2" />
+	<FIELD name="KorE_Nomig" type="STAYUI8" />
+	<FIELD name="Ext_Code" type="STAYUI4" />
+	<FIELD name="Ext_Date1" type="STAYDATE" />
+	<FIELD name="Ext_Date2" type="STAYDATE" />
+	<FIELD name="Ext_Value1" type="STAYI6" scale="5" />
+	<FIELD name="Ext_Value2" type="STAYI6" scale="5" />
+	<FIELD name="Ext_Str" type="STR" size="100" />
+	<FIELD name="StgpE_nomig" type="UI2" comm="Розширений масив даних про стаж" />
+	<FIELD name="StgpE_dbeg" type="STAYDATE" />
+	<FIELD name="StgpE_dend" type="STAYDATE" />
+	<FIELD name="StgpE_gg_t" type="UI2" comm="Кількість років трудового" />
+	<FIELD name="StgpE_mm_t" type="UI2" comm="Кількість місяців трудового" />
+	<FIELD name="StgpE_dd_t" type="UI2" comm="Кількість днів трудового" />
+	<FIELD name="StgpE_gg_k" type="UI2" comm="Кількість років з кратністю" />
+	<FIELD name="StgpE_mm_k" type="UI2" comm="Кількість місяців з кратністю" />
+	<FIELD name="StgpE_dd_k" type="UI2" comm="Кількість днів з кратністю" />
+	<FIELD name="StgE_Kods" type="UI2" comm="Код стажа (KLStg)" />
+	<FIELD name="StgE_gg_t" type="UI2" comm="Кількість років трудового" />
+	<FIELD name="StgE_mm_t" type="UI2" comm="Кількість місяців трудового" />
+	<FIELD name="StgE_dd_t" type="UI2" comm="Кількість днів трудового" />
+	<FIELD name="StgE_gg_k" type="UI2" comm="Кількість років з кратністю" />
+	<FIELD name="StgE_mm_k" type="UI2" comm="Кількість місяців з кратністю" />
+	<FIELD name="StgE_dd_k" type="UI2" comm="Кількість днів з кратністю" />
+	<FIELD name="IgdE_ID" type="STAYUI6" />
+	<FIELD name="KorE_ID" type="STAYUI6" />
+	<DATASET name="B_LSExt" type="DS_BBASE" file="LS:LSEXT.DT">
+		<INDEX name="1">
+			<KEY name="LE_Nls" />
+		</INDEX>
+		<INDEX name="2">
+			<KEY name="LE_PFUNls" />
+		</INDEX>
+		<INDEX name="3">
+			<KEY name="LE_Nomig" />
+		</INDEX>
+		<COLUMN name="LE_Nls" />
+		<COLUMN name="LE_PFUNls" />
+		<COLUMN name="LE_Nomig" />
+		<COLUMN name="B_AdrE" />
+		<COLUMN name="B_StgpE" />
+		<COLUMN name="B_ZrbsE" />
+		<COLUMN name="B_TotalE" />
+		<COLUMN name="B_PdE" />
+		<COLUMN name="B_IgdE" />
+		<COLUMN name="B_KorE" />
+		<COLUMN name="B_Extra" />
+	</DATASET>
+	<DATASET name="B_AdrE" type="DS_ARRAY" comm="Адреса ППВП">
+		<INDEX name="1">
+			<KEY name="AdrE_PFUNls" />
+		</INDEX>
+		<COLUMN name="AdrE_PFUNls" />
+		<COLUMN name="AdrE_Stlm" />
+		<COLUMN name="AdrE_Ul" />
+		<COLUMN name="AdrE_Bld" />
+		<COLUMN name="AdrE_Corp" />
+		<COLUMN name="AdrE_App" />
+		<COLUMN name="AdrE_Txt" />
+	</DATASET>
+	<DATASET name="B_StgpE" type="DS_ARRAY" comm="Масив додаткових даних про стаж">
+		<INDEX name="1">
+			<KEY name="StgpE_nomig" />
+			<KEY name="StgpE_dbeg" />
+			<KEY name="StgpE_dend" />
+		</INDEX>
+		<COLUMN name="StgpE_nomig" />
+		<COLUMN name="StgpE_dbeg" />
+		<COLUMN name="StgpE_dend" />
+		<COLUMN name="StgpE_gg_t" />
+		<COLUMN name="StgpE_mm_t" />
+		<COLUMN name="StgpE_dd_t" />
+		<COLUMN name="StgpE_gg_k" />
+		<COLUMN name="StgpE_mm_k" />
+		<COLUMN name="StgpE_dd_k" />
+	</DATASET>
+	<DATASET name="B_ZrbsE" type="DS_ARRAY" comm="Масив зведених даних про заробітки">
+		<INDEX name="1">
+			<KEY name="ZrbsE_Nr" />
+			<KEY name="ZrbsE_Nrs" />
+		</INDEX>
+		<COLUMN name="ZrbsE_Nr" />
+		<COLUMN name="ZrbsE_Nrs" />
+		<COLUMN name="ZrbsE_Zregr" />
+		<COLUMN name="ZrbsE_Zar" />
+		<COLUMN name="ZrbsE_Dendz" />
+		<COLUMN name="ZrbsE_Mes" />
+		<COLUMN name="ZrbsE_Nepol" />
+		<COLUMN name="ZrbsE_DateVZ" />
+		<COLUMN name="ZrbsE_SRNX" />
+		<COLUMN name="ZrbsE_GdSRNX" />
+		<COLUMN name="ZrbsE_MaxDOpt" />
+		<COLUMN name="ZrbsE_SKfDoOp" />
+		<COLUMN name="ZrbsE_NMsDoOp" />
+		<COLUMN name="ZrbsE_SKfRas" />
+		<COLUMN name="ZrbsE_NMsRas" />
+		<COLUMN name="ZrbsE_NMesNep" />
+		<COLUMN name="ZrbsE_ZAR1SKL" />
+		<COLUMN name="ZrbsE_ZAR2SKL" />
+		<COLUMN name="ZrbsE_PRC1SKL" />
+		<COLUMN name="ZrbsE_OSN1SKL" />
+	</DATASET>
+	<DATASET name="B_TotalE" type="DS_ARRAY">
+		<INDEX name="1">
+			<KEY name="T1" />
+			<KEY name="T2" />
+		</INDEX>
+		<COLUMN name="T1" />
+		<COLUMN name="T2" />
+		<COLUMN name="T3" />
+		<COLUMN name="T4" />
+		<COLUMN name="T5" />
+		<COLUMN name="T6" />
+		<COLUMN name="T7" />
+		<COLUMN name="T8" />
+		<COLUMN name="T9" />
+		<COLUMN name="T10" />
+		<COLUMN name="T11" />
+		<COLUMN name="T12" />
+		<COLUMN name="T13" />
+		<COLUMN name="T14" />
+		<COLUMN name="T15" />
+		<COLUMN name="T16" />
+		<COLUMN name="T17" />
+		<COLUMN name="T18" />
+		<COLUMN name="T19" />
+		<COLUMN name="T20" />
+		<COLUMN name="T21" />
+		<COLUMN name="T22" />
+		<COLUMN name="T23" />
+		<COLUMN name="T24" />
+		<COLUMN name="T25" />
+		<COLUMN name="T26" />
+		<COLUMN name="T27" />
+		<COLUMN name="T28" />
+		<COLUMN name="T29" />
+		<COLUMN name="T30" />
+		<COLUMN name="T31" />
+		<COLUMN name="T32" />
+		<COLUMN name="T33" />
+		<COLUMN name="T34" />
+		<COLUMN name="T35" />
+		<COLUMN name="T36" />
+		<COLUMN name="T37" />
+		<COLUMN name="T38" />
+		<COLUMN name="T39" />
+		<COLUMN name="T40" />
+		<COLUMN name="T41" />
+		<COLUMN name="T42" />
+		<COLUMN name="T43" />
+		<COLUMN name="T44" />		
+	</DATASET>
+	<DATASET name="B_PdE" type="DS_ARRAY" comm="База подопечных">
+		<INDEX name="1">
+			<KEY name="PdE_Num" />
+		</INDEX>
+		<COLUMN name="PdE_Num" />
+		<COLUMN name="PdE_Fam" />
+		<COLUMN name="PdE_Name" />
+		<COLUMN name="PdE_Otch" />
+		<COLUMN name="PdE_IdCd" />
+	</DATASET>
+	<DATASET name="B_IgdE" type="DS_ARRAY">
+		<INDEX name="1">
+			<KEY name="IgdE_Num" />
+		</INDEX>
+		<INDEX name="2">
+			<KEY name="IgdE_Nomig" />
+		</INDEX>
+		<COLUMN name="IgdE_Num" />
+		<COLUMN name="IgdE_Nomig" />
+		<COLUMN name="IgdE_ID" />
+	</DATASET>
+	<DATASET name="B_KorE" type="DS_ARRAY">
+		<INDEX name="1">
+			<KEY name="KorE_Num" />
+		</INDEX>
+		<INDEX name="2">
+			<KEY name="KorE_Nomig" />
+		</INDEX>
+		<COLUMN name="KorE_Num" />
+		<COLUMN name="KorE_Nomig" />
+		<COLUMN name="KorE_ID" />
+	</DATASET>
+	<DATASET name="B_Extra" type="DS_ARRAY">
+		<INDEX name="1">
+			<KEY name="Ext_Code" />
+		</INDEX>
+		<COLUMN name="Ext_Code" />
+		<COLUMN name="Ext_Date1" />
+		<COLUMN name="Ext_Date2" />
+		<COLUMN name="Ext_Value1" />
+		<COLUMN name="Ext_Value2" />
+		<COLUMN name="Ext_Str" />
+	</DATASET>
+</STAYRESOURCE>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<STAYRESOURCE version="2.0">
+	<FIELD name="Woom_Raj" type="UI2" comm="Номер района" />
+	<FIELD name="Woom_Nls" type="UI4" comm="Номер лицевого" />
+	<FIELD name="Woom_Fio" type="STR" size="50" />
+	<FIELD name="Woom_titul" type="STR" size="65" comm="Заголовок отчета" />
+	<FIELD name="Woom_Spos" type="UI1" comm="Способ выплаты" />
+	<FIELD name="Woom_Rab" type="UI1" comm="Признак работы" />
+	<FIELD name="Woom_Indots" type="UI4" comm="Индекс отделения связи" />
+	<FIELD name="Woom_Drog" type="STAYDATE" comm="Дата рождения" />
+	<FIELD name="Woom_PenVoz" type="STAYDATE" comm="Дата достижения пенс. возраста." />
+	<FIELD name="Woom_Rnaz" type="STAYI6" scale="2" comm="Ежемесячная сумма" />
+	<FIELD name="Woom_Shifr" type="UI2" comm="Шифр пенсии" />
+	<FIELD name="Woom_213" type="STAYUI2" />
+	<FIELD name="Woom_227" type="STAYUI2" />
+	<FIELD name="Woom_Rnaz2" type="STAYI6" scale="2" comm="Сумма выплаты после расчета" />
+	<FIELD name="Woom_Dot1" type="STAYI6" scale="2" comm="Сума дотяжек 995, 854, 856 до перерахунку" />
+	<FIELD name="Woom_Dot2" type="STAYI6" scale="2" comm="Сума дотяжек 995, 854, 856 після перерахунку" />
+	<FIELD name="Woom_829" type="STAYI6" scale="2" />
+	<FIELD name="Woom_Delta1" type="STAYI6" scale="2" comm="Сума пенсії без 995,854,856 до" />
+	<FIELD name="Woom_Delta2" type="STAYI6" scale="2" comm="Сума пенсії без 995,854,856 після" />
+	<FIELD name="Woom_pr829" type="UI1" />
+	<FIELD name="Woom_prNo829" type="UI1" />
+	<FIELD name="Total_829" type="UI4" />
+	<FIELD name="Total_Kolvo" type="UI4" />
+	<FIELD name="Total_No829" type="UI4" />
+	<FIELD name="Ttl_829" type="UI4" />
+	<FIELD name="Ttl_Kolvo" type="UI4" />
+	<FIELD name="Ttl_No829" type="UI4" />
+	<FIELD name="RajName" type="STR" size="45" />
+	<FIELD name="Woom_Kand" type="UI1" comm="Kandidat" />
+	<FIELD name="Woom_DtLast" type="STAYDATE" comm="DateLastMove" />
+	<FIELD name="Woom_Nauka" type="UI1" />
+	<FIELD name="Total_Sum9" type="STAYI6" scale="2" />
+	<FIELD name="Total_Sum9N" type="STAYI6" scale="2" />
+	<FIELD name="Total_Sum9S" type="STAYI6" scale="2" />
+	<FIELD name="Total_Sum13" type="STAYI6" scale="2" />
+	<FIELD name="Total_Sum13N" type="STAYI6" scale="2" />
+	<FIELD name="Total_Sum13S" type="STAYI6" scale="2" />
+	<FIELD name="Ttl_Sum9" type="STAYI6" scale="2" />
+	<FIELD name="Ttl_Sum9N" type="STAYI6" scale="2" />
+	<FIELD name="Ttl_Sum9S" type="STAYI6" scale="2" />
+	<FIELD name="Ttl_Sum13" type="STAYI6" scale="2" />
+	<FIELD name="Ttl_Sum13N" type="STAYI6" scale="2" />
+	<FIELD name="Ttl_Sum13S" type="STAYI6" scale="2" />	
+	<DATASET name="B_Woomen" type="DS_BBASE" file="WORK:close21.DT">
+		<INDEX name="1" supl="true">
+			<KEY name="Woom_Indots" />
+			<KEY name="Woom_Nls" />
+		</INDEX>
+		<INDEX name="2" supl="true">
+			<KEY name="Woom_Nls" />
+		</INDEX>
+		<COLUMN name="Woom_Indots" />
+		<COLUMN name="Woom_Nls" />
+		<COLUMN name="Woom_Fio" />
+		<COLUMN name="Woom_Shifr" />
+		<COLUMN name="Woom_Spos" />
+		<COLUMN name="Woom_Rab" />
+		<COLUMN name="Woom_Rnaz" />
+		<COLUMN name="Woom_Raj" />
+		<COLUMN name="Woom_Rnaz2" />
+		<COLUMN name="Woom_Dot1" />
+		<COLUMN name="Woom_Dot2" />
+		<COLUMN name="Woom_Delta1" />
+		<COLUMN name="Woom_Delta2" />
+		<COLUMN name="Woom_829" />
+		<COLUMN name="Woom_pr829" />
+		<COLUMN name="Woom_prNo829" />
+		<COLUMN name="Woom_Kand" />
+		<COLUMN name="Woom_DtLast" />
+		<COLUMN name="Woom_Nauka" />
+	</DATASET>
+</STAYRESOURCE>

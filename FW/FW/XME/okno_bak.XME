@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<STAYRESOURCE version="2.0">
+	<DEFINES>
+		<DEFINE name="SEL501" value="1501" />
+		<DEFINE name="SEL502" value="1502" />
+		<DEFINE name="SEL503" value="1503" />
+		<DEFINE name="SEL504" value="1504" />
+	</DEFINES>
+	<MENUS>
+		<MENUBAR name="Menu1">
+			<MENU-ITEM text=" ПОШУК О/Р " id="SEL501" />
+			<MENU text=" ЗВІТ ">
+			<MENU-ITEM text="ЗВІТ" id="SEL504" />
+			<MENU-ITEM text="ЗВІТ ЖІНКИ" id="SEL502" />
+			</MENU>
+			<MENU-ITEM text=" ВИХІД " id="SEL503" />
+		</MENUBAR>
+	</MENUS>
+	<FRAMES>
+		<FRAME name="Form1" left="0" top="0" width="425" height="230" mode="HIDDEN" tabstop="false" text="Список ОР" menu="Menu1">
+		</FRAME>
+	</FRAMES>
+</STAYRESOURCE>

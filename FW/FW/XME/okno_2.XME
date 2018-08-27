@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<STAYRESOURCE version="2.0">
+	<DEFINE name="SEL501" value="1501" />
+	<DEFINE name="SEL502" value="1502" />
+	<DEFINE name="SEL503" value="1503" />
+	<DEFINE name="SEL504" value="1504" />
+	<DEFINE name="SEL505" value="1505" />
+	<DEFINE name="SEL506" value="1506" />
+	<MENUBAR name="Menu1">
+		<MENU-ITEM text=" ЗАКРИТТЯ ОСОБОВИХ РАХУНКІВ 21 ПРИЧИНОЮ " id="SEL501" />
+		<MENU text=" ЗВІТ ">
+			<MENU-ITEM text="ЗВІТ ПО ОСОБОВИМ РАХУНКАМ" id="SEL504" />
+			<MENU-ITEM text="ЗВІТ ПО ВІДДІЛЕННЯМ ЗВЯЗКУ" id="SEL502" />
+			<MENU-ITEM text="СПИСОК КАНДИДАТІВ НА ІНДИВІДУЛЬНУ ОБРОБКУ ПО ОСОБОВИМ РАХУНКАМ" id="SEL505" />
+			<MENU-ITEM text="СПИСОК КАНДИДАТІВ НА ІНДИВІДУЛЬНУ ОБРОБКУ ПО ВІДДІЛЕННЯМ ЗВЯЗКУ" id="SEL506" />
+		</MENU>
+		<MENU-ITEM text=" ВИХІД " id="SEL503" />
+	</MENUBAR>
+	<FRAME name="Form1" x="0" y="0" cx="425" cy="230" mode="HIDDEN" text="Список ОР" menu="Menu1">
+	</FRAME>
+</STAYRESOURCE>

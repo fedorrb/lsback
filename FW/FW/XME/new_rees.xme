@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<STAYRESOURCE version="2.0">
+	<FIELDS>
+		<FIELD name="DomPar_Cd" type="UI2" comm="Код характеристики житла" />
+		<FIELD name="DomPar_DtB" type="STAYDATE" comm="Дата початку" />
+		<FIELD name="DomPar_DtE" type="STAYDATE" comm="дата закінчення" />
+		<FIELD name="DomPar_Pr" type="UI1" comm="Ознака наявності" />
+		<FIELD name="DomPar_Znach" type="STAYUI4" point="2" comm="Значення характ.житла" />
+		<FIELD name="Dom_Cd" type="UI2" comm="Код житла" />
+		<FIELD name="Dom_CdVlad" type="UI2" comm="Код власника" />
+		<FIELD name="Dom_Etag" type="UI1" comm="Поверх" />
+		<FIELD name="Dom_EtagD" type="UI1" comm="Kiлькість поверхів у будинку" />
+		<FIELD name="Dom_Komn" type="UI1" comm="Кількість кімнат" />
+		<FIELD name="Dom_Squ" type="STAYUI4" point="2" comm="Загальна площа" />
+		<FIELD name="Dom_SquOpal" type="STAYUI4" point="2" comm="площа, яка опалюється" />
+		<FIELD name="Dom_TypeOpal" type="UI1" comm="тип опалення" />
+		<FIELD name="Dom_sqSubs" type="STAYUI4" point="2" comm="площа,на яку призн.пільгу" />
+		<FIELD name="Fam_CdExit" type="UI2" comm="Код причини зняття з обліку" />
+		<FIELD name="Fam_CdRaj" type="UI2" comm="Номер району" />
+		<FIELD name="Fam_CdRelat" type="UI2" comm="Категорія родинності" />
+		<FIELD name="Fam_DateB" type="STAYDATE" comm="початок поширення пільги" />
+		<FIELD name="Fam_DateE" type="STAYDATE" comm="кінець поширення пільги" />
+		<FIELD name="Fam_DepPasp" type="STRING" ln="40" comm="Ким видано паспорт" />
+		<FIELD name="Fam_DtBeg" type="STAYDATE" comm="Дата постановки на облік" />
+		<FIELD name="Fam_DtBirth" type="STAYDATE" comm="Дата народження" />
+		<FIELD name="Fam_DtExit" type="STAYDATE" comm="Дата зняття з обліку" />
+		<FIELD name="Fam_DtPasp" type="STAYDATE" comm="Дата видачі паспорту" />
+		<FIELD name="Fam_FIO" type="STRING" ln="50" comm="ПІБ члена родини" />
+		<FIELD name="Fam_KatP" type="UI2" comm="категорія пільговика(власника картки)" />
+		<FIELD name="Fam_LgCode" type="UI2" comm=" Код пільги" />
+		<FIELD name="Fam_Ls" type="UI4" comm="Номер особового рахунку" />
+		<FIELD name="Fam_NCard" type="UI4" comm="Номер картки у реєстрі" />
+		<FIELD name="Fam_NFam" type="UI1" comm="Номер члена родини" />
+		<FIELD name="Fam_NoServ" type="UI1" comm="Ознака зняття платежів" />
+		<FIELD name="Fam_NomF" type="UI1" comm="Номер члена родини" />
+		<FIELD name="Fam_NumTaxP" type="STRING" ln="10" comm="Податковий номер" />
+		<FIELD name="Fam_Obn" type="UI2" comm="ознака оновлення" />
+		<FIELD name="Fam_Order" type="UI1" comm="Порядок розрахунку сімей" />
+		<FIELD name="Fam_Osob" type="UI1" comm="Особливість" />
+		<FIELD name="Fam_Pasp" type="STRING" ln="14" comm="Серія та номер паспорту" />
+		<FIELD name="Fam_Pfx" type="STRING" ln="4" comm="Префікс номеру особового рахунку" />
+		<FIELD name="Fam_Pol" type="UI1" comm="Стать" />
+		<FIELD name="Fam_PrDee" type="UI1" comm="ознака працездатності" />
+		<FIELD name="Fam_Prizn" type="UI2" comm=" резерв" />
+		<FIELD name="Fam_Prizn2" type="UI2" comm=" резерв" />
+		<FIELD name="Fam_PriznP" type="UI2" comm="ознака пільговика" />
+		<FIELD name="KatP_Cd" type="UI2" comm=" Код категорії пільговика" />
+		<FIELD name="KatP_Dep" type="STRING" ln="40" comm="Ким видано документ" />
+		<FIELD name="KatP_Doc" type="STRING" ln="15" comm="Номер док.,що дає право на пільгу" />
+		<FIELD name="KatP_Dt" type="STAYDATE" comm="Дата видачі документу,що дає право на пільгу" />
+		<FIELD name="KatP_DtE" type="STAYDATE" comm="дата окончания категории" />
+		<FIELD name="KatP_Obn" type="UI2" comm="ознака оновлення" />
+		<FIELD name="KatP_Osn" type="UI1" comm="ознака основної категорії" />
+		<FIELD name="LgNac_Fact" type="STAYI4" point="4" comm="факт по послузі" />
+		<FIELD name="LgNac_FactAll" type="STAYI4" point="4" comm="загальний факт для спарених послуг" />
+		<FIELD name="LgNac_FactCost" type="STAYI4" point="2" comm=" вартість послуги" />
+		<FIELD name="LgNac_FactFam" type="STAYI4" point="4" comm="факт для декількох сімей" />
+		<FIELD name="LgNac_FactType" type="UI1" comm="Тип вимірювання" />
+		<FIELD name="LgNac_God" type="UI2" comm="Рік нарахування пільги" />
+		<FIELD name="LgNac_GodIn" type="UI2" comm="Рік,в якому проведено завантаження" />
+		<FIELD name="LgNac_KodP2" type="UI2" comm="код входження в форму П2" />
+		<FIELD name="LgNac_KodZagr" type="UI2" comm="код результату завантаження" />
+		<FIELD name="LgNac_Mec" type="UI2" comm="Місяць нарахування пільги" />
+		<FIELD name="LgNac_MecIn" type="UI2" comm="Місяць,в якому проведено завантаження" />
+		<FIELD name="LgNac_Npp" type="UI2" comm="номер запису" />
+		<FIELD name="LgNac_Prizn" type="UI1" comm="ознака готівки/безготівки" />
+		<FIELD name="LgNac_Sum" type="STAYI4" point="2" comm="Сума пільги" />
+		<FIELD name="LgNac_SumAll" type="STAYI4" point="2" comm="загальна сума для спарених пільг" />
+		<FIELD name="LgNac_SumFam" type="STAYI4" point="2" comm="сума пільг для декількох сімей" />
+		<FIELD name="Lg_Cd" type="UI2" comm="Код пільги" />
+		<FIELD name="Lg_CdKat" type="UI2" comm="Код категорії пільговика" />
+		<FIELD name="Lg_CdO" type="STRING" ln="25" comm="Особовий рахунок на пільгу" />
+		<FIELD name="Lg_CdPsn" type="UI2" comm="код причини зняття з готівки" />
+		<FIELD name="Lg_DtB" type="STAYDATE" comm="Дата початку" />
+		<FIELD name="Lg_DtE" type="STAYDATE" comm="Дата закінчення" />
+		<FIELD name="Lg_Kod" type="STAYUI6" comm="Код ЄДРПОУ" />
+		<FIELD name="Lg_Kol" type="UI1" comm="Кількість пільговиків" />
+		<FIELD name="Lg_NFam" type="UI1" comm="Номер члена родини" />
+		<FIELD name="Lg_NumTax" type="STRING" ln="10" comm="Податк.ном.для розрах.рах.на пільгу" />
+		<FIELD name="Lg_Obn" type="UI2" comm="ознака оновлення" />
+		<FIELD name="Lg_PayDServCd" type="UI2" comm="різновид послуги" />
+		<FIELD name="Lg_PaySpec" type="UI1" comm="Вид організації" />
+		<FIELD name="Lg_PaySys" type="UI4" comm="Код системи тарифів" />
+		<FIELD name="Lg_Prizn" type="UI2" comm="ознака:готівка/безготівка" />
+		<FIELD name="Lg_CalcOrder" type="UI1" comm="порядок сімї для розрах." />
+		<FIELD name="Lg_Stat" type="UI1" comm="різновид користування" />
+		<FIELD name="Lg_Sum" type="STAYI4" point="2" comm="Вартість пільги(РЕЗЕРВ)" />
+		<FIELD name="Lg_Type" type="UI1" comm="Тип пільги" />
+		<FIELD name="Opic_FIO" type="STRING" ln="50" comm="ПІБ опікуна" />
+		<FIELD name="Opic_NumTaxP" type="STRING" ln="10" comm="Податковий номер" />
+		<FIELD name="Opic_Pasp" type="STRING" ln="14" comm="Серія та номер паспорту" />
+		<FIELD name="OsobA_CdExit" type="UI2" comm="Код прич.закінч.дії" />
+		<FIELD name="OsobA_Code" type="UI2" comm="Код особливості" />
+		<FIELD name="OsobA_DtBeg" type="STAYDATE" comm="Дата початку дії" />
+		<FIELD name="OsobA_DtEnd" type="STAYDATE" comm="Дата закінч.дії" />
+		<FIELD name="OsobA_NFam" type="UI1" comm="номер члена сімї" />
+		<FIELD name="OsobA_Pr" type="UI1" comm="Ознака особл.(символ.чи числова)" />
+		<FIELD name="OsobA_PrKol" type="UI1" comm="якщо число,то -кіль-ть знаків після ," />
+		<FIELD name="OsobA_StrZnach" type="STRING" ln="255" comm="знач.особл.(в симв.вигляді)" />
+		<FIELD name="OsobA_Znach1" type="UI2" comm="знач.особл.(INT)" />
+		<FIELD name="OsobA_Znach2" type="STAYI6" point="2" comm="знач.особл.(NUM POINT=2 SIGN)" />
+		<FIELD name="PayD_CodeTar" type="UI4" comm="Код тарифу" />
+		<FIELD name="PayD_Fact" type="STAYI4" point="4" comm="фактично спожито на виплату" />
+		<FIELD name="PayD_FactAll" type="STAYI4" point="4" comm="загальний факт для спарених пілг" />
+		<FIELD name="PayD_God" type="UI2" comm="Рік нарахування пільги" />
+		<FIELD name="PayD_GodIn" type="UI2" comm="Рік,в якому проведено завантаження" />
+		<FIELD name="PayD_Kfn" type="UI2" comm="Код виплати" />
+		<FIELD name="PayD_KodP2" type="UI2" comm="код входження в форму П2" />
+		<FIELD name="PayD_KodZagr" type="UI2" comm="код результату завантаження" />
+		<FIELD name="PayD_Mec" type="UI2" comm="Місяць нарахування пільги" />
+		<FIELD name="PayD_MecIn" type="UI2" comm="Місяць,в якому проведено завантаження" />
+		<FIELD name="PayD_Npp" type="UI2" comm="номер запису" />
+		<FIELD name="PayD_Prizn" type="UI1" comm="ознака готівка/безготівка" />
+		<FIELD name="PayD_Sum" type="STAYI4" point="2" comm="Сума пільги" />
+		<FIELD name="PayD_SumAll" type="STAYI4" point="2" comm="загальна сума для спарених пільг" />
+		<FIELD name="PayD_SumFam" type="STAYI4" point="2" comm="сума пільг для декількох сімей" />
+		<FIELD name="PayD_FactFam" type="STAYI4" point="4" comm="факт для декількох сімей" />
+		<FIELD name="PayD_TypeNorm" type="UI1" comm="тип норми" />
+		<FIELD name="PerP_CdLg" type="UI2" comm="код пільги" />
+		<FIELD name="PerP_Datin" type="STAYDATE" comm="Дата інспектора" />
+		<FIELD name="PerP_Dnpen" type="STAYDATE" comm="Дата початку виплати (з ...)" />
+		<FIELD name="PerP_Kat" type="UI2" comm="категорія пільговика" />
+		<FIELD name="PerP_Kin" type="UI2" comm="Код інспектора" />
+		<FIELD name="PerP_Op" type="UI2" comm="код операции" />
+		<FIELD name="PerP_Prper" type="UI2" comm="ознака (резерв)" />
+		<FIELD name="PerP_Psn" type="UI2" comm="Причина зняття з виплати(KLPSN)" />
+		<FIELD name="PerP_Rnaz" type="STAYI6" point="2" comm="Щомісячна сума для кода вип" />
+		<FIELD name="R_Apt" type="STRING" ln="4" comm="Номер квартири прожив." />
+		<FIELD name="R_Build" type="STRING" ln="2" comm="Номер корпусу прожив." />
+		<FIELD name="R_CdDepat" type="UI2" comm="Код установи,яка призн.пенсію" />
+		<FIELD name="R_CdInsp" type="UI2" comm="Код інспектора(введ.картки)" />
+		<FIELD name="R_CdNp" type="UI2" comm="Тип насел. пункту прожив." />
+		<FIELD name="R_CdObl" type="UI2" comm="Код області" />
+		<FIELD name="R_CdRaj" type="UI2" comm="Код району проживання" />
+		<FIELD name="R_CdUl" type="UI2" comm="Код вулиці прожив." />
+		<FIELD name="R_DepPasp" type="STRING" ln="40" comm="Ким видано паспорт" />
+		<FIELD name="R_DtBirth" type="STAYDATE" comm="Дата народження" />
+		<FIELD name="R_DtInsp" type="STAYDATE" comm="Дата інспектора(введ.картки)" />
+		<FIELD name="R_DtPosv" type="STAYDATE" comm="Дата видачі пенс.посв." />
+		<FIELD name="R_DtUchB" type="STAYDATE" comm="Дата постан.на облік" />
+		<FIELD name="R_House" type="STRING" ln="7" comm="Номер будинку прожив." />
+		<FIELD name="R_Index" type="UI4" comm="Індекс відд.звязку" />
+		<FIELD name="R_KatOsn" type="UI2" comm="основна категорія" />
+		<FIELD name="R_KodAdr" type="STAYUI8" comm="Кодована адреса" />
+		<FIELD name="R_KolKat" type="UI1" comm="ознака декілька категорій" />
+		<FIELD name="R_NCardP" type="UI4" comm="Номер картки пільговика" />
+		<FIELD name="R_Name1" type="STRING" ln="30" comm="Прізвище" />
+		<FIELD name="R_Name2" type="STRING" ln="20" comm="Ім я" />
+		<FIELD name="R_Name3" type="STRING" ln="20" comm="По батькові" />
+		<FIELD name="R_Nls" type="UI4" comm="Номер особового рахунку" />
+		<FIELD name="R_NlsGot" type="UI4" comm="Номер ос.рах.для готівки" />
+		<FIELD name="R_Nomig" type="UI1" comm="Номер утриманця" />
+		<FIELD name="R_NumTax" type="STRING" ln="10" comm="Податковий номер" />
+		<FIELD name="R_Opek" type="UI1" comm="ознака наявності опікуна" />
+		<FIELD name="R_PDtOblB" type="UI1" comm="Дата постанови на облік пільговика" />
+		<FIELD name="R_PensPosv" type="STRING" ln="14" comm="Серія та номер пенс.посв." />
+		<FIELD name="R_Pfx" type="STRING" ln="4" comm="Префікс" />
+		<FIELD name="R_PrAdr" type="UI1" comm="Ознака збігу адреси проживання та реєстрації" />
+		<FIELD name="R_PrGot" type="UI1" comm="ознака отрим.пільг готівкою" />
+		<FIELD name="R_PrP" type="UI1" comm="Ознака наявності виплати готівкою" />
+		<FIELD name="R_PrTwo" type="UI1" comm="ознака декілька родин пільг" />
+		<FIELD name="R_Rcd" type="UI4" comm="Унікальний номер запису" />
+		<FIELD name="R_StrAdr" type="STRING" ln="100" comm="Адрес прописки власника" />
+		<FIELD name="R_StrNp" type="STRING" ln="50" comm="Назва насел. пункту" />
+		<FIELD name="R_StrTel" type="STRING" ln="7" comm="Номер телефону" />
+	</FIELDS>
+	<DATASETS>
+		<DATASET name="B_ReestrLg" type="DS_BBASE" qnt="16" file="REESTR:REESTRLG.DT" comm="База єдин.авт.реєстру осіб,які мають пр.на пільги">
+			<INDEXES>
+				<INDEX name="1" dupl="true">
+					<KEY name="R_Pfx" order="ASC" />
+					<KEY name="R_Nls" order="ASC" />
+				</INDEX>
+				<INDEX name="2" dupl="true">
+					<KEY name="R_NlsGot" order="ASC" />
+				</INDEX>
+				<INDEX name="3" dupl="true">
+					<KEY name="R_Name1" order="ASC" length="10" />
+					<KEY name="R_Name2" order="ASC" length="5" />
+					<KEY name="R_Name3" order="ASC" length="5" />
+				</INDEX>
+				<INDEX name="4" dupl="true">
+					<KEY name="R_KodAdr" order="ASC" />
+				</INDEX>
+				<INDEX name="5">
+					<KEY name="R_NCardP" order="ASC" />
+				</INDEX>
+				<INDEX name="6" dupl="true">
+					<KEY name="R_NumTax" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="R_Pfx" />
+				<COLUMN name="R_Nls" />
+				<COLUMN name="R_Rcd" />
+				<COLUMN name="R_KodAdr" />
+				<COLUMN name="R_PrAdr" />
+				<COLUMN name="R_CdNp" />
+				<COLUMN name="R_CdObl" />
+				<COLUMN name="R_CdRaj" />
+				<COLUMN name="R_CdDepat" />
+				<COLUMN name="R_CdUl" />
+				<COLUMN name="R_NlsGot" />
+				<COLUMN name="R_House" />
+				<COLUMN name="R_Apt" />
+				<COLUMN name="R_Build" />
+				<COLUMN name="R_Opek" />
+				<COLUMN name="R_Index" />
+				<COLUMN name="R_DtBirth" />
+				<COLUMN name="R_Name1" />
+				<COLUMN name="R_Name2" />
+				<COLUMN name="R_Name3" />
+				<COLUMN name="R_NCardP" />
+				<COLUMN name="R_NumTax" />
+				<COLUMN name="R_StrTel" />
+				<COLUMN name="R_CdInsp" />
+				<COLUMN name="R_DtInsp" />
+				<COLUMN name="R_DtUchB" />
+				<COLUMN name="R_KatOsn" />
+				<COLUMN name="R_KolKat" />
+				<COLUMN name="R_PrTwo" />
+				<COLUMN name="R_PrGot" />
+				<COLUMN name="R_PensPosv" />
+				<COLUMN name="R_DtPosv" />
+				<COLUMN name="B_KatPP" />
+				<COLUMN name="B_PerP" />
+				<COLUMN name="B_FamP" />
+				<COLUMN name="B_FamLg" />
+				<COLUMN name="B_LgP" />
+				<COLUMN name="B_DomP" />
+				<COLUMN name="B_OsobAP" />
+				<COLUMN name="S_AdrPrP" />
+				<COLUMN name="S_Opic" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KatPP" type="DS_ARRAY" comm="База даних категорій пільговиків">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KatP_Cd" order="ASC" />
+					<KEY name="KatP_Dt" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KatP_Cd" />
+				<COLUMN name="KatP_Dt" />
+				<COLUMN name="KatP_Doc" />
+				<COLUMN name="KatP_Dep" />
+				<COLUMN name="KatP_Osn" />
+				<COLUMN name="KatP_DtE" />
+				<COLUMN name="KatP_Obn" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_PerP" type="DS_ARRAY">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="PerP_Kat" order="ASC" />
+					<KEY name="PerP_CdLg" order="ASC" />
+					<KEY name="PerP_Dnpen" order="ASC" />
+					<KEY name="PerP_Op" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="PerP_Kat" />
+				<COLUMN name="PerP_CdLg" />
+				<COLUMN name="PerP_Dnpen" />
+				<COLUMN name="PerP_Op" />
+				<COLUMN name="PerP_Rnaz" />
+				<COLUMN name="PerP_Prper" />
+				<COLUMN name="PerP_Psn" />
+				<COLUMN name="PerP_Kin" />
+				<COLUMN name="PerP_Datin" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_FamP" type="DS_ARRAY" comm="База відомостей про родину">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Fam_NomF" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="Fam_NomF" />
+				<COLUMN name="Fam_DtBirth" />
+				<COLUMN name="Fam_CdRaj" />
+				<COLUMN name="Fam_CdRelat" />
+				<COLUMN name="Fam_FIO" />
+				<COLUMN name="Fam_Pfx" />
+				<COLUMN name="Fam_Ls" />
+				<COLUMN name="Fam_NumTaxP" />
+				<COLUMN name="Fam_Osob" />
+				<COLUMN name="Fam_CdExit" />
+				<COLUMN name="Fam_DtBeg" />
+				<COLUMN name="Fam_DtExit" />
+				<COLUMN name="Fam_Pasp" />
+				<COLUMN name="Fam_DtPasp" />
+				<COLUMN name="Fam_DepPasp" />
+				<COLUMN name="Fam_NCard" />
+				<COLUMN name="Fam_PrDee" />
+				<COLUMN name="Fam_Order" />
+				<COLUMN name="Fam_Pol" />
+				<COLUMN name="Fam_PriznP" />
+				<COLUMN name="Fam_NoServ" />
+				<COLUMN name="Fam_Obn" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_FamLg" type="DS_ARRAY" comm=" База пільг для члена сімї">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Fam_KatP" order="ASC" />
+					<KEY name="Fam_LgCode" order="ASC" />
+					<KEY name="Fam_NFam" order="ASC" />
+					<KEY name="Fam_DateB" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="Fam_KatP" />
+				<COLUMN name="Fam_LgCode" />
+				<COLUMN name="Fam_NFam" />
+				<COLUMN name="Fam_DateB" />
+				<COLUMN name="Fam_DateE" />
+				<COLUMN name="Fam_Prizn" />
+				<COLUMN name="Fam_Prizn2" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_LgP" type="DS_ARRAY" comm="База пільг">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Lg_CdKat" order="ASC" />
+					<KEY name="Lg_Cd" order="ASC" />
+					<KEY name="Lg_DtB" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="Lg_CdKat" />
+				<COLUMN name="Lg_Cd" />
+				<COLUMN name="Lg_DtB" />
+				<COLUMN name="Lg_DtE" />
+				<COLUMN name="Lg_Stat" />
+				<COLUMN name="Lg_Sum" />
+				<COLUMN name="Lg_Kol" />
+				<COLUMN name="Lg_Kod" />
+				<COLUMN name="Lg_CdO" />
+				<COLUMN name="Lg_NumTax" />
+				<COLUMN name="Lg_NFam" />
+				<COLUMN name="Lg_Prizn" />
+				<COLUMN name="Lg_PaySpec" />
+				<COLUMN name="Lg_PaySys" />
+				<COLUMN name="Lg_PayDServCd" />
+				<COLUMN name="Lg_CdPsn" />
+				<COLUMN name="Lg_Obn" />
+				<COLUMN name="Lg_CalcOrder" />
+				<COLUMN name="B_LgNacP" />
+				<COLUMN name="B_LgPayDP" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_LgNacP" type="DS_ARRAY" comm="База нарахувань пільг">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="LgNac_GodIn" order="ASC" />
+					<KEY name="LgNac_MecIn" order="ASC" />
+					<KEY name="LgNac_God" order="ASC" />
+					<KEY name="LgNac_Mec" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="LgNac_GodIn" />
+				<COLUMN name="LgNac_MecIn" />
+				<COLUMN name="LgNac_God" />
+				<COLUMN name="LgNac_Mec" />
+				<COLUMN name="LgNac_Npp" />
+				<COLUMN name="LgNac_Prizn" />
+				<COLUMN name="LgNac_FactCost" />
+				<COLUMN name="LgNac_FactType" />
+				<COLUMN name="LgNac_Sum" />
+				<COLUMN name="LgNac_Fact" />
+				<COLUMN name="LgNac_SumAll" />
+				<COLUMN name="LgNac_FactAll" />
+				<COLUMN name="LgNac_SumFam" />
+				<COLUMN name="LgNac_FactFam" />
+				<COLUMN name="LgNac_KodZagr" />
+				<COLUMN name="LgNac_KodP2" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_LgPayDP" type="DS_ARRAY" comm="База даних про надані послуги">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="PayD_GodIn" order="ASC" />
+					<KEY name="PayD_MecIn" order="ASC" />
+					<KEY name="PayD_God" order="ASC" />
+					<KEY name="PayD_Mec" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="PayD_GodIn" />
+				<COLUMN name="PayD_MecIn" />
+				<COLUMN name="PayD_God" />
+				<COLUMN name="PayD_Mec" />
+				<COLUMN name="PayD_Npp" />
+				<COLUMN name="PayD_Prizn" />
+				<COLUMN name="PayD_CodeTar" />
+				<COLUMN name="PayD_Kfn" />
+				<COLUMN name="PayD_Sum" />
+				<COLUMN name="PayD_Fact" />
+				<COLUMN name="PayD_SumAll" />
+				<COLUMN name="PayD_FactAll" />
+				<COLUMN name="PayD_SumFam" />
+				<COLUMN name="PayD_FactFam" />
+				<COLUMN name="PayD_TypeNorm" />
+				<COLUMN name="PayD_KodZagr" />
+				<COLUMN name="PayD_KodP2" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_DomP" type="DS_ARRAY" comm=" Відомості про житло">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Dom_Cd" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="Dom_Cd" />
+				<COLUMN name="Dom_CdVlad" />
+				<COLUMN name="Dom_Etag" />
+				<COLUMN name="Dom_EtagD" />
+				<COLUMN name="Dom_Komn" />
+				<COLUMN name="Dom_Squ" />
+				<COLUMN name="Dom_sqSubs" />
+				<COLUMN name="Dom_SquOpal" />
+				<COLUMN name="Dom_TypeOpal" />
+				<COLUMN name="B_DomPar" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_DomPar" type="DS_ARRAY" comm="База характеристик житла">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="DomPar_Cd" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="DomPar_Cd" />
+				<COLUMN name="DomPar_Pr" />
+				<COLUMN name="DomPar_DtE" />
+				<COLUMN name="DomPar_DtB" />
+				<COLUMN name="DomPar_Znach" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_OsobAP" type="DS_ARRAY" comm="База особливост.">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="OsobA_NFam" order="ASC" />
+					<KEY name="OsobA_Code" order="ASC" />
+					<KEY name="OsobA_DtBeg" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="OsobA_NFam" />
+				<COLUMN name="OsobA_Code" />
+				<COLUMN name="OsobA_DtBeg" />
+				<COLUMN name="OsobA_DtEnd" />
+				<COLUMN name="OsobA_CdExit" />
+				<COLUMN name="OsobA_StrZnach" />
+				<COLUMN name="OsobA_Pr" />
+				<COLUMN name="OsobA_PrKol" />
+				<COLUMN name="OsobA_Znach1" />
+				<COLUMN name="OsobA_Znach2" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="S_AdrPrP" type="DS_STRUCT" comm=" База даних про адресу проживання">
+			<COLUMNS>
+				<COLUMN name="R_StrAdr" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="S_Opic" type="DS_STRUCT" comm=" Відомості про опікуна">
+			<COLUMNS>
+				<COLUMN name="Opic_FIO" />
+				<COLUMN name="Opic_Pasp" />
+				<COLUMN name="Opic_NumTaxP" />
+			</COLUMNS>
+		</DATASET>
+	</DATASETS>
+</STAYRESOURCE>

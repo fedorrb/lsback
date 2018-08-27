@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<STAYRESOURCE version="2.0">
+	<FIELD name="D_Nls" type="STAYUI4" />
+	<FIELD name="D_Shifr" type="UI2" />
+	<FIELD name="D_Delta1" type="I4" />
+	<FIELD name="D_Delta2" type="I4" />
+	<FIELD name="T_Beg" type="STAYTIME" />
+	<FIELD name="T_End" type="STAYTIME" />
+	<FIELD name="s_sec" type="UI4" />
+	<FIELD name="s_ls" type="UI4" />
+	<FIELD name="s_sum" type="UI4" />
+	<FIELD name="s_hour" type="STAYUI4" scale="2" />
+	<FIELD name="s_optim" type="UI4" />
+	<DATASET name="B_DelayLs" type="DS_BBASE" file="WORK:DELAYLS.DT">
+		<INDEX name="1" dupl="true" primary="true">
+			<KEY name="D_Nls" />
+		</INDEX>
+		<INDEX name="2" dupl="true">
+			<KEY name="D_Shifr" />
+		</INDEX>
+		<INDEX name="3" dupl="true">
+			<KEY name="D_Delta1" />
+		</INDEX>
+		<INDEX name="4" dupl="true">
+			<KEY name="D_Delta2" />
+		</INDEX>
+		<COLUMN name="D_Nls" />
+		<COLUMN name="D_Shifr" />
+		<COLUMN name="D_Delta1" />
+		<COLUMN name="D_Delta2" />
+	</DATASET>
+	<DATASET name="B_TimeMas" type="DS_STRUCT" file="WORK:TIMEMAS.DT">
+		<COLUMN name="T_Beg" />
+		<COLUMN name="T_End" />
+	</DATASET>
+	<DATASET name="B_Sum" type="DS_BBASE" file="WORK:BSUM.DT">
+		<INDEX name="1" dupl="true" primary="true">
+			<KEY name="s_sec" />
+		</INDEX>
+		<COLUMN name="s_sec" />
+		<COLUMN name="s_ls" />
+		<COLUMN name="s_sum" />
+		<COLUMN name="s_hour" />
+		<COLUMN name="s_optim" />
+	</DATASET>
+</STAYRESOURCE>

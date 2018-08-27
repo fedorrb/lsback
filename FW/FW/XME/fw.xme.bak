@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<STAYRESOURCE version="2.0">
+	<FIELD name="FW_Raj" type="UI2" comm="Номер района" />
+	<FIELD name="FW_Nls" type="UI4" comm="Номер лицевого" />
+	<FIELD name="FW_Fio" type="STR" size="50" />
+	<FIELD name="titul" type="STR" size="50" comm="Заголовок отчета" />
+	<FIELD name="FW_NLS_FULL" type="STAYUI6" />
+	<FIELD name="FW_LsNomig" type="STAYUI6" />
+	<FIELD name="FW_IdCode" type="STAYUI6" />
+	<FIELD name="OR_Nls" type="STAYUI4" />
+	<FIELD name="OR_FullNls" type="STAYUI6" />
+	<FIELD name="OR_Adress" type="STR" size="255" />
+	<FIELD name="OR_Nomig" type="STAYUI6" />
+	<FIELD name="KOR_Number" type="UI1" />
+	<FIELD name="KOR_Nomig" type="STAYUI6" />
+	<FIELD name="IGD_Number" type="UI1" />
+	<FIELD name="IGD_Nomig" type="STAYUI6" />
+	<FIELD name="KOR_ID" type="STAYUI6" />
+	<FIELD name="IGD_ID" type="STAYUI6" />
+	<DATASET name="B_FW" type="DS_BBASE" file="WORK:FW.DT">
+		<INDEX name="1" supl="true">
+			<KEY name="FW_Raj" />
+			<KEY name="FW_Nls" />
+		</INDEX>
+		<INDEX name="2" supl="true">
+			<KEY name="FW_Nls" />
+		</INDEX>
+		<COLUMN name="FW_Raj" />
+		<COLUMN name="FW_Nls" />
+		<COLUMN name="FW_Fio" />
+	</DATASET>
+	<DATASET name="B_OR" type="DS_BBASE" file="LS:OR.DT">
+		<INDEX name="1">
+			<KEY name="OR_Nls" />
+		</INDEX>
+		<COLUMN name="OR_Nls" />
+		<COLUMN name="OR_FullNls" />
+		<COLUMN name="OR_Nomig" />
+		<COLUMN name="OR_Adress" />
+		<COLUMN name="NKOR" />
+		<COLUMN name="NIGD" />
+	</DATASET>
+	<DATASET name="NKOR" type="DS_BBASE">
+		<INDEX name="1">
+			<KEY name="KOR_Number" />
+		</INDEX>
+		<COLUMN name="KOR_Number" />
+		<COLUMN name="KOR_Nomig" />
+		<COLUMN name="KOR_ID" />
+	</DATASET>
+	<DATASET name="NIGD" type="DS_BBASE">
+		<INDEX name="1">
+			<KEY name="IGD_Number" />
+		</INDEX>
+		<COLUMN name="IGD_Number" />
+		<COLUMN name="IGD_Nomig" />
+		<COLUMN name="IGD_ID" />
+	</DATASET>
+</STAYRESOURCE>

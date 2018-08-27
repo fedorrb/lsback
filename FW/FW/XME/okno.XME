@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<STAYRESOURCE version="2.0">
+	<DEFINE name="SEL501" value="1501" />
+	<DEFINE name="SEL502" value="1502" />
+	<DEFINE name="SEL503" value="1503" />
+	<DEFINE name="SEL504" value="1504" />
+	<DEFINE name="SEL505" value="1505" />
+	<DEFINE name="SEL506" value="1506" />
+	<DEFINE name="SEL511" value="1511" />
+	<DEFINE name="SEL512" value="1512" />
+	<DEFINE name="SEL513" value="1513" />
+	<DEFINE name="SEL514" value="1514" />
+	<DEFINE name="SEL515" value="1515" />
+	<DEFINE name="SEL516" value="1516" />
+	<MENUBAR name="Menu1">
+		<MENU-ITEM text=" МІГРАЦІЯ " id="SEL501" />
+		<MENU text=" ЗВІТ ">
+			<MENU-ITEM text="ЗВІТ ЗА НОМЕРАМИ О.Р." id="SEL511" />
+			<MENU-ITEM text="ЗВІТ ПО ВІДДІЛЕННЯМ ЗВЯЗКУ" id="SEL512" />
+		</MENU>
+		<MENU-ITEM text=" ВИХІД " id="SEL503" />
+	</MENUBAR>
+	<FRAME name="Form1" x="0" y="0" cx="482" cy="230" mode="HIDDEN" text="Зворотня міграція бази особових рахунків" menu="Menu1">
+	</FRAME>
+</STAYRESOURCE>

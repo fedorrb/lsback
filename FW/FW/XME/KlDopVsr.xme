@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<STAYRESOURCE version="2.0">
+	<FIELDS>
+		<FIELD name="KlDopVsr_Sex" type="UI1" comm="Пол 1-М, 2-Ж" />
+		<FIELD name="KlDopVsr_DBeg" type="STAYDATE" comm="" />
+		<FIELD name="KlDopVsr_DEnd" type="STAYDATE" comm="" />
+		<FIELD name="KlDopVsr_CV" type="UI2" comm="" />
+		<FIELD name="KlDopVsr_DV" type="UI1" comm="" />
+	</FIELDS>
+	<DATASETS>
+		<DATASET name="B_KlDopVsr" type="DS_ARRAY" file="KLBASE1:KLDOPVSR.DT" comm="Довідник додаткового стажу">
+			<INDEXES>
+				<INDEX name="1" supl="true">
+					<KEY name="KlDopVsr_Sex" order="ASC" />
+					<KEY name="KlDopVsr_DBeg" order="ASC" />
+					<KEY name="KlDopVsr_DEnd" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlDopVsr_Sex" />
+				<COLUMN name="KlDopVsr_DBeg" />
+				<COLUMN name="KlDopVsr_DEnd" />
+				<COLUMN name="KlDopVsr_CV" />
+				<COLUMN name="KlDopVsr_DV" />
+			</COLUMNS>
+		</DATASET>
+	</DATASETS>
+</STAYRESOURCE>

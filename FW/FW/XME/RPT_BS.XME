@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<STAYRESOURCE version="2.0">
+	<FIELDS>
+		<FIELD name="PR_CalcSum" type="STAYUI6" point="2" comm="Сумма выплаты расчитаная" />
+		<FIELD name="PR_ContrSum" type="STAYUI6" point="2" comm="Сумма взноса" />
+		<FIELD name="PR_FullName" type="STRING" ln="50" comm="ФИО" />
+		<FIELD name="LI_FullName" type="STRING" ln="50" comm="ФИО" />
+		<FIELD name="PR_IndCode" type="UI2" comm="Код строки показателя" />
+		<FIELD name="PR_InsCode" type="UI2" comm="Код застрахованной особы" />
+		<FIELD name="PR_Month" type="UI2" comm="Месяц последнего отчета" />
+		<FIELD name="PR_Nls" type="UI4" comm="Номер лицевого счета" />
+		<FIELD name="LI_Nls" type="UI4" comm="Номер лицевого счета" />
+		<FIELD name="PR_NumIdent" type="STAYUI6" comm="ИД номер" />
+		<FIELD name="LI_NumIdent" type="STAYUI6" comm="ИД номер" />
+		<FIELD name="PR_PayM" type="UI2" comm="Месяц оплаты" />
+		<FIELD name="LI_PayM" type="UI2" comm="Месяц оплаты" />
+		<FIELD name="PR_PaySum" type="STAYUI6" point="2" comm="Сумма выплаты минимальная" />
+		<FIELD name="PR_PayY" type="UI2" comm="Год оплаты" />
+		<FIELD name="LI_PayY" type="UI2" comm="Год оплаты" />
+		<FIELD name="PR_Sel" type="UI2" comm="Признак выбора для отчета" />
+		<FIELD name="PR_SelM" type="UI2" comm="Месяц отчета" />
+		<FIELD name="PR_SelY" type="UI2" comm="Год отчета" />
+		<FIELD name="PR_StartD" type="UI2" comm="День начала выплаты в отчетном месяце" />
+		<FIELD name="PR_StopD" type="UI2" comm="День окончания выплаты в отчетном месяце" />
+		<FIELD name="PR_Year" type="UI2" comm="Год последнего отчета" />
+		<FIELD name="PR_Count" type="UI2" />
+		<FIELD name="PR_Pasp" type="STRING" ln="14" comm="Серия и номер паспорта" />
+		<FIELD name="PR_Ctz" type="UI1" comm="Гражданство" />
+		<FIELD name="PR_Pasp2NumId" type="STRING" ln="10" />
+		<FIELD name="Inv_Dn" type="STAYDATE" comm="Дата нач. периода инвалидности" />
+		<FIELD name="Inv_Dk" type="STAYDATE" comm="Дата кон. периода инвалидности" />
+		<FIELD name="Dat" type="STAYDATE" comm="Для базы получения периодов" />
+	</FIELDS>
+	<DATASETS>
+		<DATASET name="A_Inv" type="DS_ARRAY" file="LS:INV.DT" qnt="0">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Inv_Dn" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Inv_Dn" />
+			<COLUMN name="Inv_Dk" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="A_Date" type="DS_ARRAY" qnt="0" comm="База получения периодов перерасчета">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Dat" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Dat" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_PFURPT" type="DS_BBASE" file="LS:PFU_RPT.DT" qnt="100">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="PR_NumIdent" />
+					<KEY name="PR_FullName" />
+				</INDEX>
+				<INDEX name="2" dupl="TRUE">
+					<KEY name="PR_Year" />
+					<KEY name="PR_Month" />
+					<KEY name="PR_NumIdent" />
+				</INDEX>
+				<INDEX name="3" dupl="TRUE">
+					<KEY name="PR_FullName" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="PR_NumIdent" />
+			<COLUMN name="PR_FullName" />
+			<COLUMN name="PR_Year" />
+			<COLUMN name="PR_Month" />
+			<COLUMN name="PR_Pasp" />
+			<COLUMN name="PR_Ctz" />
+			<COLUMN name="PR_Pasp2NumId" />
+			<COLUMN name="B_PRLS" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_PRLS" type="DS_ARRAY" qnt="0">
+			<INDEXES>
+				<INDEX name="1" dupl="TRUE">
+					<KEY name="PR_PayY" />
+					<KEY name="PR_PayM" />
+					<KEY name="PR_StartD" />
+					<KEY name="PR_Nls" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="PR_PayY" />
+			<COLUMN name="PR_PayM" />
+			<COLUMN name="PR_StartD" />
+			<COLUMN name="PR_Nls" />
+			<COLUMN name="PR_InsCode" />
+			<COLUMN name="PR_StopD" />
+			<COLUMN name="PR_PaySum" />
+			<COLUMN name="PR_CalcSum" />
+			<COLUMN name="PR_ContrSum" />
+			<COLUMN name="PR_IndCode" />
+			<COLUMN name="PR_Sel" />
+			<COLUMN name="PR_SelY" />
+			<COLUMN name="PR_SelM" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_PRLS2ID" type="DS_BBASE" file="LS:PR_LS2ID.DT" qnt="100">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="LI_Nls" />
+					<KEY name="LI_NumIdent" />
+					<KEY name="LI_FullName" />
+				</INDEX>
+				<INDEX name="2" dupl="TRUE">
+					<KEY name="LI_Nls" />
+					<KEY name="LI_PayY" />
+					<KEY name="LI_PayM" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="LI_Nls" />
+			<COLUMN name="LI_NumIdent" />
+			<COLUMN name="LI_FullName" />
+			<COLUMN name="LI_PayY" />
+			<COLUMN name="LI_PayM" />
+			</COLUMNS>
+		</DATASET>
+	</DATASETS>
+</STAYRESOURCE>

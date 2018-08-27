@@ -1,0 +1,1288 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<STAYRESOURCE version="2.0">
+	<FIELDS>
+		<FIELD name="Atst_Data" type="STAYDATE" comm="Дата аттестата" />
+		<FIELD name="Atst_Num" type="UI4" comm="Номер документа (исходящий)" />
+		<FIELD name="Atst_Type" type="UI1" comm="Тип аттестата" />
+		<FIELD name="CheZp_Code" type="UI1" comm="Код зоны работы/прожив.(KLZON)" />
+		<FIELD name="CheZp_DateBeg" type="STAYDATE" comm="Дата начала периода" />
+		<FIELD name="CheZp_DateEnd" type="STAYDATE" comm="Дата конца периода" />
+		<FIELD name="CheZp_Nomig" type="UI1" comm="Номер иждивенца" />
+		<FIELD name="CheZp_Time" type="UI1" comm="Временное/постоянное пребыв." />
+		<FIELD name="Che_Chpri" type="UI1" comm="Категория причастности к ЧАЭС" />
+		<FIELD name="Che_Dkprav" type="STAYDATE" comm="Дата конца права" />
+		<FIELD name="Che_Dnprav" type="STAYDATE" comm="Дата начала права" />
+		<FIELD name="Che_Dobr" type="UI1" comm="Призн. участия в ликв. на добр" />
+		<FIELD name="Che_Kbl" type="UI1" comm="Код блокировки (KLBL)" />
+		<FIELD name="Che_Kzp" type="UI1" comm="Код зоны проживания (1,2,3,4)" />
+		<FIELD name="Che_Kzr" type="UI1" comm="Код зоны работы(1,2,3,4-гряз)" />
+		<FIELD name="Che_Likvid" type="UI1" comm="Признак(1-ликв,2-постр,3-ядер)" />
+		<FIELD name="Che_Luch" type="UI1" comm="Призн. перенес. лучев.болезни" />
+		<FIELD name="Che_Nomig" type="UI1" comm="Номер иждивенца" />
+		<FIELD name="Che_Prod" type="UI1" comm="Право на надбавку на прод.пит" />
+		<FIELD name="Che_Proj" type="UI2" comm="Процент повыш.за прожив.в зо" />
+		<FIELD name="Che_Ptru" type="UI2" comm="% потери трудоспособности" />
+		<FIELD name="Che_Snig" type="UI2" comm="Снижение пенс.возр. (в мес.)" />
+		<FIELD name="Che_Tpos" type="UI1" comm="Тип пострадавшего (KLPOST)" />
+		<FIELD name="Igd_Dolja_Adr" type="STRING" ln="100" comm="Адрес долевой пенсии" />
+		<FIELD name="Igd_Dolja_DBeg" type="STAYDATE" comm="Дата выделения долевой пенсии с" />
+		<FIELD name="Igd_Dolja_DEnd" type="STAYDATE" comm="Дата выделения доли по" />
+		<FIELD name="Igd_Dolja_Nls" type="UI4" comm="Номер Л/С в основном - долевой,в долевой - основной" />
+		<FIELD name="Igd_Dolja_NumP" type="UI1" comm="Номер долевой пенсии" />
+		<FIELD name="Igd_Dolja_Os" type="UI4" comm="Код отделения связи" />
+		<FIELD name="Igd_Dolja_PAdr" type="UI1" comm="(1)-долевая пенсия по основному адресу" />
+		<FIELD name="Igd_Dolja_PrDN" type="UI1" comm="(1)-долевая пенсия донозначена" />
+		<FIELD name="Igd_Drog" type="STAYDATE" comm="Дата рождения" />
+		<FIELD name="Igd_Dso" type="STAYDATE" comm="Дата смерти (отъезда)" />
+		<FIELD name="Igd_Dusn" type="STAYDATE" comm="Дата усыновления" />
+		<FIELD name="Igd_Fio" type="STRING" ln="50" comm="Фамилия, имя, отчество" />
+		<FIELD name="Igd_Katnetr" type="UI1" comm="Категория нетрудоспособности" />
+		<FIELD name="Igd_Katrod" type="UI1" comm="Категория родства (KLROD)" />
+		<FIELD name="Igd_Nomig" type="UI1" comm="Номер иждивенца (Igd)" />
+		<FIELD name="Igd_Pol" type="UI1" comm="Пол (1 - М, 2 - Ж)" />
+		<FIELD name="Igd_Prab" type="UI1" comm="Признак работы" />
+		<FIELD name="Igd_Prdel" type="UI1" comm="Признак удаления" />
+		<FIELD name="Igd_Psn" type="UI1" comm="Код причины снятия с оплаты" />
+		<FIELD name="Igd_Sir" type="UI1" comm="Признак   сироты" />
+		<FIELD name="Inv_Dkpi" type="STAYDATE" comm="Дата кон. периода инвалидности" />
+		<FIELD name="Inv_Dni" type="STAYDATE" comm="Дата наступления инвалидности" />
+		<FIELD name="Inv_Dnpi" type="STAYDATE" comm="Дата нач. периода инвалидности" />
+		<FIELD name="Inv_Grinv" type="UI1" comm="Группа инвалидности (1,2,3)" />
+		<FIELD name="Inv_Kbl" type="UI1" comm="Код блокировки (KLBL)" />
+		<FIELD name="Inv_Kod" type="UI1" comm="Код причины инвалидн. (KLPINV)" />
+		<FIELD name="Inv_Nomig" type="UI1" comm="Номер иждивенца" />
+		<FIELD name="Inv_Stag" type="UI1" comm="Стаж на момент наступ. инвалид" />
+		<FIELD name="Ispl_DatU" type="STAYDATE" comm="Дата начала начислен.удержания" />
+		<FIELD name="Ispl_Datae" type="STAYDATE" comm="Дата окончания действия %" />
+		<FIELD name="Ispl_Datar" type="STAYDATE" comm="Дата рождения ребенка" />
+		<FIELD name="Ispl_Datast" type="STAYDATE" comm="Дата рождения старшего" />
+		<FIELD name="Ispl_Datin" type="STAYDATE" comm="Дата инспектора" />
+		<FIELD name="Ispl_Displ" type="STAYDATE" comm="Дата начала удержания по докум" />
+		<FIELD name="Ispl_Dolg" type="STAYI6" point="2" comm="Сумма перв. долга по докум." />
+		<FIELD name="Ispl_Dpd" type="STAYDATE" comm="Дата поступления" />
+		<FIELD name="Ispl_Dv" type="STAYDATE" comm="Дата выдачи" />
+		<FIELD name="Ispl_Gor" type="UI1" comm="Признак город/село" />
+		<FIELD name="Ispl_Kd" type="UI1" comm="Код документа (KLDOUD)" />
+		<FIELD name="Ispl_Kdp" type="UI1" comm="Заявл.на уд. свыше 50%" />
+		<FIELD name="Ispl_Kin" type="UI2" comm="Код инспектора" />
+		<FIELD name="Ispl_Kold" type="UI1" comm="Количество детей взыскателя" />
+		<FIELD name="Ispl_Ksud" type="UI1" comm="Код организации, выдав. докум." />
+		<FIELD name="Ispl_Kud" type="UI1" comm="Код удержания (KLUD)" />
+		<FIELD name="Ispl_Kvz" type="UI2" comm="Код взыскателя (0-физ.лицо)" />
+		<FIELD name="Ispl_Nd" type="STRING" ln="9" comm="Номер  документа" />
+		<FIELD name="Ispl_Num" type="UI2" comm="Порядковый номер докум. в Ispl" />
+		<FIELD name="Ispl_Ost" type="STAYI6" point="2" comm="Остаток задол. на текущ.момент" />
+		<FIELD name="Ispl_Per" type="STAYI6" point="2" comm="Процент удержания на дату рожд" />
+		<FIELD name="Ispl_Per1" type="UI1" comm="Дробная часть удержания" />
+		<FIELD name="Ispl_PerSud" type="STAYI6" point="2" comm="Проц/cумма ежемес. уд. по док" />
+		<FIELD name="Ispl_PerSud1" type="UI1" comm="Дробная часть удержания" />
+		<FIELD name="Ispl_PostDolg" type="STAYI4" point="2" comm="Задолженность по почт.сбору" />
+		<FIELD name="Ispl_Rkold" type="UI1" comm="Кол-во близнецов" />
+		<FIELD name="Ispl_Rud" type="STAYI4" point="2" comm="Проц. ежемесячных удержаний" />
+		<FIELD name="Ispl_Rudp" type="STAYI2" point="2" comm="Проц. удерж.на вр. погаш.долга" />
+		<FIELD name="Ispl_SRud" type="STAYI6" point="2" comm="Сумма ежемесячных удержаний" />
+		<FIELD name="Ispl_Sp" type="UI1" comm="Удержания в % или сумма (1,2)" />
+		<FIELD name="Ispl_Spdet" type="UI1" comm="Способ выплат на детей" />
+		<FIELD name="Ispl_Spos" type="UI1" comm="Способ выплаты (п/п,плат. пор)" />
+		<FIELD name="Ispl_SumUd" type="STAYI6" point="2" comm="Расчетная сумма,c кот.берут уд" />
+		<FIELD name="Ispl_Vhn" type="STRING" ln="9" comm="Входящий номер" />
+		<FIELD name="Kor_IdCode" type="STAYUI6" comm="Идентификационный номер кормильца" />
+		<FIELD name="Kor_Datsm" type="STAYDATE" comm="Дата смерти" />
+		<FIELD name="Kor_Drog" type="STAYDATE" comm="Дата рожд. корм. пенсионера" />
+		<FIELD name="Kor_Dvpen" type="STAYDATE" comm="Дата выхода корм. на пенсию" />
+		<FIELD name="Kor_Katk" type="UI1" comm="Категория кормильца (KLKOR)" />
+		<FIELD name="Kor_Pol" type="UI1" comm="Пол" />
+		<FIELD name="Kor_Prism" type="UI1" comm="Причина смерти (KLPS)" />
+		<FIELD name="Kor_Vozrl" type="UI1" comm="Возраст на день смерти (лет)" />
+		<FIELD name="Ls_Adrdom" type="STRING" ln="7" comm="Номер дома" />
+		<FIELD name="Ls_Adrkorp" type="STRING" ln="2" comm="Номер корпуса" />
+		<FIELD name="Ls_Adrkv" type="STRING" ln="4" comm="Номер квартиры" />
+		<FIELD name="Ls_Adrul" type="UI2" comm="Код улицы (KLUL)" />
+		<FIELD name="Ls_Dnac" type="STAYDATE" comm="Дата последнего начисления" />
+		<FIELD name="Ls_Dolya" type="UI1" comm="Выделенная доля-1" />
+		<FIELD name="Ls_Drk" type="UI1" comm="Kорректностъ даты рождения" />
+		<FIELD name="Ls_Drog" type="STAYDATE" comm="Дата рождения" />
+		<FIELD name="Ls_Fio" type="STRING" ln="50" comm="Фамилия, имя, отчество" />
+		<FIELD name="Ls_Grjd" type="UI1" comm="Гражданин Украины-1(2-перес)" />
+		<FIELD name="Ls_IdCode" type="STAYUI6" comm="Идентификационный номер" />
+		<FIELD name="Ls_Indots" type="UI4" comm="Индекс отделения связи (KLI)" />
+		<FIELD name="Ls_Kfn" type="UI2" comm="Код основной выплаты" />
+		<FIELD name="Ls_Nls" type="UI4" comm="Номер л/сч получателя пенсии" />
+		<FIELD name="Ls_Ntel" type="STRING" ln="7" comm="Телефон" />
+		<FIELD name="Ls_Pasp" type="STRING" ln="14" comm="Серия и номер паспорта" />
+		<FIELD name="Ls_Pol" type="UI1" comm="Пол (1 - м, 2 - ж)" />
+		<FIELD name="Ls_Prnp" type="UI1" comm="1(2)-назнач. в 1(2) полуг." />
+		<FIELD name="Ls_Ptk" type="UI1" comm="Дело назначено ПТК(1)" />
+		<FIELD name="Ls_Rab" type="UI1" comm="Признак работы (KLPRAB)" />
+		<FIELD name="Ls_Raj" type="UI2" comm="Код района" />
+		<FIELD name="Ls_Shifr" type="UI2" comm="Шифр пенсии" />
+		<FIELD name="Ls_Spos" type="UI1" comm="Способ выплаты (1-, 2-, 3-)" />
+		<FIELD name="Ls_Ssh" type="UI1" comm="Связь с сельским хоз.-1(прож)" />
+		<FIELD name="Ls_Vbper" type="UI1" comm="1-выпл.осн.спос. в ближ.период" />
+		<FIELD name="Ls_Vid" type="UI1" comm="Вид пенсии (KLVPEN)" />
+		<FIELD name="Ls_Vzvan" type="UI1" comm="Воинское звание (KLVZVAN)" />
+		<FIELD name="NUdr_Bj" type="UI2" comm="Призн(4-сп,4-пер,4-т.вед,1-на" />
+		<FIELD name="NUdr_Datkvit" type="STAYDATE" comm="Дата форм.квит." />
+		<FIELD name="NUdr_God" type="UI2" comm="Год выплаты" />
+		<FIELD name="NUdr_GodF" type="UI2" comm="Год начисления за кот." />
+		<FIELD name="NUdr_Godn" type="UI2" comm="Год начисления" />
+		<FIELD name="NUdr_Kin" type="UI2" comm="Код инсп." />
+		<FIELD name="NUdr_Mec" type="UI1" comm="Месяц выплаты" />
+		<FIELD name="NUdr_MecF" type="UI1" comm="Месяц начисления за кот." />
+		<FIELD name="NUdr_Mecn" type="UI1" comm="Месяц начисления" />
+		<FIELD name="NUdr_NKvit" type="UI4" comm="Номер квит." />
+		<FIELD name="NUdr_NSpis" type="UI2" comm="Номер списка" />
+		<FIELD name="NUdr_Ost" type="STAYUI6" point="2" comm="Остаток суммы удержания" />
+		<FIELD name="NUdr_SNac" type="STAYUI6" point="2" comm="Сумма начисления" />
+		<FIELD name="NUdr_Sved" type="STAYUI6" point="2" comm="Сумма в ведомости" />
+		<FIELD name="Nac_Bj" type="UI2" comm="(4-сп,4-пер,4-т/вед,1-нач,1-не" />
+		<FIELD name="Nac_DatOp" type="STAYDATE" comm="Дата операции" />
+		<FIELD name="Nac_DatSpis" type="STAYDATE" comm="Дата списка" />
+		<FIELD name="Nac_God" type="UI2" comm="Год начисления" />
+		<FIELD name="Nac_GodF" type="UI2" comm="Год начисления    --|" />
+		<FIELD name="Nac_Godn" type="UI2" comm="Год начисления         |вошла" />
+		<FIELD name="Nac_IndOts" type="UI4" comm="Номер отдел.связи" />
+		<FIELD name="Nac_Kfn" type="UI2" comm="Код выплаты (KLFN)" />
+		<FIELD name="Nac_Kin" type="UI2" comm="Код инспектора (оператора)" />
+		<FIELD name="Nac_Mec" type="UI1" comm="Месяц начисления" />
+		<FIELD name="Nac_MecF" type="UI1" comm="Месяц начисления    | за котор" />
+		<FIELD name="Nac_Mecn" type="UI1" comm="Месяц начисления     --|куда" />
+		<FIELD name="Nac_Npp" type="UI2" comm="Порядковый номер выпл. докумен" />
+		<FIELD name="Nac_Nppn" type="UI2" comm="N п/п выпл. документа--|неопл" />
+		<FIELD name="Nac_Nved" type="UI2" comm="Номер ведомости" />
+		<FIELD name="Nac_Op" type="UI2" comm="Код операции" />
+		<FIELD name="Nac_SInd" type="STAYI6" point="2" comm="Cумма индексации" />
+		<FIELD name="Nac_SNac" type="STAYI6" point="2" comm="Cумма начисленная --| начислен" />
+		<FIELD name="Nac_Sved" type="STAYI6" point="2" comm="Cумма в ведомости" />
+		<FIELD name="Nac_TVed" type="UI2" comm="доп. тип ведомости" />
+		<FIELD name="Nac_Tip" type="UI2" comm="Тип записи" />
+		<FIELD name="Nazn_Dnaz" type="STAYDATE" comm="Дата назначения/перерасч. пен." />
+		<FIELD name="Nazn_Dobr" type="STAYDATE" comm="Дата обращения" />
+		<FIELD name="Nazn_Op" type="UI2" comm="Код операции" />
+		<FIELD name="Nazn_Pensosn" type="STAYI6" point="5" comm="Сумма пенсии без ограничений" />
+		<FIELD name="Nazn_Pmax" type="UI1" comm="Право на повыш максимум ( 1 )" />
+		<FIELD name="Nazn_Prc" type="UI1" comm="Процент для определения пенсии" />
+		<FIELD name="Np_Dkprav" type="STAYDATE" comm="Дата конца права" />
+		<FIELD name="Np_Dnprav" type="STAYDATE" comm="Дата начала права" />
+		<FIELD name="Np_Kbl" type="UI1" comm="Код блокировки (KLBL)" />
+		<FIELD name="Np_Kfn" type="UI2" comm="Код надбавки (KLFN)" />
+		<FIELD name="Np_Nomig" type="UI1" comm="Номер иждивенца" />
+		<FIELD name="Np_Pr" type="UI1" comm="Признак обработки" />
+		<FIELD name="Np_Snadp" type="STAYI6" point="2" comm="Размер (абсол. величина)" />
+		<FIELD name="Osob_Code" type="UI2" comm="Код особенности (Kl_Osob)" />
+		<FIELD name="Osob_Priz" type="UI2" comm="Признак - INT" />
+		<FIELD name="Per_CodeDoc" type="UI1" comm="Код документа по измен(KlDoc)" />
+		<FIELD name="Per_DateIz" type="STAYDATE" comm="Дата извещения" />
+		<FIELD name="Per_Datin" type="STAYDATE" comm="Дата инспектора" />
+		<FIELD name="Per_Dnpen" type="STAYDATE" comm="Дата начала выплаты (с)" />
+		<FIELD name="Per_Kfn" type="UI2" comm="Код выплаты (KLFN)" />
+		<FIELD name="Per_Kin" type="UI2" comm="Код инспектора" />
+		<FIELD name="Per_NIz" type="UI4" comm="Номер извещения" />
+		<FIELD name="Per_Op" type="UI2" comm="Код операции" />
+		<FIELD name="Per_Prper" type="UI1" comm="Призн.переноса зап. в NAC" />
+		<FIELD name="Per_Psn" type="UI1" comm="Причина снятия с оплаты(KLPSN)" />
+		<FIELD name="Per_Rnaz" type="STAYI6" point="2" comm="Ежемесячная сумма для кода вып" />
+		<FIELD name="PplNac_God" type="UI2" comm="Год погашения переплаты" />
+		<FIELD name="PplNac_Mec" type="UI2" comm="Месяц погашения переплаты" />
+		<FIELD name="PplNac_Npp" type="UI1" comm="Номер по порядку записи" />
+		<FIELD name="PplNac_Ost" type="STAYUI6" point="2" comm="Сумма остатка" />
+		<FIELD name="PplNac_Sum" type="STAYUI6" point="2" comm="Сумма погашения переплаты" />
+		<FIELD name="Ppl_DateObn" type="STAYDATE" comm="Дата обнаружения переплаты" />
+		<FIELD name="Ppl_DatePk" type="STAYDATE" comm="Дата конца переплаты" />
+		<FIELD name="Ppl_DatePs" type="STAYDATE" comm="Дата начала переплаты" />
+		<FIELD name="Ppl_DateUdr" type="STAYDATE" comm="Дата начала удержаний" />
+		<FIELD name="Ppl_Kfn" type="UI2" comm="Вид выплаты по переплате" />
+		<FIELD name="Ppl_Prizn" type="UI1" comm="Признак(1-раб.,2-смерть)" />
+		<FIELD name="Ppl_Sum" type="STAYI6" point="2" comm="Сумма переплаты" />
+		<FIELD name="Ppl_SumMon" type="STAYI6" point="2" comm="Ежемесячная сумма удержания" />
+		<FIELD name="Ppl_SumOst" type="STAYI6" point="2" comm="Сумма остатка" />
+		<FIELD name="Ppl_Tip" type="UI1" comm="Тип орг. обнаруж. переплату" />
+		<FIELD name="Prc_Code" type="STAYUI6" comm="Код предприятия/организации" />
+		<FIELD name="Prc_Dni" type="UI1" comm="Кол-во дней стажа" />
+		<FIELD name="Prc_God" type="UI1" comm="Кол-во лет стажа" />
+		<FIELD name="Prc_Mec" type="UI1" comm="Кол_во месяцев стажа" />
+		<FIELD name="Prc_One" type="STAYI4" point="2" comm="Процент для бюджетных орг." />
+		<FIELD name="Prc_Priz" type="UI2" comm="Признак" />
+		<FIELD name="Prc_Two" type="STAYI4" point="2" comm="Процент для не бюджетных орг." />
+		<FIELD name="RabPer_CodIns" type="UI2" comm="Код инспектора" />
+		<FIELD name="RabPer_Date" type="STAYDATE" comm="Дата начала / конца работы(1-й нераб день)" />
+		<FIELD name="RabPer_DateIns" type="STAYDATE" comm="Дата инспектора" />
+		<FIELD name="RabPer_Pr" type="UI1" comm="признак блокировки" />
+		<FIELD name="Rd_CdDoh" type="UI2" comm="Код категории дохода" />
+		<FIELD name="Rd_Code" type="UI1" comm="Код кат. чл.семьи (klcfam)" />
+		<FIELD name="Rd_Kv" type="UI1" comm="Номер квартала" />
+		<FIELD name="Rd_Nmes" type="UI1" comm="Число месяцев" />
+		<FIELD name="Rd_NomCode" type="UI1" comm="Порядковый номер по категории" />
+		<FIELD name="Rd_Suma" type="STAYI6" point="5" comm="Сумма за период (кв.)" />
+		<FIELD name="Rd_SumaMes" type="STAYI6" point="5" comm="Сумма за месяц" />
+		<FIELD name="Rd_Year" type="UI2" comm="Год" />
+		<FIELD name="Rod_CodeNW" type="UI1" comm="Прич. не раб.(klnwork.dt)" />
+		<FIELD name="Rod_D1" type="STAYDATE" comm="Дата регистрации брака" />
+		<FIELD name="Rod_D2" type="STAYDATE" comm="Дата установления отцовства" />
+		<FIELD name="Rod_DFree" type="STAYDATE" comm="Дата увольнения" />
+		<FIELD name="Rod_DReg" type="STAYDATE" comm="Дата регистрации в сз" />
+		<FIELD name="Rod_MaskJob" type="UI1" comm="Призн. наличия работы" />
+		<FIELD name="Rod_Parents" type="UI1" comm="Кат. родителя   (klpar.dt)" />
+		<FIELD name="Rod_WorkD" type="UI2" comm="К-во рабочих дней" />
+		<FIELD name="Shifr_Code" type="UI2" comm="Код нового шифра пенсии" />
+		<FIELD name="Shifr_DateC" type="STAYDATE" comm="Дата с ..." />
+		<FIELD name="Shifr_InsCod" type="UI2" comm="Код инспектора" />
+		<FIELD name="Shifr_InsDat" type="STAYDATE" comm="Дата инспектора" />
+		<FIELD name="Shifr_Kfn" type="UI2" comm="Код основного KFN(Ls_Kfn)" />
+		<FIELD name="Stg_Dni" type="UI1" comm="Дни" />
+		<FIELD name="Stg_God" type="UI1" comm="Годы" />
+		<FIELD name="Stg_Kods" type="UI2" comm="Код стажа (KLStg)" />
+		<FIELD name="Stg_Mec" type="UI1" comm="Месяцы" />
+		<FIELD name="Stg_DEnd" type="STAYDATE" comm="Дата последнего стажа" />
+		<FIELD name="Stgp_Dbeg" type="STAYDATE" comm="Дата начала" />
+		<FIELD name="Stgp_Dd" type="UI1" comm="Число дней" />
+		<FIELD name="Stgp_Dend" type="STAYDATE" comm="Дата конца" />
+		<FIELD name="Stgp_Dok" type="UI1" comm="Признак свид. показаний" />
+		<FIELD name="Stgp_Gg" type="UI1" comm="Число лет" />
+		<FIELD name="Stgp_Kolh" type="UI2" comm="Число трудодней в периоде" />
+		<FIELD name="Stgp_KodPr" type="STAYUI6" comm="Код предприятия" />
+		<FIELD name="Stgp_Krat" type="UI1" comm="Код исчисления стажа" />
+		<FIELD name="Stgp_Lgvl" type="UI2" comm="Код льготного стажа" />
+		<FIELD name="Stgp_Mm" type="UI1" comm="Число месяцев" />
+		<FIELD name="Stgp_Sever" type="UI1" comm="Признак работы в рай.Севера" />
+		<FIELD name="Stgp_Sezon" type="UI1" comm="Признак сезонных работ" />
+		<FIELD name="Stgp_Vtch" type="UI2" comm="Признак налич стажа в том чис" />
+		<FIELD name="Sv1_Du" type="UI1" comm="Доставочный участок" />
+		<FIELD name="Sv1_Dvipl" type="UI1" comm="Дата выплаты (день)" />
+		<FIELD name="Sv1_Kus" type="UI1" comm="Код узла связи" />
+		<FIELD name="Sv1_Os" type="UI4" comm="Отделение связи" />
+		<FIELD name="Sv2_Ncsbb" type="UI2" comm="ЦСВ" />
+		<FIELD name="Sv2_Npsbb" type="UI2" comm="РСВ" />
+		<FIELD name="Sv2_Vklad" type="STRING" ln="25" comm="Номер вклада" />
+		<FIELD name="Sv3_Adr" type="STRING" ln="100" comm="Адрес для 3 способа" />
+		<FIELD name="Sv3_Indots" type="UI4" comm="Индекс отделения связи (KLI)" />
+		<FIELD name="Sv3_Tar" type="UI1" comm="Код тарифа почтового сбора" />
+		<FIELD name="Ud2_Abank" type="STRING" ln="50" comm="Адрес банка" />
+		<FIELD name="Ud2_Dpd" type="STAYDATE" comm="Дата поступления документа" />
+		<FIELD name="Ud2_Fio" type="STRING" ln="50" comm="ФИО взыскателя" />
+		<FIELD name="Ud2_Indots" type="UI4" comm="Индекс почт. отделения (KLI)" />
+		<FIELD name="Ud2_Kud" type="UI1" comm="Код удержания (KLUD)" />
+		<FIELD name="Ud2_Nbank" type="STRING" ln="40" comm="Наименование банка" />
+		<FIELD name="Ud2_Ncsbb" type="UI2" comm="Номер СБ" />
+		<FIELD name="Ud2_Npsbb" type="UI2" comm="Номер подотчетного СБ" />
+		<FIELD name="Ud2_Vhn" type="STRING" ln="9" comm="Входящий номер документа" />
+		<FIELD name="Ud2_Vklad" type="STRING" ln="25" comm="Номер вклада" />
+		<FIELD name="Ud3_Adom" type="STRING" ln="100" comm="Улица, дом, корпус, квартира" />
+		<FIELD name="Ud3_Dpd" type="STAYDATE" comm="Дата поступления документа" />
+		<FIELD name="Ud3_Fio" type="STRING" ln="50" comm="ФИО взыскателя" />
+		<FIELD name="Ud3_Indots" type="UI4" comm="Индекс отделения связи" />
+		<FIELD name="Ud3_Kud" type="UI1" comm="Код удержания (KLUD)" />
+		<FIELD name="Ud3_Vhn" type="STRING" ln="9" comm="Входящий номер документа" />
+		<FIELD name="Ud_Dso" type="STAYDATE" comm="Дата снятия удержаний" />
+		<FIELD name="Ud_Psn" type="UI1" comm="Код причины снятия удержаний" />
+		<FIELD name="Umer_Adr" type="STRING" ln="100" comm="Адрес заявителя" />
+		<FIELD name="Umer_DatPoh" type="STAYDATE" comm="Дата похорон" />
+		<FIELD name="Umer_DatPos" type="STAYDATE" comm="Дата начисления пособия" />
+		<FIELD name="Umer_DatSm" type="STAYDATE" comm="Дата смерти" />
+		<FIELD name="Umer_DatSp" type="STAYDATE" comm="Дата списка" />
+		<FIELD name="Umer_DatZap" type="STAYDATE" comm="Дата записи" />
+		<FIELD name="Umer_Fio" type="STRING" ln="50" comm="ФИО заявителя" />
+		<FIELD name="Umer_God" type="UI2" comm="Год нач.недоп.пенс.умершего" />
+		<FIELD name="Umer_Mec" type="UI1" comm="Месяц нач.недоп.пенс.умершего" />
+		<FIELD name="Umer_Nomig" type="UI1" comm="номер иждивенца(0-владелец ЛС)" />
+		<FIELD name="Umer_Npp" type="UI2" comm="Порядк.N нач.недоп.пенс.умершего" />
+		<FIELD name="Umer_Pasp" type="STRING" ln="15" comm="Паспорт" />
+		<FIELD name="Umer_Pos" type="STAYI6" point="2" comm="Размер похоронного пособия" />
+		<FIELD name="Umer_Spis" type="UI2" comm="Номер списка" />
+		<FIELD name="Umer_Vidan" type="STRING" ln="40" comm="Кем выдан" />
+		<FIELD name="Umer_Zap" type="UI4" comm="N записи" />
+		<FIELD name="Zarab_CodIns" type="UI2" comm="Код инспектора" />
+		<FIELD name="Zarab_DateIns" type="STAYDATE" comm="Дата инспектора" />
+		<FIELD name="Zarab_Month" type="UI1" comm="Месяц заработка" />
+		<FIELD name="Zarab_SumInd" type="STAYUI4" point="2" comm="Сумма индексации" />
+		<FIELD name="Zarab_Year" type="UI2" comm="Год заработка" />
+		<FIELD name="Zarab_Zarp" type="STAYUI4" point="2" comm="Сумма заработка" />
+		<FIELD name="Zarab_ZarpInd" type="STAYUI4" point="2" comm="Поpиндексиp.сумма заpоботка" />
+		<FIELD name="Zp_Alim" type="UI2" comm="Кол-во оплаченных дней" />
+		<FIELD name="Zp_DateB" type="STAYDATE" comm="Дата начала выпрлаты" />
+		<FIELD name="Zp_DateE" type="STAYDATE" comm="Дата конца выплаты" />
+		<FIELD name="Zp_Razm" type="STAYI6" point="5" comm="Размер зарплаты" />
+		<FIELD name="Zrb_DKoef" type="UI1" comm="Признак зар. за неполн. мес." />
+		<FIELD name="Zrb_Dbeg" type="STAYDATE" comm="Дата начала" />
+		<FIELD name="Zrb_Dend" type="STAYDATE" comm="Дата конца" />
+		<FIELD name="Zrb_KodPr" type="STAYUI6" comm="Код предприятия" />
+		<FIELD name="Zrb_Koef" type="STAYUI2" point="2" comm="Доп.коэф. коррегирования" />
+		<FIELD name="Zrb_Nepol" type="UI1" comm="Признак зар. за неполн. мес." />
+		<FIELD name="Zrb_Nr" type="UI1" comm="Номер родителя" />
+		<FIELD name="Zrb_Nrs" type="UI1" comm="Номер расчета заработка" />
+		<FIELD name="Zrb_Suma" type="STAYI6" point="5" comm="Сумма заработка" />
+		<FIELD name="Zrbs_Dendz" type="STAYDATE" comm="Дата последнего заработка (кон" />
+		<FIELD name="Zrbs_Mes" type="UI1" comm="Кол-во месяцев" />
+		<FIELD name="Zrbs_Nepol" type="UI1" comm="Вид заработка" />
+		<FIELD name="Zrbs_Nr" type="UI1" comm="Номер родителя" />
+		<FIELD name="Zrbs_Nrs" type="UI1" comm="Номер расчета заработка" />
+		<FIELD name="Zrbs_Zar" type="STAYI6" point="5" comm="Среднемесячный заработок" />
+		<FIELD name="Zrbs_Zregr" type="STAYI6" point="5" comm="Заработок для примен. регрес." />
+		<FIELD name="VidOs_Code" type="UI2" comm="Код особенности (Kl_Osob)" />
+		<FIELD name="VidOs_DateB" type="STAYDATE" comm="Дата начала действия" />
+		<FIELD name="VidOs_DateE" type="STAYDATE" comm="Дата окончания действия" />
+		<FIELD name="VidOs_Priz" type="UI2" comm="Признак" />
+		<FIELD name="VidOs_Sum" type="STAYI4" point="2" comm="Значение" />
+		<FIELD name="Stag_Nr" type="UI1" />
+		<FIELD name="Stag_Dni" type="UI1" comm="Дни" />
+		<FIELD name="Stag_God" type="UI1" comm="Годы" />
+		<FIELD name="Stag_Kods" type="UI2" comm="Код стажа (KLStg)" />
+		<FIELD name="Stag_Mec" type="UI1" comm="Месяцы" />
+		<FIELD name="Stag_DEnd" type="STAYDATE" comm="Дата последнего стажа" />
+		<FIELD name="Stagp_Nr" type="UI1" />
+		<FIELD name="Stagp_Dbeg" type="STAYDATE" comm="Дата начала" />
+		<FIELD name="Stagp_Dd" type="UI1" comm="Число дней" />
+		<FIELD name="Stagp_Dend" type="STAYDATE" comm="Дата конца" />
+		<FIELD name="Stagp_Dok" type="UI1" comm="Признак свид. показаний" />
+		<FIELD name="Stagp_Gg" type="UI1" comm="Число лет" />
+		<FIELD name="Stagp_Kolh" type="UI2" comm="Число трудодней в периоде" />
+		<FIELD name="Stagp_KodPr" type="STAYUI6" comm="Код предприятия" />
+		<FIELD name="Stagp_Krat" type="UI1" comm="Код исчисления стажа" />
+		<FIELD name="Stagp_Lgvl" type="UI2" comm="Код льготного стажа" />
+		<FIELD name="Stagp_Mm" type="UI1" comm="Число месяцев" />
+		<FIELD name="Stagp_Sever" type="UI1" comm="Признак работы в рай.Севера" />
+		<FIELD name="Stagp_Sezon" type="UI1" comm="Признак сезонных работ" />
+		<FIELD name="Stagp_Vtch" type="UI2" comm="Признак налич стажа в том чис" />
+		<FIELD name="Stagp_Krat24" type="UI1" comm="Кратн.с 2004         " />
+		<FIELD name="Stagp_GgKr" type="UI1" comm="Годи   - Кратн.с 2004" />
+		<FIELD name="Stagp_MmKr" type="UI1" comm="Месяци - Кратн.с 2004" />
+		<FIELD name="Stagp_DdKr" type="UI1" comm="Дни    - Кратн.с 2004" />
+		<FIELD name="Stagp_COKPriz" type="UI1" />
+		<FIELD name="Stagp_COKDni" type="UI1" />
+		<FIELD name="Stagp_COKGg" type="UI1" />
+		<FIELD name="Stagp_COKMm" type="UI1" />
+		<FIELD name="Stagp_COKDd" type="UI1" />
+		<FIELD name="Kr_Num" type="UI1" comm="Номер кормильца" />
+		<FIELD name="Kr_Code" type="UI1" comm="Код категории кормильца" />
+		<FIELD name="Kr_Age" type="UI1" comm="Возраст кормильца" />
+		<FIELD name="Kr_DateP" type="STAYDATE" comm="Дата вихода на пенсию" />
+		<FIELD name="Kr_DateR" type="STAYDATE" comm="Дата рождения кормильца" />
+		<FIELD name="Kr_DateSm" type="STAYDATE" comm="Дата смерти кормильца" />
+		<FIELD name="Kr_DieCode" type="UI1" comm="Код причини смерти" />
+		<FIELD name="Kr_Sex" type="UI2" comm="Пол" />
+		<FIELD name="Kr_Fio" type="STRING" ln="50" comm="ФИО" />
+		<FIELD name="Kr_VZvan" type="UI1" comm="Воинское звание" />
+		<FIELD name="Kr_IdCode" type="STAYUI6" comm="Идентиф.код" />
+		<FIELD name="Kr_Pen0124" type="UI1" />
+		<FIELD name="Kr_Type" type="UI1" />
+		<FIELD name="Kr_Tpos" type="UI1" />
+		<FIELD name="Kr_Grinv" type="UI1" />
+		<FIELD name="Kr_Ptru" type="UI2" />
+		<FIELD name="Kr_PrSmShax" type="UI1" />
+		<FIELD name="Kr_PrSmShPZ" type="UI1" />
+		<FIELD name="Kr_MaskOsb" type="STRING" ln="10" />
+		<FIELD name="Kr_DPStgInv" type="STAYI6" point="2" />
+		<FIELD name="Kr_DPStgVsr" type="STAYI6" point="2" />
+		<FIELD name="Kr_Razv1" type="UI2" comm="Развитие" />
+		<FIELD name="Kr_Razv2" type="UI2" comm="Развитие" />
+		<FIELD name="Kr_Razv3" type="STAYDATE" comm="Развитие" />
+		<FIELD name="Ar1_Code" type="UI4" comm="" />
+		<FIELD name="Ar1_Priz" type="UI2" comm="Признак" />
+		<FIELD name="Ar1_Priz1" type="UI2" comm="Признак1" />
+		<FIELD name="Ar1_Date" type="STAYDATE" comm="" />
+		<FIELD name="Ar1_Date1" type="STAYDATE" comm="" />
+		<FIELD name="Ar1_Date2" type="STAYDATE" comm="" />
+		<FIELD name="Ar1_Sum" type="STAYI4" point="2" comm="Значение" />
+		<FIELD name="Ar1_Ind" type="STAYI4" point="5" comm="Значение" />
+		<FIELD name="Ar1_PrUI4" type="UI4" comm="" />
+		<FIELD name="Ar1_PrUI2" type="UI2" comm="" />
+		<FIELD name="Ar1_Pr1UI2" type="UI2" comm="" />
+		<FIELD name="Ar2_Code" type="UI4" comm="" />
+		<FIELD name="Ar2_Priz" type="UI2" comm="Признак" />
+		<FIELD name="Ar2_Date1" type="STAYDATE" comm="" />
+		<FIELD name="Ar2_Date2" type="STAYDATE" comm="" />
+		<FIELD name="Ar2_Sum" type="STAYI4" point="2" comm="Значение" />
+		<FIELD name="Ar2_Ind" type="STAYI4" point="5" comm="Значение" />
+		<FIELD name="Ar2_PrUI4" type="UI4" comm="" />
+		<FIELD name="Ar2_PrUI2" type="UI2" comm="" />
+		<FIELD name="Pd_Num" type="UI2" comm="номер кормильца" />
+		<FIELD name="Pd_Fam" type="STRING" ln="50" comm="Пр_звище" />
+		<FIELD name="Pd_Name" type="STRING" ln="50" comm="_м&apos;я" />
+		<FIELD name="Pd_Otch" type="STRING" ln="50" comm="По-батьков_" />
+		<FIELD name="Pd_IdCd" type="STAYUI6" comm="_дентиф_кац_йний номер пенс_онера" />
+	</FIELDS>
+	<DATASETS>
+		<DATASET name="B_Ls" type="DS_BBASE" file="LS:LS.DT" qnt="100" comm="База особових рахунків">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Ls_Nls" />
+				</INDEX>
+				<INDEX name="2" dupl="TRUE">
+					<KEY name="Ls_Spos" />
+				</INDEX>
+				<INDEX name="3" dupl="TRUE">
+					<KEY name="Ls_Fio" length="10" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Ls_Nls" />
+			<COLUMN name="Ls_Spos" />
+			<COLUMN name="Ls_Fio" />
+			<COLUMN name="Ls_Indots" />
+			<COLUMN name="Ls_Shifr" />
+			<COLUMN name="Ls_Vid" />
+			<COLUMN name="Ls_Kfn" />
+			<COLUMN name="Ls_Pol" />
+			<COLUMN name="Ls_Drog" />
+			<COLUMN name="Ls_Pasp" />
+			<COLUMN name="Ls_Ntel" />
+			<COLUMN name="Ls_Adrul" />
+			<COLUMN name="Ls_Adrdom" />
+			<COLUMN name="Ls_Adrkorp" />
+			<COLUMN name="Ls_Adrkv" />
+			<COLUMN name="Ls_Grjd" />
+			<COLUMN name="Ls_Vzvan" />
+			<COLUMN name="Ls_Dolya" />
+			<COLUMN name="Ls_Ssh" />
+			<COLUMN name="Ls_Rab" />
+			<COLUMN name="Ls_Prnp" />
+			<COLUMN name="Ls_Drk" />
+			<COLUMN name="Ls_Raj" />
+			<COLUMN name="Ls_Ptk" />
+			<COLUMN name="Ls_Vbper" />
+			<COLUMN name="Ls_Dnac" />
+			<COLUMN name="Ls_IdCode" />
+			<COLUMN name="B_Ppl" />
+			<COLUMN name="B_Zrbs" />
+			<COLUMN name="B_Sv1" />
+			<COLUMN name="B_Sv2" />
+			<COLUMN name="B_Sv3" />
+			<COLUMN name="B_Per" />
+			<COLUMN name="B_Np" />
+			<COLUMN name="B_Prc" />
+			<COLUMN name="B_Nac" />
+			<COLUMN name="B_Stg" />
+			<COLUMN name="B_Stgp" />
+			<COLUMN name="B_Zrb" />
+			<COLUMN name="B_Kor" />
+			<COLUMN name="B_Igd" />
+			<COLUMN name="B_Inv" />
+			<COLUMN name="B_Che" />
+			<COLUMN name="B_CheZp" />
+			<COLUMN name="B_Nazn" />
+			<COLUMN name="B_Osob" />
+			<COLUMN name="B_Atst" />
+			<COLUMN name="B_Umer" />
+			<COLUMN name="B_Ispl" />
+			<COLUMN name="B_Rd" />
+			<COLUMN name="B_Rod" />
+			<COLUMN name="B_RabPer" />
+			<COLUMN name="B_Zarab" />
+			<COLUMN name="B_Zp" />
+			<COLUMN name="B_Shifr" />
+			<COLUMN name="B_VidOs" />
+			<COLUMN name="B_Kr" />
+			<COLUMN name="B_Stag" />
+			<COLUMN name="B_Stagp" />
+			<COLUMN name="B_Ar1" />
+			<COLUMN name="B_Ar2" />
+			<COLUMN name="B_Pd" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Ppl" type="DS_ARRAY" qnt="0" comm="Масив відрахувань переплат">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Ppl_Prizn" />
+					<KEY name="Ppl_DatePs" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Ppl_Prizn" />
+			<COLUMN name="Ppl_DatePs" />
+			<COLUMN name="Ppl_DatePk" />
+			<COLUMN name="Ppl_DateUdr" />
+			<COLUMN name="Ppl_Kfn" />
+			<COLUMN name="Ppl_Sum" />
+			<COLUMN name="Ppl_SumMon" />
+			<COLUMN name="Ppl_SumOst" />
+			<COLUMN name="Ppl_Tip" />
+			<COLUMN name="Ppl_DateObn" />
+			<COLUMN name="B_PplNac" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_PplNac" type="DS_ARRAY" qnt="0">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="PplNac_God" />
+					<KEY name="PplNac_Mec" />
+					<KEY name="PplNac_Npp" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="PplNac_God" />
+			<COLUMN name="PplNac_Mec" />
+			<COLUMN name="PplNac_Npp" />
+			<COLUMN name="PplNac_Sum" />
+			<COLUMN name="PplNac_Ost" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Zrbs" type="DS_ARRAY" qnt="0" comm="Масив зведених даних про заробітки">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Zrbs_Nr" />
+					<KEY name="Zrbs_Nrs" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Zrbs_Nr" />
+			<COLUMN name="Zrbs_Nrs" />
+			<COLUMN name="Zrbs_Zregr" />
+			<COLUMN name="Zrbs_Zar" />
+			<COLUMN name="Zrbs_Dendz" />
+			<COLUMN name="Zrbs_Mes" />
+			<COLUMN name="Zrbs_Nepol" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Sv1" type="DS_STRUCT" qnt="0" comm="Реквізити 1-го спос.виплати">
+			<COLUMNS>
+			<COLUMN name="Sv1_Kus" />
+			<COLUMN name="Sv1_Os" />
+			<COLUMN name="Sv1_Du" />
+			<COLUMN name="Sv1_Dvipl" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Sv2" type="DS_STRUCT" qnt="0" comm="Реквізити 2-го спос.виплати">
+			<COLUMNS>
+			<COLUMN name="Sv2_Ncsbb" />
+			<COLUMN name="Sv2_Npsbb" />
+			<COLUMN name="Sv2_Vklad" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Sv3" type="DS_STRUCT" qnt="0" comm="Реквізити 3-го спос.виплати">
+			<COLUMNS>
+			<COLUMN name="Sv3_Indots" />
+			<COLUMN name="Sv3_Adr" />
+			<COLUMN name="Sv3_Tar" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Per" type="DS_ARRAY" qnt="0" comm="Масив перерахувань">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Per_Kfn" />
+					<KEY name="Per_Dnpen" />
+					<KEY name="Per_Op" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Per_Kfn" />
+			<COLUMN name="Per_Dnpen" />
+			<COLUMN name="Per_Op" />
+			<COLUMN name="Per_Rnaz" />
+			<COLUMN name="Per_Prper" />
+			<COLUMN name="Per_Psn" />
+			<COLUMN name="Per_Kin" />
+			<COLUMN name="Per_Datin" />
+			<COLUMN name="Per_NIz" />
+			<COLUMN name="Per_DateIz" />
+			<COLUMN name="Per_CodeDoc" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Np" type="DS_ARRAY" qnt="0" comm="Масив підвищень">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Np_Nomig" />
+					<KEY name="Np_Kfn" />
+					<KEY name="Np_Dnprav" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Np_Nomig" />
+			<COLUMN name="Np_Kfn" />
+			<COLUMN name="Np_Dnprav" />
+			<COLUMN name="Np_Dkprav" />
+			<COLUMN name="Np_Snadp" />
+			<COLUMN name="Np_Kbl" />
+			<COLUMN name="Np_Pr" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Prc" type="DS_ARRAY" qnt="0" comm="Відсоток нарахування">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Prc_Code" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Prc_Code" />
+			<COLUMN name="Prc_One" />
+			<COLUMN name="Prc_Two" />
+			<COLUMN name="Prc_Priz" />
+			<COLUMN name="Prc_God" />
+			<COLUMN name="Prc_Mec" />
+			<COLUMN name="Prc_Dni" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Nac" type="DS_ARRAY" qnt="0" comm="Масив нарахувань">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Nac_God" />
+					<KEY name="Nac_Mec" />
+					<KEY name="Nac_Npp" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Nac_God" />
+			<COLUMN name="Nac_Mec" />
+			<COLUMN name="Nac_Npp" />
+			<COLUMN name="Nac_Sved" />
+			<COLUMN name="Nac_Nved" />
+			<COLUMN name="Nac_DatSpis" />
+			<COLUMN name="Nac_Bj" />
+			<COLUMN name="Nac_IndOts" />
+			<COLUMN name="Nac_Mecn" />
+			<COLUMN name="Nac_Godn" />
+			<COLUMN name="Nac_Nppn" />
+			<COLUMN name="Nac_Tip" />
+			<COLUMN name="Nac_TVed" />
+			<COLUMN name="B_NacOp" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_NacOp" type="DS_ARRAY" qnt="0">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Nac_Op" />
+					<KEY name="Nac_DatOp" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Nac_Op" />
+			<COLUMN name="Nac_DatOp" />
+			<COLUMN name="Nac_Kin" />
+			<COLUMN name="B_NacKfn" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_NacKfn" type="DS_ARRAY" qnt="0">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Nac_Kfn" />
+					<KEY name="Nac_GodF" />
+					<KEY name="Nac_MecF" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Nac_Kfn" />
+			<COLUMN name="Nac_GodF" />
+			<COLUMN name="Nac_MecF" />
+			<COLUMN name="Nac_SNac" />
+			<COLUMN name="Nac_SInd" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Stg" type="DS_ARRAY" qnt="0" comm="Масив відомостей про стаж">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Stg_Kods" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Stg_Kods" />
+			<COLUMN name="Stg_Dni" />
+			<COLUMN name="Stg_Mec" />
+			<COLUMN name="Stg_God" />
+			<COLUMN name="Stg_DEnd" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Stgp" type="DS_ARRAY" qnt="0" comm="Масив стажів по періодах">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Stgp_Dbeg" />
+					<KEY name="Stgp_Dend" />
+					<KEY name="Stgp_Lgvl" />
+					<KEY name="Stgp_Krat" />
+					<KEY name="Stgp_Vtch" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Stgp_Dbeg" />
+			<COLUMN name="Stgp_Dend" />
+			<COLUMN name="Stgp_Lgvl" />
+			<COLUMN name="Stgp_Krat" />
+			<COLUMN name="Stgp_Vtch" />
+			<COLUMN name="Stgp_Dok" />
+			<COLUMN name="Stgp_Sever" />
+			<COLUMN name="Stgp_Sezon" />
+			<COLUMN name="Stgp_Gg" />
+			<COLUMN name="Stgp_Mm" />
+			<COLUMN name="Stgp_Dd" />
+			<COLUMN name="Stgp_Kolh" />
+			<COLUMN name="Stgp_KodPr" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Zrb" type="DS_ARRAY" qnt="0" comm="Масив заробітків по періодах">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Zrb_Nr" />
+					<KEY name="Zrb_Nrs" />
+					<KEY name="Zrb_Dbeg" />
+					<KEY name="Zrb_Dend" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Zrb_Nr" />
+			<COLUMN name="Zrb_Nrs" />
+			<COLUMN name="Zrb_Dbeg" />
+			<COLUMN name="Zrb_Dend" />
+			<COLUMN name="Zrb_Suma" />
+			<COLUMN name="Zrb_Koef" />
+			<COLUMN name="Zrb_DKoef" />
+			<COLUMN name="Zrb_Nepol" />
+			<COLUMN name="Zrb_KodPr" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Kor" type="DS_ARRAY" qnt="0" comm="Масив відомостей про годувальників">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Kor_Katk" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Kor_Katk" />
+			<COLUMN name="Kor_Vozrl" />
+			<COLUMN name="Kor_Pol" />
+			<COLUMN name="Kor_Prism" />
+			<COLUMN name="Kor_Datsm" />
+			<COLUMN name="Kor_Drog" />
+			<COLUMN name="Kor_Dvpen" />
+			<COLUMN name="Kor_IdCode" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Igd" type="DS_ARRAY" qnt="0" comm="Масив відомостей про утриманців">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Igd_Nomig" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Igd_Nomig" />
+			<COLUMN name="Igd_Katrod" />
+			<COLUMN name="Igd_Katnetr" />
+			<COLUMN name="Igd_Fio" />
+			<COLUMN name="Igd_Drog" />
+			<COLUMN name="Igd_Pol" />
+			<COLUMN name="Igd_Psn" />
+			<COLUMN name="Igd_Sir" />
+			<COLUMN name="Igd_Dso" />
+			<COLUMN name="Igd_Prab" />
+			<COLUMN name="Igd_Prdel" />
+			<COLUMN name="Igd_Dusn" />
+			<COLUMN name="B_Dolja" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Dolja" type="DS_ARRAY" qnt="0" comm="Дольова пенсія">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Igd_Dolja_DBeg" />
+					<KEY name="Igd_Dolja_DEnd" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Igd_Dolja_DBeg" />
+			<COLUMN name="Igd_Dolja_DEnd" />
+			<COLUMN name="Igd_Dolja_NumP" />
+			<COLUMN name="Igd_Dolja_PAdr" />
+			<COLUMN name="Igd_Dolja_Os" />
+			<COLUMN name="Igd_Dolja_Adr" />
+			<COLUMN name="Igd_Dolja_Nls" />
+			<COLUMN name="Igd_Dolja_PrDN" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Inv" type="DS_ARRAY" qnt="0" comm="Масив відомостей про інвалідність">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Inv_Nomig" />
+					<KEY name="Inv_Dnpi" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Inv_Nomig" />
+			<COLUMN name="Inv_Dnpi" />
+			<COLUMN name="Inv_Dkpi" />
+			<COLUMN name="Inv_Kod" />
+			<COLUMN name="Inv_Dni" />
+			<COLUMN name="Inv_Stag" />
+			<COLUMN name="Inv_Kbl" />
+			<COLUMN name="Inv_Grinv" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Che" type="DS_ARRAY" qnt="0" comm="Масив відомостей про ЧАЕС">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Che_Nomig" />
+					<KEY name="Che_Dnprav" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Che_Nomig" />
+			<COLUMN name="Che_Dnprav" />
+			<COLUMN name="Che_Dkprav" />
+			<COLUMN name="Che_Dobr" />
+			<COLUMN name="Che_Kbl" />
+			<COLUMN name="Che_Kzp" />
+			<COLUMN name="Che_Kzr" />
+			<COLUMN name="Che_Chpri" />
+			<COLUMN name="Che_Likvid" />
+			<COLUMN name="Che_Luch" />
+			<COLUMN name="Che_Ptru" />
+			<COLUMN name="Che_Prod" />
+			<COLUMN name="Che_Proj" />
+			<COLUMN name="Che_Snig" />
+			<COLUMN name="Che_Tpos" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_CheZp" type="DS_ARRAY" qnt="0" comm="Масив періодів">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="CheZp_Nomig" />
+					<KEY name="CheZp_Code" />
+					<KEY name="CheZp_DateBeg" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="CheZp_Nomig" />
+			<COLUMN name="CheZp_Code" />
+			<COLUMN name="CheZp_DateBeg" />
+			<COLUMN name="CheZp_DateEnd" />
+			<COLUMN name="CheZp_Time" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Nazn" type="DS_ARRAY" qnt="0" comm="Масив відомостей про призначення">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Nazn_Op" />
+					<KEY name="Nazn_Dnaz" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Nazn_Op" />
+			<COLUMN name="Nazn_Dnaz" />
+			<COLUMN name="Nazn_Dobr" />
+			<COLUMN name="Nazn_Prc" />
+			<COLUMN name="Nazn_Pensosn" />
+			<COLUMN name="Nazn_Pmax" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Osob" type="DS_ARRAY" qnt="0" comm="Масив особливостей">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Osob_Code" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Osob_Code" />
+			<COLUMN name="Osob_Priz" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Atst" type="DS_ARRAY" qnt="0" comm="Масив відомостей про атестати">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Atst_Type" />
+					<KEY name="Atst_Num" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Atst_Type" />
+			<COLUMN name="Atst_Num" />
+			<COLUMN name="Atst_Data" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Umer" type="DS_ARRAY" qnt="0" comm="Масив відомостей про померлих">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Umer_Nomig" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Umer_Nomig" />
+			<COLUMN name="Umer_DatSm" />
+			<COLUMN name="Umer_DatZap" />
+			<COLUMN name="Umer_Zap" />
+			<COLUMN name="Umer_DatPos" />
+			<COLUMN name="Umer_Fio" />
+			<COLUMN name="Umer_Adr" />
+			<COLUMN name="Umer_Pasp" />
+			<COLUMN name="Umer_Vidan" />
+			<COLUMN name="Umer_Pos" />
+			<COLUMN name="Umer_Spis" />
+			<COLUMN name="Umer_DatSp" />
+			<COLUMN name="Umer_DatPoh" />
+			<COLUMN name="Umer_God" />
+			<COLUMN name="Umer_Mec" />
+			<COLUMN name="Umer_Npp" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Ispl" type="DS_ARRAY" qnt="0" comm="Масив відомостей про утримання">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Ispl_Kud" />
+					<KEY name="Ispl_Num" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Ispl_Kud" />
+			<COLUMN name="Ispl_Num" />
+			<COLUMN name="Ispl_Dpd" />
+			<COLUMN name="Ispl_Vhn" />
+			<COLUMN name="Ispl_Kd" />
+			<COLUMN name="Ispl_Nd" />
+			<COLUMN name="Ispl_Dv" />
+			<COLUMN name="Ispl_Ksud" />
+			<COLUMN name="Ispl_Kvz" />
+			<COLUMN name="Ispl_Kold" />
+			<COLUMN name="Ispl_Datast" />
+			<COLUMN name="Ispl_PostDolg" />
+			<COLUMN name="Ispl_Dolg" />
+			<COLUMN name="Ispl_Sp" />
+			<COLUMN name="Ispl_SumUd" />
+			<COLUMN name="Ispl_SRud" />
+			<COLUMN name="Ispl_PerSud" />
+			<COLUMN name="Ispl_PerSud1" />
+			<COLUMN name="Ispl_DatU" />
+			<COLUMN name="Ispl_Displ" />
+			<COLUMN name="Ispl_Spos" />
+			<COLUMN name="Ispl_Kdp" />
+			<COLUMN name="Ispl_Ost" />
+			<COLUMN name="Ispl_Rudp" />
+			<COLUMN name="Ispl_Rud" />
+			<COLUMN name="Ispl_Gor" />
+			<COLUMN name="Ispl_Kin" />
+			<COLUMN name="Ispl_Datin" />
+			<COLUMN name="B_Ud" />
+			<COLUMN name="B_Det" />
+			<COLUMN name="B_NUdr" />
+			<COLUMN name="B_Ud2" />
+			<COLUMN name="B_Ud3" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Ud" type="DS_STRUCT" qnt="0" comm="Відомості про блокування виконавч.листів">
+			<COLUMNS>
+			<COLUMN name="Ud_Psn" />
+			<COLUMN name="Ud_Dso" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Det" type="DS_ARRAY" qnt="0" comm="Відомості про дітей">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Ispl_Datar" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Ispl_Datar" />
+			<COLUMN name="Ispl_Datae" />
+			<COLUMN name="Ispl_Spdet" />
+			<COLUMN name="Ispl_Per" />
+			<COLUMN name="Ispl_Per1" />
+			<COLUMN name="Ispl_Rkold" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_NUdr" type="DS_ARRAY" qnt="0" comm="Масив нарахувань по утриманням">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="NUdr_God" />
+					<KEY name="NUdr_Mec" />
+					<KEY name="NUdr_Kin" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="NUdr_God" />
+			<COLUMN name="NUdr_Mec" />
+			<COLUMN name="NUdr_Kin" />
+			<COLUMN name="NUdr_Sved" />
+			<COLUMN name="NUdr_NSpis" />
+			<COLUMN name="NUdr_Datkvit" />
+			<COLUMN name="NUdr_NKvit" />
+			<COLUMN name="NUdr_Bj" />
+			<COLUMN name="NUdr_Ost" />
+			<COLUMN name="NUdr_Mecn" />
+			<COLUMN name="NUdr_Godn" />
+			<COLUMN name="B_UdMec" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_UdMec" type="DS_ARRAY" qnt="0">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="NUdr_GodF" />
+					<KEY name="NUdr_MecF" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="NUdr_GodF" />
+			<COLUMN name="NUdr_MecF" />
+			<COLUMN name="NUdr_SNac" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Ud2" type="DS_STRUCT" qnt="0" comm="Реквізити 2-го способу для утримань">
+			<COLUMNS>
+			<COLUMN name="Ud2_Kud" />
+			<COLUMN name="Ud2_Vhn" />
+			<COLUMN name="Ud2_Dpd" />
+			<COLUMN name="Ud2_Ncsbb" />
+			<COLUMN name="Ud2_Npsbb" />
+			<COLUMN name="Ud2_Vklad" />
+			<COLUMN name="Ud2_Fio" />
+			<COLUMN name="Ud2_Indots" />
+			<COLUMN name="Ud2_Abank" />
+			<COLUMN name="Ud2_Nbank" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Ud3" type="DS_STRUCT" qnt="0" comm="Реквізити 3-го способу для утримань">
+			<COLUMNS>
+			<COLUMN name="Ud3_Kud" />
+			<COLUMN name="Ud3_Vhn" />
+			<COLUMN name="Ud3_Dpd" />
+			<COLUMN name="Ud3_Indots" />
+			<COLUMN name="Ud3_Adom" />
+			<COLUMN name="Ud3_Fio" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Rd" type="DS_ARRAY" qnt="0" comm="Масив сукупного доходу сімї">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Rd_Year" />
+					<KEY name="Rd_Kv" />
+					<KEY name="Rd_Code" />
+					<KEY name="Rd_NomCode" />
+					<KEY name="Rd_CdDoh" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Rd_Year" />
+			<COLUMN name="Rd_Kv" />
+			<COLUMN name="Rd_Code" />
+			<COLUMN name="Rd_NomCode" />
+			<COLUMN name="Rd_CdDoh" />
+			<COLUMN name="Rd_Suma" />
+			<COLUMN name="Rd_Nmes" />
+			<COLUMN name="Rd_SumaMes" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Rod" type="DS_ARRAY" qnt="0" comm="Масив відомостей про батьків">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Rod_Parents" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Rod_Parents" />
+			<COLUMN name="Rod_MaskJob" />
+			<COLUMN name="Rod_CodeNW" />
+			<COLUMN name="Rod_DFree" />
+			<COLUMN name="Rod_DReg" />
+			<COLUMN name="Rod_D1" />
+			<COLUMN name="Rod_D2" />
+			<COLUMN name="Rod_WorkD" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_RabPer" type="DS_ARRAY" qnt="0" comm="Масив періодів роботи">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="RabPer_Date" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="RabPer_Date" />
+			<COLUMN name="RabPer_Pr" />
+			<COLUMN name="RabPer_CodIns" />
+			<COLUMN name="RabPer_DateIns" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Zarab" type="DS_ARRAY" qnt="0" comm="Масив заробітків">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Zarab_Year" />
+					<KEY name="Zarab_Month" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Zarab_Year" />
+			<COLUMN name="Zarab_Month" />
+			<COLUMN name="Zarab_CodIns" />
+			<COLUMN name="Zarab_DateIns" />
+			<COLUMN name="Zarab_Zarp" />
+			<COLUMN name="Zarab_ZarpInd" />
+			<COLUMN name="Zarab_SumInd" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Zp" type="DS_ARRAY" qnt="0" comm="Масив зарплати(аліментів)">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Zp_DateB" />
+					<KEY name="Zp_DateE" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Zp_DateB" />
+			<COLUMN name="Zp_DateE" />
+			<COLUMN name="Zp_Razm" />
+			<COLUMN name="Zp_Alim" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Shifr" type="DS_ARRAY" qnt="0" comm="Масив відомостей про шифри">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Shifr_DateC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Shifr_DateC" />
+			<COLUMN name="Shifr_Code" />
+			<COLUMN name="Shifr_Kfn" />
+			<COLUMN name="Shifr_InsCod" />
+			<COLUMN name="Shifr_InsDat" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_VidOs" type="DS_ARRAY" qnt="0" comm="Масив особливостей з датами">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="VidOs_Code" />
+					<KEY name="VidOs_DateB" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="VidOs_Code" />
+			<COLUMN name="VidOs_DateB" />
+			<COLUMN name="VidOs_DateE" />
+			<COLUMN name="VidOs_Priz" />
+			<COLUMN name="VidOs_Sum" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Kr" type="DS_ARRAY" qnt="0" comm="Масив відомостей про годувальників(2)">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Kr_Num" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Kr_Num" />
+			<COLUMN name="Kr_Code" />
+			<COLUMN name="Kr_Age" />
+			<COLUMN name="Kr_DateP" />
+			<COLUMN name="Kr_DateR" />
+			<COLUMN name="Kr_DateSm" />
+			<COLUMN name="Kr_DieCode" />
+			<COLUMN name="Kr_Sex" />
+			<COLUMN name="Kr_Fio" />
+			<COLUMN name="Kr_VZvan" />
+			<COLUMN name="Kr_IdCode" />
+			<COLUMN name="Kr_Pen0124" />
+			<COLUMN name="Kr_Type" />
+			<COLUMN name="Kr_Tpos" />
+			<COLUMN name="Kr_Grinv" />
+			<COLUMN name="Kr_Ptru" />
+			<COLUMN name="Kr_PrSmShax" />
+			<COLUMN name="Kr_PrSmShPZ" />
+			<COLUMN name="Kr_MaskOsb" />
+			<COLUMN name="Kr_DPStgInv" />
+			<COLUMN name="Kr_DPStgVsr" />
+			<COLUMN name="Kr_Razv1" />
+			<COLUMN name="Kr_Razv2" />
+			<COLUMN name="Kr_Razv3" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Stag" type="DS_ARRAY" qnt="0" comm="Масив відомостей про стаж(2)">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Stag_Nr" />
+					<KEY name="Stag_Kods" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Stag_Nr" />
+			<COLUMN name="Stag_Kods" />
+			<COLUMN name="Stag_Dni" />
+			<COLUMN name="Stag_Mec" />
+			<COLUMN name="Stag_God" />
+			<COLUMN name="Stag_DEnd" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Stagp" type="DS_ARRAY" qnt="0" comm="Масив стажів по періодах(2)">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Stagp_Nr" />
+					<KEY name="Stagp_Dbeg" />
+					<KEY name="Stagp_Dend" />
+					<KEY name="Stagp_Lgvl" />
+					<KEY name="Stagp_Krat" />
+					<KEY name="Stagp_Vtch" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="Stagp_Nr" />
+			<COLUMN name="Stagp_Dbeg" />
+			<COLUMN name="Stagp_Dend" />
+			<COLUMN name="Stagp_Lgvl" />
+			<COLUMN name="Stagp_Krat" />
+			<COLUMN name="Stagp_Vtch" />
+			<COLUMN name="Stagp_Dok" />
+			<COLUMN name="Stagp_Sever" />
+			<COLUMN name="Stagp_Sezon" />
+			<COLUMN name="Stagp_Gg" />
+			<COLUMN name="Stagp_Mm" />
+			<COLUMN name="Stagp_Dd" />
+			<COLUMN name="Stagp_Kolh" />
+			<COLUMN name="Stagp_KodPr" />
+			<COLUMN name="Stagp_Krat24" />
+			<COLUMN name="Stagp_GgKr" />
+			<COLUMN name="Stagp_MmKr" />
+			<COLUMN name="Stagp_DdKr" />
+			<COLUMN name="Stagp_COKPriz" />
+			<COLUMN name="Stagp_COKDni" />
+			<COLUMN name="Stagp_COKGg" />
+			<COLUMN name="Stagp_COKMm" />
+			<COLUMN name="Stagp_COKDd" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Ar1" type="DS_ARRAY" comm="Массив 1">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Ar1_Code" order="ASC" />
+					<KEY name="Ar1_Priz" order="ASC" />
+					<KEY name="Ar1_Priz1" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="Ar1_Code" />
+				<COLUMN name="Ar1_Priz" />
+				<COLUMN name="Ar1_Priz1" />
+				<COLUMN name="Ar1_Date" />
+				<COLUMN name="Ar1_Date1" />
+				<COLUMN name="Ar1_Date2" />
+				<COLUMN name="Ar1_Sum" />
+				<COLUMN name="Ar1_Ind" />
+				<COLUMN name="Ar1_PrUI4" />
+				<COLUMN name="Ar1_PrUI2" />
+				<COLUMN name="Ar1_Pr1UI2" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Ar2" type="DS_ARRAY" comm="Массив 2">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Ar2_Code" order="ASC" />
+					<KEY name="Ar2_Date1" order="ASC" />
+					<KEY name="Ar2_Date2" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="Ar2_Code" />
+				<COLUMN name="Ar2_Date1" />
+				<COLUMN name="Ar2_Date2" />
+				<COLUMN name="Ar2_Priz" />
+				<COLUMN name="Ar2_Sum" />
+				<COLUMN name="Ar2_Ind" />
+				<COLUMN name="Ar2_PrUI4" />
+				<COLUMN name="Ar2_PrUI2" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Pd" type="DS_ARRAY" comm="База подопечных">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Pd_Num" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="Pd_Num" />
+				<COLUMN name="Pd_Fam" />
+				<COLUMN name="Pd_Name" />
+				<COLUMN name="Pd_Otch" />
+				<COLUMN name="Pd_IdCd" />
+			</COLUMNS>
+		</DATASET>
+	</DATASETS>
+</STAYRESOURCE>

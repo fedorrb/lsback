@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<STAYRESOURCE version="2.0">
+	<FIELD name="NSI_UlKat" type="UI1" comm="Код категории улицы" />
+	<FIELD name="NSI_UlRaj" type="UI2" comm="Код района (KlAt_)" />
+	<FIELD name="NSI_UlCode" type="STAYUI4" comm="Код улицы" />
+	<FIELD name="NSI_UlName" type="STR" size="50" comm="Наименование улицы" />
+	<DATASET name="NSI_KlUl" type="DS_QBASE" qnt="10" file="KLBASE2:NSIUL.DT" comm="Справочник кодов улиц">
+		<INDEX name="1" dupl="true">
+			<KEY name="NSI_UlRaj" />
+			<KEY name="NSI_UlCode" />
+		</INDEX>
+		<INDEX name="2" dupl="true">
+			<KEY name="NSI_UlCode" />
+		</INDEX>
+		<INDEX name="3" dupl="true">
+			<KEY name="NSI_UlRaj" />
+			<KEY name="NSI_UlName" length="6" />
+		</INDEX>
+		<COLUMN name="NSI_UlRaj" />
+		<COLUMN name="NSI_UlCode" />
+		<COLUMN name="NSI_UlName" />
+		<COLUMN name="NSI_UlKat" />
+	</DATASET>
+</STAYRESOURCE>

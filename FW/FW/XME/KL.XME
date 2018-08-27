@@ -1,0 +1,1862 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<STAYRESOURCE version="2.0">
+	<FIELDS>
+		<FIELD name="PtSan_Code" type="UI2" comm="Код санатория" />
+		<FIELD name="PtSan_Code1" type="STAYUI6" comm="Код ЕДРПОУ" />
+		<FIELD name="PtSan_Name" type="STRING" ln="30" comm="Наименование санатория" />
+		<FIELD name="PtSan_Kurort" type="STRING" ln="20" comm="Наименование курорта" />
+		<FIELD name="PtSan_Prvv" type="UI1" comm="Признак ввода" />
+		<FIELD name="KlPitDsh_Code" type="UI2" comm="Код разм.ср.стоим.пит." />
+		<FIELD name="KlPitDsh_DataB" type="STAYDATE" comm="Дата нач.действия кода" />
+		<FIELD name="KlPitDsh_DataE" type="STAYDATE" comm="Дата кон. действ.кода" />
+		<FIELD name="KlPitDsh_Name" type="STRING" ln="25" comm="Наименование" />
+		<FIELD name="KlPitDsh_Sum" type="STAYI6" point="2" comm="Разм.ср.стоим.пит." />
+		<FIELD name="KlKEKV_KFN" type="UI2" comm=" Код вида выплаты" />
+		<FIELD name="KlKEKV_KEKV" type="UI2" comm=" Код КЕКВ" />
+		<FIELD name="KlKEKV_NameRR" type="STRING" ln="10" comm=" Наим. Р/Р (КДК или КФК ...)" />
+		<FIELD name="KlKEKV_CdKlas" type="STRING" ln="14" comm=" Код классификации" />
+		<FIELD name="KlMinZar_Razm" type="STAYUI6" point="5" comm="Розмір MIN зар.плати" />
+		<FIELD name="KlMinZar_DataB" type="STAYDATE" comm="Дата встановл.MIN зар.плати  - початок" />
+		<FIELD name="KlMinZar_DataE" type="STAYDATE" comm="Дата встановл.MIN зар.плати  - кінцева" />
+		<FIELD name="KlMinZar_DtSys" type="STAYDATE" comm="Дата внес.інформ.про розм.зар.плати" />
+		<FIELD name="Doc_Code" type="UI1" comm="Код документа" />
+		<FIELD name="Doc_Kfn" type="UI2" comm="Код надбавки" />
+		<FIELD name="Joint_Kfn1" type="UI2" comm="Код пособия 1" />
+		<FIELD name="Joint_Kfn2" type="UI2" comm="Код пособия 2" />
+		<FIELD name="Joint_Pr" type="UI1" comm="Признак преоритета" />
+		<FIELD name="KlAt_Code" type="UI2" comm="Код тер-ного образования" />
+		<FIELD name="KlAt_Name" type="STRING" ln="40" comm="Наимен. тер-ного образов." />
+		<FIELD name="KlCFam_Code" type="UI1" comm="Код члена семьи" />
+		<FIELD name="KlCFam_Name" type="STRING" ln="30" comm="Наименование члена семьи" />
+		<FIELD name="KlChe_Code" type="UI1" comm="Код катег-и пострадавшего" />
+		<FIELD name="KlChe_Name" type="STRING" ln="23" comm="Наим. катег-и пострадавш." />
+		<FIELD name="KlComDsh_Code" type="UI2" comm="Код группи" />
+		<FIELD name="KlComDsh_DtB" type="STAYDATE" comm="Дата начала периода" />
+		<FIELD name="KlComDsh_DtE" type="STAYDATE" comm="Дата конца периода" />
+		<FIELD name="KlComDsh_Razm" type="STAYI6" point="5" comm="Размер компенсации" />
+		<FIELD name="KlComDsh_Name" type="STRING" ln="25" comm="Наименование группи" />
+		<FIELD name="KlDKVp_Code" type="UI2" comm="Код документа-основания" />
+		<FIELD name="KlDKVp_Data" type="STAYDATE" comm="Дата документа-основания" />
+		<FIELD name="KlDKVp_Name" type="STRING" ln="40" comm="Наим. документа-основания" />
+		<FIELD name="KlDKVp_Num" type="UI1" comm="Номер документа-основания" />
+		<FIELD name="KlDUch_About" type="STRING" ln="100" comm="Опис-е доставочного уч-ка" />
+		<FIELD name="KlDUch_Code" type="UI1" comm="Код доставочного уч-ка" />
+		<FIELD name="KlDUch_CodeUl" type="UI2" comm="Код улицы(KlUl_)" />
+		<FIELD name="KlDUch_Data" type="UI1" comm="День обслуживания Д.У." />
+		<FIELD name="KlDUch_IndOS" type="UI4" comm="Индекс отдел.связи(KlInd)" />
+		<FIELD name="KlDUch_Prizn" type="UI1" comm="Призн.выделен.дос-го уч-ка=1" />
+		<FIELD name="KlDoUd_Code" type="UI1" comm="Код документа-основания" />
+		<FIELD name="KlDoUd_Name" type="STRING" ln="25" comm="Наим. документа-основания" />
+		<FIELD name="KlDoc_Kdoc" type="UI1" comm="Код документа" />
+		<FIELD name="KlDoc_Ndoc" type="STRING" ln="42" comm="Наименование документа" />
+		<FIELD name="KlDox_Code" type="UI1" comm="Код дохода" />
+		<FIELD name="KlDox_Name" type="STRING" ln="40" comm="Наименование дохода" />
+		<FIELD name="KlEarth_Code" type="UI1" comm="Код земельного участка" />
+		<FIELD name="KlEarth_DtB" type="STAYDATE" comm="Дата начала" />
+		<FIELD name="KlEarth_DtE" type="STAYDATE" comm="Дата конца" />
+		<FIELD name="KlEarth_Name" type="STRING" ln="50" comm="Наименование земел. участка" />
+		<FIELD name="KlEarth_Razm" type="STAYI6" point="3" comm="Стоимость одной сотки" />
+		<FIELD name="KlFN_Code" type="UI2" comm="Код надбавки(пособ.пенс.)" />
+		<FIELD name="KlFN_CodeIF" type="UI1" comm="Код источ. финанс-я(KlIF)" />
+		<FIELD name="KlFN_DataB" type="STAYDATE" comm="Дата начала действия" />
+		<FIELD name="KlFN_DataE" type="STAYDATE" comm="Дата конца действия" />
+		<FIELD name="KlFN_Name" type="STRING" ln="50" comm="Наименование" />
+		<FIELD name="KlFN_ORVp" type="UI1" comm="Основание размера выплат" />
+		<FIELD name="KlFN_PCh" type="UI1" comm="Признак связи с ЧК" />
+		<FIELD name="KlFN_PInd" type="UI1" comm="Признак индексации" />
+		<FIELD name="KlFN_PUd" type="UI1" comm="Признак удержания" />
+		<FIELD name="KlFN_RVp" type="STAYUI6" point="2" comm="Разм.выпл.(в % или абсол)" />
+		<FIELD name="KlIFUK_Code" type="UI1" comm="Код источника финанс-я" />
+		<FIELD name="KlIFUK_CodeVIF" type="UI1" comm="Код вида ист.фин." />
+		<FIELD name="KlIFUK_MFO" type="UI4" comm="МФО банка" />
+		<FIELD name="KlIFUK_NBal" type="UI4" comm="Номер бал.счета в бухгал." />
+		<FIELD name="KlIFUK_NRS" type="STAYUI6" comm="Номер расч..счета ист.фин-я" />
+		<FIELD name="KlIFUK_NRSB" type="STRING" ln="14" comm="Номер расчет. счета банке" />
+		<FIELD name="KlIFUK_Name" type="STRING" ln="20" comm="Наим. вида источ. финас-я" />
+		<FIELD name="KlIFUK_NameB" type="STRING" ln="40" comm="Наименование банка" />
+		<FIELD name="KlIFUK_Razd" type="STRING" ln="10" comm="Раздел бюджет. клас-ции" />
+		<FIELD name="KlIF_Code" type="UI1" comm="Код источника финанс-я" />
+		<FIELD name="KlIF_CodeVIF" type="UI1" comm="Код вида ист.фин." />
+		<FIELD name="KlIF_MFO" type="UI4" comm="МФО банка" />
+		<FIELD name="KlIF_NBal" type="UI4" comm="Номер бал.счета в бухгал." />
+		<FIELD name="KlIF_NRS" type="STAYUI6" comm="Номер расч..счета ист.фин-я" />
+		<FIELD name="KlIF_NRSB" type="STRING" ln="14" comm="Номер расчет. счета банке" />
+		<FIELD name="KlIF_Name" type="STRING" ln="20" comm="Наим. вида источ. финас-я" />
+		<FIELD name="KlIF_NameB" type="STRING" ln="40" comm="Наименование банка" />
+		<FIELD name="KlIF_Razd" type="STRING" ln="10" comm="Раздел бюджет. клас-ции" />
+		<FIELD name="KlInd_Adr" type="STRING" ln="50" comm="Почтовый адрес индекса" />
+		<FIELD name="KlInd_Ind" type="UI4" comm="Индекс" />
+		<FIELD name="KlInd_TPS" type="UI1" comm="Тариф почтовых сборов" />
+		<FIELD name="KlInf_Code" type="UI1" comm="Код справки" />
+		<FIELD name="KlInf_Name" type="STRING" ln="200" comm="Наименование справки" />
+		<FIELD name="KlInv_Code" type="UI1" comm="Код вида инвалидности" />
+		<FIELD name="KlInv_Name" type="STRING" ln="18" comm="Наименование вида инв-ти" />
+		<FIELD name="KlKRZp_DtB" type="STAYDATE" comm="Дата начала" />
+		<FIELD name="KlKRZp_DtE" type="STAYDATE" comm="Дата конца" />
+		<FIELD name="KlKRZp_Razm" type="STAYUI4" point="3" comm="Размер коэффициента роста" />
+		<FIELD name="KlKatUl_Code" type="UI1" comm="Код категории улиц" />
+		<FIELD name="KlKatUl_Name" type="STRING" ln="7" comm="Наименование категории" />
+		<FIELD name="KlKfp_Coeff" type="STAYUI2" point="2" comm="Коэф. повыш. пенсии" />
+		<FIELD name="KlKfp_Coeff2" type="STAYUI2" point="3" comm="Поправочный коэф" />
+		<FIELD name="KlKfp_Coeff3" type="STAYUI6" point="5" comm="Поправочный коэф" />
+		<FIELD name="KlKfp_Data" type="STAYDATE" comm="Дата установл. коэф." />
+		<FIELD name="KlKfp_MaxD996" type="STAYUI6" point="5" comm="Максимальный заработок до 09.9" />
+		<FIELD name="KlKfp_MaxP996" type="STAYUI6" point="5" comm="Максимальный заработок после 0" />
+		<FIELD name="KlKfp_Zregr" type="STAYUI6" point="5" comm="Заработок для регреса" />
+		<FIELD name="KlKor_Code" type="UI1" comm="Код категории кормильца" />
+		<FIELD name="KlKor_Name" type="STRING" ln="30" comm="Наименов. кат-и кормильца" />
+		<FIELD name="KlLRab_Code" type="UI2" comm="Код льотной работы" />
+		<FIELD name="KlLRab_Coef" type="STAYI2" point="2" comm="Коэффициент кратности" />
+		<FIELD name="KlLRab_KrNam" type="STRING" ln="11" comm="Краткое наименование" />
+		<FIELD name="KlLRab_Name" type="STRING" ln="35" comm="Наим-е льотной работы" />
+		<FIELD name="KlLgk_Alg" type="UI1" comm="Номер алгоритма расчета" />
+		<FIELD name="KlLgk_Code" type="UI1" comm="Код вида деятельности" />
+		<FIELD name="KlLgk_Coeff" type="STAYUI2" point="2" comm="Коэф.кратного исчисления" />
+		<FIELD name="KlLgk_DataB" type="STAYDATE" comm="Дата  с " />
+		<FIELD name="KlLgk_DataE" type="STAYDATE" comm="Дата  по " />
+		<FIELD name="KlLgk_KrName" type="STRING" ln="11" comm="Кратк. наименов.деятельн." />
+		<FIELD name="KlLgk_Name" type="STRING" ln="30" comm="Наимен. вида деятел." />
+		<FIELD name="KlNet_Code" type="UI1" comm="Код кат. нетрудоспособн." />
+		<FIELD name="KlNet_Name" type="STRING" ln="40" comm="Наим.кат.нетрудоспособн." />
+		<FIELD name="KlORG163_Adr" type="STRING" ln="50" comm=" Адрес орг." />
+		<FIELD name="KlORG163_Code" type="UI1" comm=" Код орг." />
+		<FIELD name="KlORG163_DopNr" type="STRING" ln="14" comm=" Доп.к ном.Р/С организации" />
+		<FIELD name="KlORG163_IndPO" type="UI4" comm=" Индекс ПО (KlInd_)" />
+		<FIELD name="KlORG163_MFO" type="UI4" comm=" МФО" />
+		<FIELD name="KlORG163_NRSB" type="STRING" ln="14" comm=" Номер Р/с банка" />
+		<FIELD name="KlORG163_NRSO" type="STRING" ln="14" comm=" Номер Р/с орг." />
+		<FIELD name="KlORG163_Name" type="STRING" ln="40" comm=" Наим. организации" />
+		<FIELD name="KlORG163_NameB" type="STRING" ln="40" comm=" Наименование банка" />
+		<FIELD name="KlORG163_Prim" type="STRING" ln="50" comm=" Примечания" />
+		<FIELD name="KlORG163_PrivO" type="STRING" ln="14" comm=" Личн.Р/С организации" />
+		<FIELD name="KlOSZ_Adr" type="STRING" ln="50" comm="Адрес (ул., дом)" />
+		<FIELD name="KlOSZ_Code" type="UI2" comm="Код" />
+		<FIELD name="KlOSZ_FIOB" type="STRING" ln="40" comm="ФИО бухгалтера" />
+		<FIELD name="KlOSZ_FION" type="STRING" ln="40" comm="ФИО начальника" />
+		<FIELD name="KlOSZ_IPOV" type="UI4" comm="Инд.ПО для выпл.пох.пособ." />
+		<FIELD name="KlOSZ_IndPO" type="UI4" comm="Индекс ПО ( KlInd_ )" />
+		<FIELD name="KlOSZ_MFOB" type="UI4" comm="МФО банка" />
+		<FIELD name="KlOSZ_NRSB" type="STRING" ln="14" comm="Р/С банка" />
+		<FIELD name="KlOSZ_NRSO" type="STRING" ln="14" comm="Р/С организации" />
+		<FIELD name="KlOSZ_Name" type="STRING" ln="40" comm="Наименование" />
+		<FIELD name="KlOSZ_NameB" type="STRING" ln="40" comm="Наименование банка" />
+		<FIELD name="KlOSZ_PrV" type="UI1" comm="Признак выплаты" />
+		<FIELD name="KlOSZ_TelB" type="UI4" comm="Телефон бухгалтера" />
+		<FIELD name="KlOSZ_TelN" type="UI4" comm="Телефон начальника" />
+		<FIELD name="KlOS_CodeOS" type="UI2" comm="Код узла связи ( KlUS_ )" />
+		<FIELD name="KlOS_CodeRn" type="UI2" comm="Код района ( KlAt_ )" />
+		<FIELD name="KlOS_NumOS" type="UI4" comm="Номер отд.связи (KlInd_)" />
+		<FIELD name="KlOVUd_Adr" type="STRING" ln="50" comm="Адрес орг.-взыск.(внутри инд." />
+		<FIELD name="KlOVUd_Code" type="UI1" comm="Код орг.-взыскателя" />
+		<FIELD name="KlOVUd_DopNr" type="STRING" ln="14" comm="Доп.к ном.Р/С организации" />
+		<FIELD name="KlOVUd_IndPO" type="UI4" comm="Индыкс ПО (KlInd_)" />
+		<FIELD name="KlOVUd_MFO" type="UI4" comm="МФО" />
+		<FIELD name="KlOVUd_NRSB" type="STRING" ln="14" comm="Номер Р/с банка" />
+		<FIELD name="KlOVUd_NRSO" type="STRING" ln="14" comm="Номер Р/с орг." />
+		<FIELD name="KlOVUd_Name" type="STRING" ln="40" comm="Наим. организации-взыск." />
+		<FIELD name="KlOVUd_NameB" type="STRING" ln="40" comm="Наименование банка" />
+		<FIELD name="KlOVUd_Prim" type="STRING" ln="50" comm=" Примечания" />
+		<FIELD name="KlOVUd_PrivO" type="STRING" ln="14" comm="Личн.Р/С организации" />
+		<FIELD name="KlOp_Code" type="UI2" comm="код операции" />
+		<FIELD name="KlOp_Name" type="STRING" ln="50" comm="наименование операции" />
+		<FIELD name="KlOrg_Code" type="UI1" comm="Код органзации" />
+		<FIELD name="KlOrg_Name" type="STRING" ln="40" comm="Наименование организации" />
+		<FIELD name="KlOsob_Code" type="UI2" comm="Кодособенности" />
+		<FIELD name="KlOsob_Name" type="STRING" ln="50" comm="Наименование особенности" />
+		<FIELD name="KlPInv_Code" type="UI1" comm="Код причин инвалидности" />
+		<FIELD name="KlPInv_Name" type="STRING" ln="32" comm="Наим. причин инвалидности" />
+		<FIELD name="KlPNo_Code" type="UI1" comm="Код причины неоплаты" />
+		<FIELD name="KlPNo_Name" type="STRING" ln="18" comm="Наименование причины" />
+		<FIELD name="KlPRab_Code" type="UI1" comm="Код характеристики раб.п." />
+		<FIELD name="KlPRab_Name" type="STRING" ln="40" comm="Наим. х-ки раб. пенс." />
+		<FIELD name="KlPSB_CodeCB" type="UI2" comm="Код центр-го СБ (KlUS_)" />
+		<FIELD name="KlPSB_CodeRn" type="UI2" comm="Код района ( KlAt_)" />
+		<FIELD name="KlPSB_CodeSB" type="UI2" comm="Код СБ(локальный код ИВЦ)" />
+		<FIELD name="KlPSB_NameSB" type="STRING" ln="40" comm=" Наименование СБ" />
+		<FIELD name="KlPSUd_Code" type="UI1" comm="Код причин снятия удержан." />
+		<FIELD name="KlPSUd_Name" type="STRING" ln="30" comm="Наим.причин снят.удержан." />
+		<FIELD name="KlPS_Code" type="UI1" comm="Код категории смерти" />
+		<FIELD name="KlPS_Name" type="STRING" ln="40" comm="Наименование катег.смерти" />
+		<FIELD name="KlPS_Pros" type="UI2" comm="% выпл. пенсии по потере кор." />
+		<FIELD name="KlPSn_Code" type="UI1" comm="Код причин снятия  оплаты" />
+		<FIELD name="KlPSn_Name" type="STRING" ln="35" comm="Наим. снятия с оплаты" />
+		<FIELD name="KlPost_Code" type="UI1" comm="Код типа пострадавшего" />
+		<FIELD name="KlPost_Name" type="STRING" ln="35" comm="Наименование типа постр." />
+		<FIELD name="KlPov_Code" type="UI2" comm="Код повышения" />
+		<FIELD name="KlPov_GrPov" type="UI1" comm="Группа повышения" />
+		<FIELD name="KlPov_NBit" type="UI1" comm="N бита в маске" />
+		<FIELD name="KlPov_Name" type="STRING" ln="54" comm="Наимен. повышения" />
+		<FIELD name="KlPov_Prizn" type="UI2" comm="Признак" />
+		<FIELD name="KlPred_Code" type="UI4" comm="Код предприятия" />
+		<FIELD name="KlPred_Name" type="STRING" ln="50" comm="Наименование предприятия" />
+		<FIELD name="KlProf_Code" type="UI2" comm="Код профессии" />
+		<FIELD name="KlProf_KrName" type="STRING" ln="11" comm="Кратк. наимен. профессии" />
+		<FIELD name="KlProf_Name" type="STRING" ln="26" comm="Наимен. профессии" />
+		<FIELD name="KlProf_Probr" type="UI1" comm="реквизит" />
+		<FIELD name="KlRPen_ChPri" type="UI1" comm="Признак связи с ЧК" />
+		<FIELD name="KlRPen_Code" type="UI2" comm="Код размера выплаты" />
+		<FIELD name="KlRPen_DataB" type="STAYDATE" comm="Дата нач.действия кода" />
+		<FIELD name="KlRPen_DataE" type="STAYDATE" comm="Дата кон. действ.кода" />
+		<FIELD name="KlRPen_Name" type="STRING" ln="44" comm="Наименование" />
+		<FIELD name="KlRPen_Proc" type="STAYUI4" point="2" comm="Проценты" />
+		<FIELD name="KlRPen_Tag" type="UI1" comm="Осн.устан.знач.соот.KlFN" />
+		<FIELD name="KlRod_Code" type="UI1" comm="Код категории родства" />
+		<FIELD name="KlRod_Name" type="STRING" ln="20" comm="Наим. категории родства" />
+		<FIELD name="KlSPUd_Code" type="UI1" comm="Код сост. перевода удерж." />
+		<FIELD name="KlSPUd_Name" type="STRING" ln="40" comm="Наим. сост. перевода удерж." />
+		<FIELD name="KlSVUd_Code" type="UI1" comm="Код способ. выпл. удерж." />
+		<FIELD name="KlSVUd_Name" type="STRING" ln="25" comm="Наим. спос. выпл. удерж." />
+		<FIELD name="KlShPN_CodeIF" type="UI1" comm="Код источника финанс-я" />
+		<FIELD name="KlShPN_Name" type="STRING" ln="250" comm="Наименование выплаты" />
+		<FIELD name="KlShPN_ShP" type="UI2" comm="Шифр пенсии(пособия)" />
+		<FIELD name="KlShP_All" type="UI1" comm="Общий стаж(1-неполный)" />
+		<FIELD name="KlShP_CodeIF" type="UI1" comm="Код источника финанс-я" />
+		<FIELD name="KlShP_CodeVp" type="UI2" comm="Код выплаты (KlFN_)" />
+		<FIELD name="KlShP_IFN" type="UI1" comm="связь ShP c KFN" />
+		<FIELD name="KlShP_KIgd" type="UI1" comm="Количество иждивенцев" />
+		<FIELD name="KlShP_Kor" type="UI1" comm="Категория кормил.(KlKor_)" />
+		<FIELD name="KlShP_Lgt" type="UI1" comm="Льготный стаж(1-неполный)" />
+		<FIELD name="KlShP_Netr" type="UI1" comm="Категор. нетруд.(KlNet_)" />
+		<FIELD name="KlShP_Nr" type="UI1" comm="Номер расчета(1,2,3)" />
+		<FIELD name="KlShP_PSKor" type="UI1" comm="Прич. смерти корм.(KlPS_)" />
+		<FIELD name="KlShP_PoCH" type="UI1" comm="Тип пострадав. ЧАЭС(KlPost)" />
+		<FIELD name="KlShP_PrCH" type="UI1" comm="Причастность ЧАЭС(KlChe_)" />
+		<FIELD name="KlShP_PrInv" type="UI1" comm="Причина инв-ти (KlPInv_)" />
+		<FIELD name="KlShP_Prof" type="UI1" comm="Код профессии" />
+		<FIELD name="KlShP_Sex" type="UI1" comm="Пол" />
+		<FIELD name="KlShP_ShP" type="UI2" comm="Шифр пенсии(пособия)" />
+		<FIELD name="KlShP_VInv" type="UI1" comm="Вид инвалидности (KlInv_)" />
+		<FIELD name="KlShP_VP" type="UI1" comm="Вид пенсии(KlVPen_)" />
+		<FIELD name="KlSposUd_Code" type="UI1" comm="Код способа удержаний" />
+		<FIELD name="KlSposUd_Name" type="STRING" ln="12" comm="Наимен. способа" />
+		<FIELD name="KlStag_Stag" type="UI1" comm="Необх.миним.стаж" />
+		<FIELD name="KlStag_Vozr" type="UI1" comm="Возраст инвалида (лет)" />
+		<FIELD name="KlSud_Adr" type="STRING" ln="50" comm="Адрес суда(ул.,дом)" />
+		<FIELD name="KlSud_Code" type="UI1" comm="Код суда" />
+		<FIELD name="KlSud_IndPO" type="UI4" comm="Индекс поч-го отд(KlInd_)" />
+		<FIELD name="KlSud_Name" type="STRING" ln="40" comm="Наименование суда" />
+		<FIELD name="KlTPer_Code" type="UI1" comm="Код типа периода" />
+		<FIELD name="KlTPer_Name" type="STRING" ln="30" comm="Наименование типа периода" />
+		<FIELD name="KlTpVzs_Code" type="UI1" comm="Код повышения" />
+		<FIELD name="KlTpVzs_Name" type="STRING" ln="17" comm="Наимен. повышения" />
+		<FIELD name="KlUS_Code" type="UI2" comm="Код узла связи" />
+		<FIELD name="KlUS_MFO" type="UI4" comm="МФО банка" />
+		<FIELD name="KlUS_NRSB" type="STRING" ln="14" comm="Номер р/с банка Нац.Банк Укр." />
+		<FIELD name="KlUS_NRSUS" type="STRING" ln="14" comm="Номер р/с узла связи банка" />
+		<FIELD name="KlUS_Name" type="STRING" ln="20" comm="Наименов. узла связи ЦСБ" />
+		<FIELD name="KlUS_NameB" type="STRING" ln="40" comm="Наим.банка,где нах-ся р/с УС" />
+		<FIELD name="KlUS_PrcPS" type="STAYUI6" point="2" comm="% почтовых сборов(для УС)" />
+		<FIELD name="KlUd_Code" type="UI1" comm="Код удержания" />
+		<FIELD name="KlUd_Name" type="STRING" ln="25" comm="Наименование удержания" />
+		<FIELD name="KlUd_Ogr" type="STAYUI6" point="2" comm="Огр. размера (в % от сумм)" />
+		<FIELD name="KlUd_PInd" type="UI1" comm="Признак индексир. удерж." />
+		<FIELD name="KlUd_Vid" type="UI1" comm="Вид удержания (группа)" />
+		<FIELD name="KlUl_CodeKUl" type="UI1" comm="Код категории улицы" />
+		<FIELD name="KlUl_CodeRn" type="UI2" comm="Код района (KlAt_)" />
+		<FIELD name="KlUl_CodeUl" type="UI2" comm="Код улицы" />
+		<FIELD name="KlUl_Name" type="STRING" ln="50" comm="Наименование улицы" />
+		<FIELD name="KlVPen_Code" type="UI1" comm="Код вида выплат" />
+		<FIELD name="KlVPen_Name" type="STRING" ln="25" comm="Наименование вида выплат" />
+		<FIELD name="KlVZvan_Code" type="UI1" comm="Код звания" />
+		<FIELD name="KlVZvan_Name" type="STRING" ln="10" comm="Наименование звания" />
+		<FIELD name="KlVis_ChPri" type="UI1" comm="Признак связи с ЧАЭС" />
+		<FIELD name="KlVis_Code" type="UI2" comm="Код профессии" />
+		<FIELD name="KlVis_M1" type="UI2" comm="Возраст в месяцах" />
+		<FIELD name="KlVis_M2" type="UI2" comm="Общий стаж" />
+		<FIELD name="KlVis_M3" type="UI2" comm="Льготный стаж" />
+		<FIELD name="KlVis_M4" type="UI2" comm="Льготный стаж - СПЕЦИАЛЬНЫЙ" />
+		<FIELD name="KlVis_DBeg" type="STAYDATE" comm="Дата начала права" />
+		<FIELD name="KlVis_DEnd" type="STAYDATE" comm="Дата конца  права" />
+		<FIELD name="KlVis_Sex" type="UI1" comm="Пол" />
+		<FIELD name="KlVozvr_Code" type="UI1" comm="Код причины неоплаты" />
+		<FIELD name="KlVozvr_Name" type="STRING" ln="19" comm="Наименование причины" />
+		<FIELD name="KlVsr_CL" type="UI2" comm="Льготный стаж" />
+		<FIELD name="KlVsr_CSG1" type="UI2" comm="Сниж. пенс. возр. за год" />
+		<FIELD name="KlVsr_CSG2" type="UI2" comm="Сниж. пенс. возр." />
+		<FIELD name="KlVsr_CSP" type="UI2" comm="Сниж.пенс.возр.за год" />
+		<FIELD name="KlVsr_CST" type="UI2" comm="Общий стаж" />
+		<FIELD name="KlVsr_CV" type="UI2" comm="Возраст в месяцах" />
+		<FIELD name="KlVsr_ChPri" type="UI1" comm="Признак связи с ЧАЭС" />
+		<FIELD name="KlVsr_Code" type="UI1" comm="Код профессии" />
+		<FIELD name="KlVsr_Sex" type="UI1" comm="Пол" />
+		<FIELD name="KlZR92_Coeff" type="STAYUI4" point="2" comm="Коэффициент" />
+		<FIELD name="KlZR92_Data" type="STAYDATE" comm="Дата установл. коэф." />
+		<FIELD name="KlZR_Coeff" type="STAYUI4" point="2" comm="Коэффициент" />
+		<FIELD name="KlZR_Data" type="STAYDATE" comm="Дата усьановл. коэф." />
+		<FIELD name="KlZach_Code" type="UI1" comm="Код профессии" />
+		<FIELD name="KlZach_CodeZ" type="UI1" comm="Код профес. по зачету" />
+		<FIELD name="KlZach_Name" type="STRING" ln="42" comm="Наимен. профессии" />
+		<FIELD name="KlZach_Prizn" type="UI1" comm="Признак основних профессий" />
+		<FIELD name="KlZach_DBeg" type="STAYDATE" comm="Дата начала права" />
+		<FIELD name="KlZach_DEnd" type="STAYDATE" comm="Дата конца  права" />
+		<FIELD name="KlZem_Code" type="UI1" comm="Код земельного участка" />
+		<FIELD name="KlZem_Name" type="STRING" ln="50" comm="Наименование земел. участка" />
+		<FIELD name="KlZon_Code" type="UI1" comm="Кода категории зоны" />
+		<FIELD name="KlZon_Name" type="STRING" ln="50" comm="Наименование категор.зоны" />
+		<FIELD name="Klhl_Date" type="STAYDATE" comm="Дата праздника" />
+		<FIELD name="Klhl_Name" type="STRING" ln="50" comm="Наименование праздника" />
+		<FIELD name="Km_Date" type="STAYDATE" comm="Дата установ. размера мин. дох" />
+		<FIELD name="Km_Razm" type="STAYI6" point="2" comm="Размер мин. сред. сов. дохода" />
+		<FIELD name="Kmd_Date" type="STAYDATE" comm="Дата установки размера" />
+		<FIELD name="Kmd_Razm" type="STAYI6" point="2" comm="Размер мин.сред.сов.дохода д/пос.на погребение" />
+		<FIELD name="NWork_Code" type="UI1" comm="Код причины, по кот. не раб." />
+		<FIELD name="NWork_Name" type="STRING" ln="50" comm="Наименование пр., по кот. не" />
+		<FIELD name="Par_Code" type="UI1" comm="Код категории родителя" />
+		<FIELD name="Par_Name" type="STRING" ln="20" comm="Наименование категории родител" />
+		<FIELD name="Prav_DBeg" type="STAYDATE" comm="Дата начала для правовых норм" />
+		<FIELD name="Prav_DEnd" type="STAYDATE" comm="Дата конца для правовых норм" />
+		<FIELD name="Prav_MesNaz" type="UI1" comm="Кол-во месяцев для назначения" />
+		<FIELD name="Prav_MesReas" type="UI1" comm="Кол-во месяцев для опред.права" />
+		<FIELD name="Prav_MesRet" type="UI1" comm="Мах. кол-во месяцев для возв." />
+		<FIELD name="SysP_CMPer" type="STAYUI4" point="5" comm=" коэф.массовых перарасчетов" />
+		<FIELD name="SysP_CMinZp" type="STAYUI6" point="5" comm=" попр.коэф.мин.ЗП" />
+		<FIELD name="SysP_CMinZpCh" type="STAYUI6" point="5" comm=" попр.коэф. ЗП для ЧАЭС" />
+		<FIELD name="SysP_CNS" type="STAYUI6" point="5" comm=" попр.коэф надбавок - статус" />
+		<FIELD name="SysP_CNadb" type="STAYUI6" point="5" comm=" попр.коэф надбавок" />
+		<FIELD name="SysP_CPen" type="STAYUI6" point="5" comm=" попр. коэф пенс." />
+		<FIELD name="SysP_CPenCh" type="STAYUI6" point="5" comm=" попр. коэф пенс. - Чернобиль" />
+		<FIELD name="SysP_CPenSc" type="STAYUI6" point="5" comm=" попр. коэф пенс. - социальные" />
+		<FIELD name="SysP_CPenVn" type="STAYUI6" point="5" comm=" попр. коэф пенс. - военные" />
+		<FIELD name="SysP_CPenVz" type="STAYUI6" point="5" comm=" попр. коэф пенс. - социальные" />
+		<FIELD name="SysP_CodeInsp" type="UI2" comm=" Код инспектора" />
+		<FIELD name="SysP_Data" type="STAYDATE" comm=" Дата ввода мин. размеры" />
+		<FIELD name="SysP_MinPen" type="STAYUI4" point="2" comm="Разм. мин. пенс." />
+		<FIELD name="SysP_MinPenCh" type="STAYUI4" point="2" comm="Разм. мин. пенс. - Чернобиль" />
+		<FIELD name="SysP_MinPenNS" type="STAYUI4" point="2" comm="Разм. мин. пенс. - для надбавок - Статус по ОЗ" />
+		<FIELD name="SysP_MinPenNb" type="STAYUI4" point="2" comm="Разм. мин. пенс. - для надбавок" />
+		<FIELD name="SysP_MinPenSc" type="STAYUI4" point="2" comm="Разм. мин. пенс. - социальные" />
+		<FIELD name="SysP_MinPenVn" type="STAYUI4" point="2" comm="Разм. мин. пенс. - военные" />
+		<FIELD name="SysP_MinPenVz" type="STAYUI4" point="2" comm="Разм. мин. пенс. - социальные" />
+		<FIELD name="SysP_MinZp" type="STAYUI4" point="2" comm=" Разм. мин. ЗП" />
+		<FIELD name="SysP_OgrPKoef" type="STAYUI6" comm="Ограничение применения коэф" />
+		<FIELD name="SysP_OgrRez" type="STAYUI6" comm="Ограничение результата перерас" />
+		<FIELD name="SysP_PrMPer" type="UI1" comm="Признак массового перерасчета" />
+		<FIELD name="SysP_PrOgr" type="UI1" comm="Признак ограничения" />
+		<FIELD name="TarPS_Data" type="STAYDATE" comm=" Дата початку д_ї:\NSI\PIC\" />
+		<FIELD name="TarPS_Kod" type="UI1" comm="Код тарифа" />
+		<FIELD name="TarPS_DataE" type="STAYDATE" comm=" Дата закинч.д_є" />
+		<FIELD name="TarPS_Name" type="STRING" ln="50" comm="Вид тарифа" />
+		<FIELD name="TarPS_Prc" type="STAYUI6" point="2" comm="Процент почтовых сборов" />
+		<FIELD name="KlCheKfn_Cd1" type="UI2" comm="Не чернобыльский код" />
+		<FIELD name="KlCheKfn_Cd2" type="UI2" comm="Соотв. чернобыльский код" />
+		<FIELD name="KlCng_NewKfn" type="UI2" comm="Новый основной код выплаты" />
+		<FIELD name="KlCng_OldKfn" type="UI2" comm="Старый основной код выплаты" />
+		<FIELD name="KlTerm_Code" type="UI1" comm="Код периода" />
+		<FIELD name="KlTerm_Name" type="STRING" ln="50" comm="Наименование периода" />
+		<FIELD name="KlProMin_Code" type="UI2" comm="Код размера прож.мин." />
+		<FIELD name="KlProMin_DataB" type="STAYDATE" comm="Дата нач.действия кода" />
+		<FIELD name="KlProMin_DataE" type="STAYDATE" comm="Дата кон. действ.кода" />
+		<FIELD name="KlProMin_Name" type="STRING" ln="25" comm="Наименование" />
+		<FIELD name="KlProMin_Sum" type="STAYI6" point="2" comm="Размер прож.мин." />
+		<FIELD name="Kltpl_Name" type="STRING" ln="50" comm="Название переплаты" />
+		<FIELD name="Kltpl_Ob" type="STRING" ln="10" comm="метка обработанности" />
+		<FIELD name="Kltpl_Tip" type="UI1" comm="Номер переплаты" />
+		<FIELD name="KlOrgR_Adr" type="STRING" ln="50" comm="Адрес организации" />
+		<FIELD name="KlOrgR_Code" type="STAYUI6" comm="Код организации по ЭКПО" />
+		<FIELD name="KlOrgR_DBeg" type="STAYDATE" comm="Дата начала действия данных" />
+		<FIELD name="KlOrgR_DEnd" type="STAYDATE" comm="Дата конца  действия данных" />
+		<FIELD name="KlOrgR_IndPO" type="UI4" comm="Индекс ПО (KlInd_)" />
+		<FIELD name="KlOrgR_MFO" type="UI4" comm="МФО" />
+		<FIELD name="KlOrgR_NRSO" type="STRING" ln="14" comm="Номер Р/с организации" />
+		<FIELD name="KlOrgR_Name" type="STRING" ln="50" comm="Наименование организации" />
+		<FIELD name="KlOrgR_NameB" type="STRING" ln="40" comm="Наименование банка" />
+		<FIELD name="KlOrgR_DopNr" type="STRING" ln="14" comm="Доп.к ном.Р/С организации" />
+		<FIELD name="KlOrgR_PrivO" type="STRING" ln="14" comm="Личн.Р/С организации" />
+		<FIELD name="KlOrgR_Prim" type="STRING" ln="50" comm="Примечания" />
+		<FIELD name="KlOrgR_ProcB" type="STAYUI2" point="2" comm="Процент бюджета организации" />
+		<FIELD name="DiapPS_Code" type="UI1" comm=" Код тарифа по диапазону сумм" />
+		<FIELD name="DiapPS_Min" type="STAYUI6" point="2" comm=" Мин.  сумма диапазона" />
+		<FIELD name="DiapPS_Max" type="STAYUI6" point="2" comm=" Макс. сумма диапазона" />
+		<FIELD name="DiapPS_PrEd" type="UI1" comm=" Призн.,в каких ЕД.наход.П/С(0 - в %,1 - в грн.)" />
+		<FIELD name="DiapPS_Prc" type="STAYUI6" point="2" comm=" Почтовый сбор ( в % либо в грн.)" />
+		<FIELD name="KlAtQ_Code" type="UI2" comm="Код тер-ного образования" />
+		<FIELD name="KlAtQ_Name" type="STRING" ln="100" comm="Назва тер-ного утворення" />
+		<FIELD name="KlDohNal_Razm" type="STAYUI6" point="2" comm="Сума MAX доходу" />
+		<FIELD name="KlDohNal_DataB" type="STAYDATE" comm="Дата встановл.MAX доходу  - початок" />
+		<FIELD name="KlDohNal_DataE" type="STAYDATE" comm="Дата встановл.MAX доходу  - кінцева" />
+		<FIELD name="KlVidZar_Code" type="UI1" comm=" Код заробітку" />
+		<FIELD name="KlVidZar_Name" type="STRING" ln="40" comm=" Назва виду заробітку" />
+		<FIELD name="KlSrNx_Razm" type="STAYUI6" point="5" comm="Сума середн.зарпл.по н/г" />
+		<FIELD name="KlSrNx_DataB" type="STAYDATE" comm="Дата встановл.середн.зарпл.по н/г- початок" />
+		<FIELD name="KlSrNx_DataE" type="STAYDATE" comm="Дата встановл.середн.зарпл.по н/г- кінець" />
+		<FIELD name="KlSrNx_DataNad" type="STAYDATE" comm="Дата надання інформ.про сер.зарпл.по н/г" />
+		<FIELD name="KlOsVidz_Name" type="STRING" ln="150" comm="Назва особл.відзнаки" />
+		<FIELD name="KlOsVidz_Code" type="UI2" comm="Код особл.відзнаки" />
+		<FIELD name="KlStran_Code" type="UI2" comm=" Код страни" />
+		<FIELD name="KlStran_Name" type="STRING" ln="40" comm=" Наимен.страни" />
+		<FIELD name="KlIndex_GodNar" type="UI2" comm=" Рік нарахування" />
+		<FIELD name="KlIndex_MecNar" type="UI1" comm=" Місяць нарахування" />
+		<FIELD name="KlIndex_GodBaz" type="UI2" comm=" Базовий рік" />
+		<FIELD name="KlIndex_MecBaz" type="UI1" comm=" Базовий місяць" />
+		<FIELD name="KlIndex_Koef" type="STAYUI6" point="5" comm=" Коефіцієнт індексації" />
+		<FIELD name="Cost_CodeOrg" type="UI2" comm=" Код організац.із B_KlOVUd" />
+		<FIELD name="Cost_CodeSum" type="UI2" comm=" Код вартості утримання" />
+		<FIELD name="Cost_DtB" type="STAYDATE" comm=" Дата вартості  з " />
+		<FIELD name="Cost_DtE" type="STAYDATE" comm=" Дата вартості  по " />
+		<FIELD name="Cost_SumDpi" type="STAYUI6" point="2" comm=" Розмір вартості утримання" />
+		<FIELD name="Cost_DodSum" type="STAYUI6" point="2" comm=" додаткова сума" />
+		<FIELD name="Cost_Priznak" type="UI2" comm=" ознака" />
+		<FIELD name="Cost_Procent" type="STAYUI6" point="2" comm=" відсоток" />
+		<FIELD name="KlInd6PF_Adr" type="STRING" ln="50" comm=" Поштов.адреса індексу" />
+		<FIELD name="KlInd6PF_Ind" type="UI4" comm=" Індекс" />
+		<FIELD name="KlInd6PF_TPS" type="UI1" comm=" Тариф поштових сборів" />
+		<FIELD name="KlInd6PF_Kod" type="UI2" comm=" Код насел.пункту" />
+		<FIELD name="KlInd6PF_Name" type="STRING" ln="30" comm=" Назва коду насел.пункту" />
+		<FIELD name="KlNpVidz_Name" type="STRING" ln="250" comm="Назва заслуги" />
+		<FIELD name="KlNpVidz_Code" type="UI2" comm="Код заслуги" />
+		<FIELD name="KlNpVidz_CdSt" type="UI2" comm="Код пункту статті" />
+		<FIELD name="KlNpVidz_Razm" type="UI2" comm="Розмір надбавки(в %)" />
+	</FIELDS>
+	<DATASETS>
+		<DATASET name="B_Joint" type="DS_QBASE" qnt="16" file="KLBASE1:JOINT.DT" comm="База несовместимых пособий">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Joint_Kfn1" order="ASC" />
+					<KEY name="Joint_Kfn2" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="Joint_Kfn1" />
+				<COLUMN name="Joint_Kfn2" />
+				<COLUMN name="Joint_Pr" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlAt" type="DS_ARRAY" file="KLBASE1:KLAT.DT" comm="Справочник территориальных образований">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlAt_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlAt_Code" />
+				<COLUMN name="KlAt_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlCFam" type="DS_ARRAY" file="KLBASE1:KLCFAM.DT" comm="Классификатор категорий членов семьи">
+			<INDEXES>
+				<INDEX name="1" dupl="true">
+					<KEY name="KlCFam_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlCFam_Code" />
+				<COLUMN name="KlCFam_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlChe" type="DS_ARRAY" file="KLBASE1:KLCHE.DT" comm="Справочник категорий пострадавших на ЧАЭС">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlChe_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlChe_Code" />
+				<COLUMN name="KlChe_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlComDsh" type="DS_ARRAY" file="KLBASE3:KLCOMDSH.DT" qnt="0" comm="Справочник размеров компенсаций дошкольникам">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlComDsh_DtB" />
+					<KEY name="KlComDsh_Code" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="KlComDsh_DtB" />
+			<COLUMN name="KlComDsh_Code" />
+			<COLUMN name="KlComDsh_DtE" />
+			<COLUMN name="KlComDsh_Razm" />
+			<COLUMN name="KlComDsh_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlDKVp" type="DS_ARRAY" file="KLBASE1:KLDKVP.DT" comm="Справочник документов-оснований для компенсационных">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlDKVp_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlDKVp_Code" />
+				<COLUMN name="KlDKVp_Name" />
+				<COLUMN name="KlDKVp_Num" />
+				<COLUMN name="KlDKVp_Data" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlDUch" type="DS_QBASE" qnt="10" file="KLBASE3:KLDUCH.DT" comm="Справочник доставочных участков">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlDUch_IndOS" order="ASC" />
+					<KEY name="KlDUch_Code" order="ASC" />
+				</INDEX>
+				<INDEX name="2" dupl="true">
+					<KEY name="KlDUch_Prizn" order="ASC" />
+					<KEY name="KlDUch_IndOS" order="ASC" />
+					<KEY name="KlDUch_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlDUch_Code" />
+				<COLUMN name="KlDUch_Prizn" />
+				<COLUMN name="KlDUch_IndOS" />
+				<COLUMN name="B_KlDUch_D" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlDUch_D" type="DS_ARRAY" comm="Дата доставочных участков">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlDUch_Data" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlDUch_Data" />
+				<COLUMN name="B_KlDUch_A" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlDUch_A" type="DS_ARRAY" comm="Справочник описания Д.У.">
+			<INDEXES>
+				<INDEX name="1" dupl="true">
+					<KEY name="KlDUch_CodeUl" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlDUch_CodeUl" />
+				<COLUMN name="KlDUch_About" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlDoUd" type="DS_ARRAY" file="KLBASE1:KLDOUD.DT" comm="Справочник документов-оснований для удержания">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlDoUd_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlDoUd_Code" />
+				<COLUMN name="KlDoUd_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlDoc" type="DS_QBASE" qnt="16" file="KLBASE4:KLDOC.DT" comm="Справочник документов ведения ЛС">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlDoc_Kdoc" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlDoc_Kdoc" />
+				<COLUMN name="KlDoc_Ndoc" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlDocNz" type="DS_QBASE" qnt="16" file="KLBASE1:KLDOCNZ.DT" comm="Список необходимых документов">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Doc_Kfn" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="Doc_Kfn" />
+				<COLUMN name="Doc_Reg1" />
+				<COLUMN name="Doc_Reg2" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="Doc_Reg1" type="DS_ARRAY" comm="Список документов для назначения">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Doc_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="Doc_Code" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="Doc_Reg2" type="DS_ARRAY" comm="Список документов для перерасчет">
+			<INDEXES>
+				<INDEX name="1" dupl="true">
+					<KEY name="Doc_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="Doc_Code" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlDox" type="DS_ARRAY" file="KLBASE1:KLDOX.DT" comm="Массив категорий доходов">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlDox_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlDox_Code" />
+				<COLUMN name="KlDox_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlEarth" type="DS_ARRAY" file="KLBASE3:KLEARTH.DT" comm="База размеров стоимости сотки">
+			<INDEXES>
+				<INDEX name="1" dupl="true">
+					<KEY name="KlEarth_Code" order="ASC" />
+					<KEY name="KlEarth_DtB" order="ASC" />
+					<KEY name="KlEarth_DtE" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlEarth_Code" />
+				<COLUMN name="KlEarth_DtB" />
+				<COLUMN name="KlEarth_DtE" />
+				<COLUMN name="KlEarth_Razm" />
+				<COLUMN name="KlEarth_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlFN" type="DS_QBASE" qnt="10" file="KLBASE1:KLFN.DT" comm="Справочник видов выплат">
+			<INDEXES>
+				<INDEX name="1" dupl="true">
+					<KEY name="KlFN_Code" order="ASC" />
+				</INDEX>
+				<INDEX name="2">
+					<KEY name="KlFN_Code" order="ASC" />
+					<KEY name="KlFN_DataB" order="ASC" />
+					<KEY name="KlFN_DataE" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlFN_Code" />
+				<COLUMN name="KlFN_DataB" />
+				<COLUMN name="KlFN_DataE" />
+				<COLUMN name="KlFN_Name" />
+				<COLUMN name="KlFN_CodeIF" />
+				<COLUMN name="KlFN_ORVp" />
+				<COLUMN name="KlFN_PCh" />
+				<COLUMN name="KlFN_PInd" />
+				<COLUMN name="KlFN_PUd" />
+				<COLUMN name="KlFN_RVp" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlHl" type="DS_ARRAY" file="KLBASE1:KLHL.DT" comm="Справочник праздников текущего и предыдущего года">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Klhl_Date" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="Klhl_Date" />
+				<COLUMN name="Klhl_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlIF" type="DS_ARRAY" file="KLBASE3:KLIF.DT" comm="Справ. Р/С ист.финанс.">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlIF_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlIF_Code" />
+				<COLUMN name="KlIF_Name" />
+				<COLUMN name="KlIF_CodeVIF" />
+				<COLUMN name="KlIF_NBal" />
+				<COLUMN name="KlIF_NRSB" />
+				<COLUMN name="KlIF_NRS" />
+				<COLUMN name="KlIF_NameB" />
+				<COLUMN name="KlIF_MFO" />
+				<COLUMN name="KlIF_Razd" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlIFUKR" type="DS_ARRAY" file="KLBASE1:KLIFUKR.DT" comm=" Справочник источников финансирования">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlIFUK_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlIFUK_Code" />
+				<COLUMN name="KlIFUK_Name" />
+				<COLUMN name="KlIFUK_CodeVIF" />
+				<COLUMN name="KlIFUK_NBal" />
+				<COLUMN name="KlIFUK_NRSB" />
+				<COLUMN name="KlIFUK_NRS" />
+				<COLUMN name="KlIFUK_NameB" />
+				<COLUMN name="KlIFUK_MFO" />
+				<COLUMN name="KlIFUK_Razd" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlInd" type="DS_QBASE" qnt="16" file="KLBASE2:KLIND.DT" comm="Справочник адресов почтовых индексов">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlInd_Ind" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlInd_Ind" />
+				<COLUMN name="KlInd_Adr" />
+				<COLUMN name="KlInd_TPS" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlInf" type="DS_ARRAY" file="KLBASE1:KLINF.DT" comm="Справочник справок для назначения пособия">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlInf_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlInf_Code" />
+				<COLUMN name="KlInf_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlInv" type="DS_ARRAY" file="KLBASE1:KLINV.DT" comm="Справочник видов инвалидности (групп)">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlInv_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlInv_Code" />
+				<COLUMN name="KlInv_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlKRZp" type="DS_ARRAY" file="KLBASE1:KLKRZP.DT" comm="База коэффициентов роста заработной платы">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlKRZp_DtB" order="ASC" />
+					<KEY name="KlKRZp_DtE" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlKRZp_DtB" />
+				<COLUMN name="KlKRZp_DtE" />
+				<COLUMN name="KlKRZp_Razm" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlKatUl" type="DS_ARRAY" file="KLBASE1:KLKATUL.DT" comm="Справочник категорий улиц">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlKatUl_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlKatUl_Code" />
+				<COLUMN name="KlKatUl_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlKfp" type="DS_ARRAY" file="KLBASE1:KLKFP.DT" comm="Справочник коэффициентов повышения пенсий">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlKfp_Data" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlKfp_Data" />
+				<COLUMN name="KlKfp_Coeff" />
+				<COLUMN name="KlKfp_Coeff2" />
+				<COLUMN name="KlKfp_Coeff3" />
+				<COLUMN name="KlKfp_MaxD996" />
+				<COLUMN name="KlKfp_MaxP996" />
+				<COLUMN name="KlKfp_Zregr" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlKor" type="DS_ARRAY" file="KLBASE1:KLKOR.DT" comm="Справочник категорий кормильцев">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlKor_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlKor_Code" />
+				<COLUMN name="KlKor_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlLRab" type="DS_ARRAY" file="KLBASE1:KLLRAB.DT" comm="Справочник работ льотного состава">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlLRab_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlLRab_Code" />
+				<COLUMN name="KlLRab_Name" />
+				<COLUMN name="KlLRab_KrNam" />
+				<COLUMN name="KlLRab_Coef" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlLgk" type="DS_ARRAY" file="KLBASE1:KLLGK.DT" comm="Справочник льготных коэффициентов">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlLgk_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlLgk_Code" />
+				<COLUMN name="KlLgk_Alg" />
+				<COLUMN name="KlLgk_DataB" />
+				<COLUMN name="KlLgk_DataE" />
+				<COLUMN name="KlLgk_Coeff" />
+				<COLUMN name="KlLgk_KrName" />
+				<COLUMN name="KlLgk_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlNWork" type="DS_ARRAY" file="KLBASE1:KLNWORK.DT" comm="База причин, по кот. не раб.">
+			<INDEXES>
+				<INDEX name="1" dupl="true">
+					<KEY name="NWork_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="NWork_Code" />
+				<COLUMN name="NWork_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlNet" type="DS_ARRAY" file="KLBASE1:KLNET.DT" comm="Справочник категорий нетрудоспособности">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlNet_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlNet_Code" />
+				<COLUMN name="KlNet_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlORG163" type="DS_ARRAY" file="KLBASE3:KLORG163.DT" comm="Справочник орг,финансир.доп.код выпл.">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlORG163_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlORG163_Code" />
+				<COLUMN name="KlORG163_Name" />
+				<COLUMN name="KlORG163_NRSB" />
+				<COLUMN name="KlORG163_NRSO" />
+				<COLUMN name="KlORG163_DopNr" />
+				<COLUMN name="KlORG163_PrivO" />
+				<COLUMN name="KlORG163_NameB" />
+				<COLUMN name="KlORG163_MFO" />
+				<COLUMN name="KlORG163_IndPO" />
+				<COLUMN name="KlORG163_Adr" />
+				<COLUMN name="KlORG163_Prim" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlOS" type="DS_ARRAY" file="KLBASE2:KLOS.DT" comm="Справочник отделений связи">
+			<INDEXES>
+				<INDEX name="1" dupl="true">
+					<KEY name="KlOS_CodeRn" order="ASC" />
+					<KEY name="KlOS_NumOS" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlOS_CodeRn" />
+				<COLUMN name="KlOS_NumOS" />
+				<COLUMN name="KlOS_CodeOS" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlOSZ" type="DS_ARRAY" file="KLBASE2:KLOSZ.DT" comm="Справочник органов социальной защиты">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlOSZ_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlOSZ_Code" />
+				<COLUMN name="KlOSZ_Adr" />
+				<COLUMN name="KlOSZ_FIOB" />
+				<COLUMN name="KlOSZ_FION" />
+				<COLUMN name="KlOSZ_IPOV" />
+				<COLUMN name="KlOSZ_IndPO" />
+				<COLUMN name="KlOSZ_MFOB" />
+				<COLUMN name="KlOSZ_NRSB" />
+				<COLUMN name="KlOSZ_NRSO" />
+				<COLUMN name="KlOSZ_Name" />
+				<COLUMN name="KlOSZ_NameB" />
+				<COLUMN name="KlOSZ_PrV" />
+				<COLUMN name="KlOSZ_TelB" />
+				<COLUMN name="KlOSZ_TelN" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlOVUd" type="DS_ARRAY" file="KLBASE4:KLOVUD.DT" comm="Справочник организаций-взыскателей удержаний">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlOVUd_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlOVUd_Code" />
+				<COLUMN name="KlOVUd_Name" />
+				<COLUMN name="KlOVUd_NRSB" />
+				<COLUMN name="KlOVUd_NRSO" />
+				<COLUMN name="KlOVUd_DopNr" />
+				<COLUMN name="KlOVUd_PrivO" />
+				<COLUMN name="KlOVUd_NameB" />
+				<COLUMN name="KlOVUd_MFO" />
+				<COLUMN name="KlOVUd_IndPO" />
+				<COLUMN name="KlOVUd_Adr" />
+				<COLUMN name="KlOVUd_Prim" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlOp" type="DS_ARRAY" file="KLBASE1:KLOP.DT" comm="Справочник кодов операций">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlOp_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlOp_Code" />
+				<COLUMN name="KlOp_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlOrg" type="DS_ARRAY" file="KLBASE4:KLORG.DT" comm="Справочник организаций, издающих распоряжения">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlOrg_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlOrg_Code" />
+				<COLUMN name="KlOrg_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlOsob" type="DS_ARRAY" file="KLBASE1:BKLOSOB.DT" comm="Справочник особенностей">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlOsob_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlOsob_Code" />
+				<COLUMN name="KlOsob_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlPInv" type="DS_ARRAY" file="KLBASE1:KLPINV.DT" comm="Справочник причин инвалидности">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlPInv_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlPInv_Code" />
+				<COLUMN name="KlPInv_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlPNo" type="DS_ARRAY" file="KLBASE1:KLPNO.DT" comm="Справочник причин неоплаты">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlPNo_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlPNo_Code" />
+				<COLUMN name="KlPNo_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlPRab" type="DS_ARRAY" file="KLBASE1:KLPRAB.DT" comm="Справочник характеристик работы пенсионеров">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlPRab_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlPRab_Code" />
+				<COLUMN name="KlPRab_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlPS" type="DS_ARRAY" file="KLBASE1:KLPS.DT" comm="Справочник причин смерти кормильца">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlPS_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlPS_Code" />
+				<COLUMN name="KlPS_Pros" />
+				<COLUMN name="KlPS_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlPSB" type="DS_QBASE" qnt="10" file="KLBASE2:KLPSB.DT" comm="Справочник БАНКОВ">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlPSB_CodeRn" order="ASC" />
+					<KEY name="KlPSB_CodeCB" order="ASC" />
+					<KEY name="KlPSB_CodeSB" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlPSB_CodeRn" />
+				<COLUMN name="KlPSB_CodeCB" />
+				<COLUMN name="KlPSB_CodeSB" />
+				<COLUMN name="KlPSB_NameSB" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlPSUd" type="DS_ARRAY" file="KLBASE1:KLPSUD.DT" comm="Справочник причин снятия удержания">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlPSUd_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlPSUd_Code" />
+				<COLUMN name="KlPSUd_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlPSn" type="DS_ARRAY" file="KLBASE1:KLPSN.DT" comm="Справочник причин снятия с оплаты">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlPSn_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlPSn_Code" />
+				<COLUMN name="KlPSn_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlPar" type="DS_ARRAY" file="KLBASE1:KLPAR.DT" comm="Справочник категорий родителей">
+			<INDEXES>
+				<INDEX name="1" dupl="true">
+					<KEY name="Par_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="Par_Code" />
+				<COLUMN name="Par_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlPost" type="DS_ARRAY" file="KLBASE1:KLPOST.DT" comm="Справочник типов пострадавших на ЧАЭС">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlPost_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlPost_Code" />
+				<COLUMN name="KlPost_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlPov" type="DS_ARRAY" file="KLBASE1:KLPOV.DT" comm="Справочник повышений">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlPov_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlPov_Code" />
+				<COLUMN name="KlPov_GrPov" />
+				<COLUMN name="KlPov_NBit" />
+				<COLUMN name="KlPov_Name" />
+				<COLUMN name="KlPov_Prizn" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlPred" type="DS_ARRAY" file="KLBASE3:KLPRED.DT" comm="Справочник организаций-плательщиков">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlPred_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlPred_Code" />
+				<COLUMN name="KlPred_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlProf" type="DS_ARRAY" file="KLBASE1:KLPROF.DT" comm="Справочник профессий">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlProf_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlProf_Code" />
+				<COLUMN name="KlProf_KrName" />
+				<COLUMN name="KlProf_Probr" />
+				<COLUMN name="KlProf_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlRPen" type="DS_QBASE" qnt="16" file="KLBASE1:KLRPEN.DT" comm="Справочник размеров платежей">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlRPen_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlRPen_Code" />
+				<COLUMN name="KlRPen_ChPri" />
+				<COLUMN name="KlRPen_DataB" />
+				<COLUMN name="KlRPen_DataE" />
+				<COLUMN name="KlRPen_Name" />
+				<COLUMN name="KlRPen_Proc" />
+				<COLUMN name="KlRPen_Tag" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlRod" type="DS_ARRAY" file="KLBASE1:KLROD.DT" comm="Классификатор категорий родства иждивенца">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlRod_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlRod_Code" />
+				<COLUMN name="KlRod_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlSPUd" type="DS_ARRAY" file="KLBASE1:KLSPUD.DT" comm="Справочник состояний переводов удержаний">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlSPUd_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlSPUd_Code" />
+				<COLUMN name="KlSPUd_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlSVUd" type="DS_ARRAY" file="KLBASE1:KLSVUD.DT" comm="Справочник способов выплаты удержаний">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlSVUd_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlSVUd_Code" />
+				<COLUMN name="KlSVUd_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlShP" type="DS_QBASE" qnt="16" file="KLBASE1:KLSHP.DT" comm="Справочник шифров пенсий">
+			<INDEXES>
+				<INDEX name="1" dupl="true">
+					<KEY name="KlShP_CodeIF" order="ASC" />
+					<KEY name="KlShP_ShP" order="ASC" />
+				</INDEX>
+				<INDEX name="2" dupl="true">
+					<KEY name="KlShP_ShP" order="ASC" />
+				</INDEX>
+				<INDEX name="3" dupl="true">
+					<KEY name="KlShP_IFN" order="ASC" />
+					<KEY name="KlShP_CodeVp" order="ASC" />
+					<KEY name="KlShP_KIgd" order="ASC" />
+				</INDEX>
+				<INDEX name="4" dupl="true">
+					<KEY name="KlShP_IFN" order="ASC" />
+					<KEY name="KlShP_ShP" order="ASC" />
+				</INDEX>
+				<INDEX name="5" supl="true">
+					<KEY name="KlShP_VP" order="ASC" />
+					<KEY name="KlShP_Prof" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlShP_CodeIF" />
+				<COLUMN name="KlShP_IFN" />
+				<COLUMN name="KlShP_ShP" />
+				<COLUMN name="KlShP_VP" />
+				<COLUMN name="KlShP_CodeVp" />
+				<COLUMN name="KlShP_KIgd" />
+				<COLUMN name="KlShP_Kor" />
+				<COLUMN name="KlShP_Netr" />
+				<COLUMN name="KlShP_PoCH" />
+				<COLUMN name="KlShP_PrInv" />
+				<COLUMN name="KlShP_PSKor" />
+				<COLUMN name="KlShP_PrCH" />
+				<COLUMN name="KlShP_Prof" />
+				<COLUMN name="KlShP_Sex" />
+				<COLUMN name="KlShP_VInv" />
+				<COLUMN name="KlShP_All" />
+				<COLUMN name="KlShP_Nr" />
+				<COLUMN name="KlShP_Lgt" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlShPN" type="DS_QBASE" qnt="16" file="KLBASE1:KLSHPN.DT" comm="Справочник наименований шифров">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlShPN_CodeIF" order="ASC" />
+					<KEY name="KlShPN_ShP" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlShPN_CodeIF" />
+				<COLUMN name="KlShPN_ShP" />
+				<COLUMN name="KlShPN_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlSposUd" type="DS_ARRAY" file="KLBASE1:KLSPOSUD.DT" comm="Справочник способов удержаний">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlSposUd_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlSposUd_Code" />
+				<COLUMN name="KlSposUd_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlStagInv" type="DS_ARRAY" file="KLBASE1:KLSTAGIN.DT" comm="Справочник стажей">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlStag_Vozr" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlStag_Vozr" />
+				<COLUMN name="KlStag_Stag" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlSud" type="DS_ARRAY" file="KLBASE4:KLSUD.DT" comm="Справочник судов">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlSud_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlSud_Code" />
+				<COLUMN name="KlSud_Name" />
+				<COLUMN name="KlSud_IndPO" />
+				<COLUMN name="KlSud_Adr" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlTPer" type="DS_ARRAY" file="KLBASE1:KLTPER.DT" comm="Справочник типов периодов">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlTPer_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlTPer_Code" />
+				<COLUMN name="KlTPer_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlTarPS" type="DS_ARRAY" file="KLBASE3:KLTARPS.DT" qnt="0" comm="Дов_дник тариф_в поштових збор_в">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="TarPS_Kod" />
+					<KEY name="TarPS_Data" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="TarPS_Kod" />
+			<COLUMN name="TarPS_Data" />
+			<COLUMN name="TarPS_Name" />
+			<COLUMN name="TarPS_Prc" />
+			<COLUMN name="TarPS_DataE" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlTpVzs" type="DS_ARRAY" file="KLBASE1:KLTPVZS.DT" comm="Справочник типов взыскателей">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlTpVzs_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlTpVzs_Code" />
+				<COLUMN name="KlTpVzs_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlUS" type="DS_ARRAY" file="KLBASE2:KLUS.DT" comm="Справочник узлов связи и ЦЕНТР.БАНКОВ">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlUS_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlUS_Code" />
+				<COLUMN name="KlUS_Name" />
+				<COLUMN name="KlUS_NameB" />
+				<COLUMN name="KlUS_PrcPS" />
+				<COLUMN name="KlUS_NRSB" />
+				<COLUMN name="KlUS_NRSUS" />
+				<COLUMN name="KlUS_MFO" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlUd" type="DS_ARRAY" file="KLBASE1:KLUD.DT" comm="Справочник удержаний">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlUd_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlUd_Code" />
+				<COLUMN name="KlUd_Name" />
+				<COLUMN name="KlUd_Ogr" />
+				<COLUMN name="KlUd_PInd" />
+				<COLUMN name="KlUd_Vid" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlUl" type="DS_QBASE" qnt="10" file="KLBASE2:KLUL.DT" comm="Справочник кодов улиц">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlUl_CodeRn" order="ASC" />
+					<KEY name="KlUl_CodeUl" order="ASC" />
+				</INDEX>
+				<INDEX name="2" dupl="true">
+					<KEY name="KlUl_CodeUl" order="ASC" />
+				</INDEX>
+				<INDEX name="3" dupl="true">
+					<KEY name="KlUl_CodeRn" order="ASC" />
+					<KEY name="KlUl_Name" order="ASC" length="6" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlUl_CodeRn" />
+				<COLUMN name="KlUl_CodeUl" />
+				<COLUMN name="KlUl_Name" />
+				<COLUMN name="KlUl_CodeKUl" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlVPen" type="DS_ARRAY" file="KLBASE1:KLVPEN.DT" comm="Справочник видов пенсий">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlVPen_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlVPen_Code" />
+				<COLUMN name="KlVPen_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlVZvan" type="DS_ARRAY" file="KLBASE1:KLVZVAN.DT" comm="Справочник воинских званий">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlVZvan_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlVZvan_Code" />
+				<COLUMN name="KlVZvan_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlVis" type="DS_ARRAY" file="KLBASE1:KLVIS.DT" comm="Справочник специальностей по выс">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlVis_Sex" order="ASC" />
+					<KEY name="KlVis_ChPri" order="ASC" />
+					<KEY name="KlVis_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlVis_Sex" />
+				<COLUMN name="KlVis_ChPri" />
+				<COLUMN name="KlVis_Code" />
+				<COLUMN name="KlVis_M1" />
+				<COLUMN name="KlVis_M2" />
+				<COLUMN name="KlVis_M3" />
+				<COLUMN name="KlVis_M4" />
+				<COLUMN name="KlVis_DBeg" />
+				<COLUMN name="KlVis_DEnd" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlVozvr" type="DS_ARRAY" file="KLBASE1:KLVOZVR.DT" comm="Справочник направлений возврата">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlVozvr_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlVozvr_Code" />
+				<COLUMN name="KlVozvr_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlVsr" type="DS_ARRAY" file="KLBASE1:KLVSR.DT" comm="Справочник проводок по выслуге">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlVsr_Sex" order="ASC" />
+					<KEY name="KlVsr_ChPri" order="ASC" />
+					<KEY name="KlVsr_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlVsr_Sex" />
+				<COLUMN name="KlVsr_ChPri" />
+				<COLUMN name="KlVsr_Code" />
+				<COLUMN name="KlVsr_CV" />
+				<COLUMN name="KlVsr_CST" />
+				<COLUMN name="KlVsr_CL" />
+				<COLUMN name="KlVsr_CSP" />
+				<COLUMN name="KlVsr_CSG1" />
+				<COLUMN name="KlVsr_CSG2" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlZR" type="DS_ARRAY" file="KLBASE1:KLZR.DT" comm="Справочник коэффициентов повышения ЗП до 01.01.1992">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlZR_Data" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlZR_Data" />
+				<COLUMN name="KlZR_Coeff" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlZR92" type="DS_ARRAY" file="KLBASE1:KLZR92.DT" comm="Справочник коэффициентов повышения ЗП после 01.01.1">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlZR92_Data" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlZR92_Data" />
+				<COLUMN name="KlZR92_Coeff" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlZach" type="DS_QBASE" qnt="16" file="KLBASE1:KLZACH.DT" comm="Справочник взаимных зачетов">
+			<INDEXES>
+				<INDEX name="1" dupl="true">
+					<KEY name="KlZach_Code" order="ASC" />
+					<KEY name="KlZach_CodeZ" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlZach_Code" />
+				<COLUMN name="KlZach_CodeZ" />
+				<COLUMN name="KlZach_Name" />
+				<COLUMN name="KlZach_Prizn" />
+				<COLUMN name="KlZach_DBeg" />
+				<COLUMN name="KlZach_DEnd" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlZem" type="DS_ARRAY" file="KLBASE1:KLZEM.DT" comm="База наименований земел. участков">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlZem_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlZem_Code" />
+				<COLUMN name="KlZem_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlZon" type="DS_ARRAY" file="KLBASE1:KLZON.DT" comm="Справочник категорий зон Р/А загрязнения">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlZon_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlZon_Code" />
+				<COLUMN name="KlZon_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_PravPom" type="DS_ARRAY" file="KLBASE1:PRAVPOM.DT" comm="Массив правовых данных по ден. помощи">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Prav_DBeg" order="ASC" />
+					<KEY name="Prav_DEnd" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="Prav_DBeg" />
+				<COLUMN name="Prav_DEnd" />
+				<COLUMN name="Prav_MesNaz" />
+				<COLUMN name="Prav_MesReas" />
+				<COLUMN name="Prav_MesRet" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_SysP" type="DS_QBASE" qnt="16" file="KLBASE1:SYSP.DT" comm="Справочник системных параметров">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="SysP_Data" order="ASC" />
+					<KEY name="SysP_PrMPer" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="SysP_Data" />
+				<COLUMN name="SysP_PrMPer" />
+				<COLUMN name="SysP_CodeInsp" />
+				<COLUMN name="SysP_MinPen" />
+				<COLUMN name="SysP_MinPenSc" />
+				<COLUMN name="SysP_MinPenVz" />
+				<COLUMN name="SysP_MinPenCh" />
+				<COLUMN name="SysP_MinPenVn" />
+				<COLUMN name="SysP_MinPenNb" />
+				<COLUMN name="SysP_MinPenNS" />
+				<COLUMN name="SysP_MinZp" />
+				<COLUMN name="SysP_CMPer" />
+				<COLUMN name="SysP_CMinZp" />
+				<COLUMN name="SysP_CMinZpCh" />
+				<COLUMN name="SysP_CPen" />
+				<COLUMN name="SysP_CPenSc" />
+				<COLUMN name="SysP_CPenVz" />
+				<COLUMN name="SysP_CPenCh" />
+				<COLUMN name="SysP_CPenVn" />
+				<COLUMN name="SysP_CNadb" />
+				<COLUMN name="SysP_CNS" />
+				<COLUMN name="SysP_PrOgr" />
+				<COLUMN name="SysP_OgrPKoef" />
+				<COLUMN name="SysP_OgrRez" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="KDMinDox" type="DS_ARRAY" file="KLBASE1:KDMINDOX.DT" comm="База размер.мин.сред.сов.дохода д/пос.на погребение">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Kmd_Date" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="Kmd_Date" />
+				<COLUMN name="Kmd_Razm" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="KMinDox" type="DS_ARRAY" file="KLBASE1:BKMINDOX.DT" comm="База размеров мин. сред. совок. доходов">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Km_Date" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="Km_Date" />
+				<COLUMN name="Km_Razm" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlCheKfn" type="DS_QBASE" qnt="16" file="KLBASE1:KLCHEKFN.DT" comm="База кодов выплат, выплач. одновременно">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlCheKfn_Cd1" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlCheKfn_Cd1" />
+				<COLUMN name="KlCheKfn_Cd2" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlCngKfn" type="DS_QBASE" qnt="16" file="KLBASE1:KLCNGKFN.DT" comm="База допустимых измен. основных кодов выпл.">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlCng_NewKfn" order="ASC" />
+					<KEY name="KlCng_OldKfn" order="ASC" />
+				</INDEX>
+				<INDEX name="2" dupl="true">
+					<KEY name="KlCng_OldKfn" order="ASC" />
+					<KEY name="KlCng_NewKfn" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlCng_NewKfn" />
+				<COLUMN name="KlCng_OldKfn" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlTerm" type="DS_ARRAY" file="KLBASE1:KLTERM.DT" comm="Справочник периодов">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlTerm_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlTerm_Code" />
+				<COLUMN name="KlTerm_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlProMin" type="DS_QBASE" qnt="10" file="KLBASE1:KLPROMIN.DT" comm="Справочник размеров прожит.минимума">
+			<INDEXES>
+				<INDEX name="1" dupl="true">
+					<KEY name="KlProMin_Code" order="ASC" />
+					<KEY name="KlProMin_DataB" order="ASC" />
+					<KEY name="KlProMin_DataE" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlProMin_Code" />
+				<COLUMN name="KlProMin_DataB" />
+				<COLUMN name="KlProMin_DataE" />
+				<COLUMN name="KlProMin_Name" />
+				<COLUMN name="KlProMin_Sum" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_Kltpl" type="DS_ARRAY" file="KLBASE1:KLTPL.DT" comm="Справочник признаков переплат">
+			<INDEXES>
+				<INDEX name="1" dupl="true">
+					<KEY name="Kltpl_Tip" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="Kltpl_Tip" />
+				<COLUMN name="Kltpl_Name" />
+				<COLUMN name="Kltpl_Ob" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlOrgR" type="DS_QBASE" qnt="10" file="KLBASE3:KLORGRAZ.DT" comm="Справочник бюджетн.финасиров.организаций">
+			<INDEXES>
+				<INDEX name="1" dupl="true">
+					<KEY name="KlOrgR_Code" order="ASC" />
+				</INDEX>
+				<INDEX name="2">
+					<KEY name="KlOrgR_Code" order="ASC" />
+					<KEY name="KlOrgR_DBeg" order="ASC" />
+					<KEY name="KlOrgR_DEnd" order="ASC" />
+				</INDEX>
+				<INDEX name="3" dupl="true">
+					<KEY name="KlOrgR_Name" order="ASC" length="10" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlOrgR_Code" />
+				<COLUMN name="KlOrgR_DBeg" />
+				<COLUMN name="KlOrgR_DEnd" />
+				<COLUMN name="KlOrgR_ProcB" />
+				<COLUMN name="KlOrgR_Name" />
+				<COLUMN name="KlOrgR_NRSO" />
+				<COLUMN name="KlOrgR_DopNr" />
+				<COLUMN name="KlOrgR_PrivO" />
+				<COLUMN name="KlOrgR_IndPO" />
+				<COLUMN name="KlOrgR_Adr" />
+				<COLUMN name="KlOrgR_MFO" />
+				<COLUMN name="KlOrgR_NameB" />
+				<COLUMN name="KlOrgR_Prim" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlDiapPS" type="DS_ARRAY" file="KLBASE3:KLDIAPPS.DT" comm="Справочник тар.почт.сб.по диапаз.сумм">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="DiapPS_Code" order="ASC" />
+					<KEY name="DiapPS_Min" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="DiapPS_Code" />
+				<COLUMN name="DiapPS_Min" />
+				<COLUMN name="DiapPS_Max" />
+				<COLUMN name="DiapPS_PrEd" />
+				<COLUMN name="DiapPS_Prc" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlAtQ" type="DS_QBASE" file="KLBASE1:KLATBOX.DT" comm="Довідник тер-них утворень">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlAtQ_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlAtQ_Code" />
+				<COLUMN name="KlAtQ_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlVidZar" type="DS_ARRAY" file="KLBASE1:KLVIDZAR.DT" comm="Довідник видів заробітків">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlVidZar_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlVidZar_Code" />
+				<COLUMN name="KlVidZar_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlDohNal" type="DS_ARRAY" file="KLBASE1:KLDOHNAL.DT" comm="Довідник макс.доходів, з яких справл.внески">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlDohNal_DataB" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlDohNal_DataB" />
+				<COLUMN name="KlDohNal_DataE" />
+				<COLUMN name="KlDohNal_Razm" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlSrNx" type="DS_ARRAY" file="KLBASE1:KLSRNX.DT" comm="Довідник розм.серед.зарпл.по н/г(НАУКА/стаття 65 ПЗ)">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlSrNx_DataB" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlSrNx_DataB" />
+				<COLUMN name="KlSrNx_DataE" />
+				<COLUMN name="KlSrNx_Razm" />
+				<COLUMN name="KlSrNx_DataNad" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlSr0124" type="DS_ARRAY" file="KLBASE1:KLSR0124.DT" comm="Довідник розм.серед.зарпл.по н/г(ПОСТАНОВА N 1783)">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlSrNx_DataB" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlSrNx_DataB" />
+				<COLUMN name="KlSrNx_DataE" />
+				<COLUMN name="KlSrNx_Razm" />
+				<COLUMN name="KlSrNx_DataNad" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlSr4024" type="DS_ARRAY" file="KLBASE1:KLSR4024.DT" comm="Довідник розм.серед.зарпл.по н/г згідно з  методикою ">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlSrNx_DataB" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlSrNx_DataB" />
+				<COLUMN name="KlSrNx_DataE" />
+				<COLUMN name="KlSrNx_Razm" />
+				<COLUMN name="KlSrNx_DataNad" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlSr424Y" type="DS_ARRAY" file="KLBASE1:KLSR424Y.DT" comm="Довідник розм.сер.зарпл.по н/г(річні)(згідно з  методикою )">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlSrNx_DataB" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlSrNx_DataB" />
+				<COLUMN name="KlSrNx_DataE" />
+				<COLUMN name="KlSrNx_Razm" />
+				<COLUMN name="KlSrNx_DataNad" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlSrNxY" type="DS_ARRAY" file="KLBASE1:KLSRNXY.DT" comm="Довідник розм.сер.зарпл.по н/г(річні)(НАУКА та мін.розм.пенс)">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlSrNx_DataB" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlSrNx_DataB" />
+				<COLUMN name="KlSrNx_DataE" />
+				<COLUMN name="KlSrNx_Razm" />
+				<COLUMN name="KlSrNx_DataNad" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlOsVidz" type="DS_ARRAY" file="KLBASE1:KLOSVIDZ.DT" comm="Довідник особливих відзнак">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlOsVidz_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlOsVidz_Code" />
+				<COLUMN name="KlOsVidz_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlStran" type="DS_ARRAY" file="KLBASE1:KLSTRAN.DT" comm="Довідник країн для призн.міжнар.пенсій">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlStran_Code" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlStran_Code" />
+				<COLUMN name="KlStran_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlIndex" type="DS_QBASE" qnt="16" file="KLBASE1:KLINDEX.DT" comm="Довідник коефіц.індивід.індекс.пенсій">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlIndex_GodNar" order="ASC" />
+					<KEY name="KlIndex_MecNar" order="ASC" />
+					<KEY name="KlIndex_GodBaz" order="ASC" />
+					<KEY name="KlIndex_MecBaz" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlIndex_GodNar" />
+				<COLUMN name="KlIndex_MecNar" />
+				<COLUMN name="KlIndex_GodBaz" />
+				<COLUMN name="KlIndex_MecBaz" />
+				<COLUMN name="KlIndex_Koef" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlCostDpi" type="DS_QBASE" qnt="10" file="KLBASE3:KLCOSTDP.DT" comm="Довідник вартості утримання в буд.-інтерн.">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="Cost_CodeOrg" order="ASC" />
+					<KEY name="Cost_CodeSum" order="ASC" />
+					<KEY name="Cost_DtB" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="Cost_CodeOrg" />
+				<COLUMN name="Cost_CodeSum" />
+				<COLUMN name="Cost_DtB" />
+				<COLUMN name="Cost_DtE" />
+				<COLUMN name="Cost_SumDpi" />
+				<COLUMN name="Cost_DodSum" />
+				<COLUMN name="Cost_Priznak" />
+				<COLUMN name="Cost_Procent" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlInd6PF" type="DS_QBASE" qnt="16" file="KLBASE2:KLIND6PF.DT" comm="Довідник адрес пошт.індексів(6ПФ)">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlInd6PF_Ind" order="ASC" />
+				</INDEX>
+				<INDEX name="2" dupl="true">
+					<KEY name="KlInd6PF_Kod" order="ASC" />
+					<KEY name="KlInd6PF_Ind" order="ASC" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+				<COLUMN name="KlInd6PF_Ind" />
+				<COLUMN name="KlInd6PF_Adr" />
+				<COLUMN name="KlInd6PF_TPS" />
+				<COLUMN name="KlInd6PF_Kod" />
+				<COLUMN name="KlInd6PF_Name" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlMinZar" type="DS_ARRAY" file="KLBASE1:KLMINZAR.DT" qnt="0" comm="Довідник MIN розмірів зароб.плат">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlMinZar_DataB" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="KlMinZar_DataB" />
+			<COLUMN name="KlMinZar_DataE" />
+			<COLUMN name="KlMinZar_Razm" />
+			<COLUMN name="KlMinZar_DtSys" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlKEKV" type="DS_QBASE" file="KLBASE3:KLKEKV.DT" qnt="10" comm="Справочник реквизитов УДК">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlKEKV_KFN" />
+				</INDEX>
+				<INDEX name="2" dupl="TRUE">
+					<KEY name="KlKEKV_KEKV" />
+					<KEY name="KlKEKV_KFN" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="KlKEKV_KFN" />
+			<COLUMN name="KlKEKV_KEKV" />
+			<COLUMN name="KlKEKV_NameRR" />
+			<COLUMN name="KlKEKV_CdKlas" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlPitDsh" type="DS_QBASE" file="KLBASE3:KLPITDSH.DT" qnt="10" comm="Справочник разм.ср.стоим.пит.в детск.дошк.учр.">
+			<INDEXES>
+				<INDEX name="1" dupl="TRUE">
+					<KEY name="KlPitDsh_Code" />
+					<KEY name="KlPitDsh_DataB" />
+					<KEY name="KlPitDsh_DataE" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="KlPitDsh_Code" />
+			<COLUMN name="KlPitDsh_DataB" />
+			<COLUMN name="KlPitDsh_DataE" />
+			<COLUMN name="KlPitDsh_Name" />
+			<COLUMN name="KlPitDsh_Sum" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_PtSan" type="DS_QBASE" file="KLBASE3:KLPTSAN.DT" qnt="16" comm="дов_дник санатор_їв">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="PtSan_Code" />
+				</INDEX>
+				<INDEX name="2" dupl="TRUE">
+					<KEY name="PtSan_Name" length="6" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="PtSan_Code" />
+			<COLUMN name="PtSan_Code1" />
+			<COLUMN name="PtSan_Name" />
+			<COLUMN name="PtSan_Kurort" />
+			<COLUMN name="PtSan_Prvv" />
+			</COLUMNS>
+		</DATASET>
+		<DATASET name="B_KlNpVidz" type="DS_QBASE" file="KLBASE1:KLNPVIDZ.DT" qnt="10" comm="Дов_дник розм.надб.в зал.в_д наявн.засл.">
+			<INDEXES>
+				<INDEX name="1">
+					<KEY name="KlNpVidz_CdSt" />
+					<KEY name="KlNpVidz_Code" />
+				</INDEX>
+			</INDEXES>
+			<COLUMNS>
+			<COLUMN name="KlNpVidz_CdSt" />
+			<COLUMN name="KlNpVidz_Code" />
+			<COLUMN name="KlNpVidz_Name" />
+			<COLUMN name="KlNpVidz_Razm" />
+			</COLUMNS>
+		</DATASET>
+	</DATASETS>
+</STAYRESOURCE>

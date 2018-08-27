@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<STAYRESOURCE version="2.0">
+	<FIELD name="Stud_Region" type="UI2" comm="Регіон (область)" />
+	<FIELD name="Stud_Rayon" type="UI2" />
+	<FIELD name="Stud_Sirota" type="UI4" />
+	<FIELD name="Stud_CHAES" type="UI4" />
+	<FIELD name="Stud_Shaht" type="UI4" />
+	<FIELD name="Stud_ShahtStg" type="UI4" comm="батьки яких є шахтарями із стажем 15 років, або загинули на шахті" />
+	<FIELD name="Stud_UBD" type="UI4" comm="учасники бойових дій" />
+	<FIELD name="Stud_ATO" type="UI4" />
+	<FIELD name="Stud_Revol" type="UI4" />
+	<FIELD name="Stud_Moved" type="UI4" comm="зареєстровані, як внутрішньо переміщені особи" />
+	<FIELD name="Stud_Social" type="UI4" />
+	<FIELD name="Stud_Inv" type="UI4" />
+	<FIELD name="Stud_Malozab" type="UI4" />
+	<FIELD name="S_NameRegion" type="STR" size="20" comm="Назва області" />
+	<FIELD name="S_Sum1" type="UI4" />
+	<FIELD name="S_Sum2" type="UI4" />
+	<FIELD name="S_Sum3" type="UI4" />
+	<FIELD name="S_Sum4" type="UI4" />
+	<FIELD name="S_Sum5" type="UI4" />
+	<FIELD name="S_Sum6" type="UI4" />
+	<FIELD name="S_Sum7" type="UI4" />
+	<FIELD name="S_Sum8" type="UI4" />
+	<FIELD name="S_Sum9" type="UI4" />
+	<FIELD name="S_Sum10" type="UI4" />
+	<FIELD name="S_Sum11" type="UI4" />
+	<FIELD name="S_Sum1Ttl" type="UI4" />
+	<FIELD name="S_Sum2Ttl" type="UI4" />
+	<FIELD name="S_Sum3Ttl" type="UI4" />
+	<FIELD name="S_Sum4Ttl" type="UI4" />
+	<FIELD name="S_Sum5Ttl" type="UI4" />
+	<FIELD name="S_Sum6Ttl" type="UI4" />
+	<FIELD name="S_Sum7Ttl" type="UI4" />
+	<FIELD name="S_Sum8Ttl" type="UI4" />
+	<FIELD name="S_Sum9Ttl" type="UI4" />
+	<FIELD name="S_Sum10Ttl" type="UI4" />
+	<FIELD name="S_Sum11Ttl" type="UI4" />
+	<FIELD name="Stud_Date" type="STAYDATE" />
+	<DATASET name="B_Stud1045" type="DS_BBASE" file="SVODRES:stud1045.dt" comm="постанова кабміну від 28.12.16 №1045">
+		<INDEX name="1" dupl="true">
+			<KEY name="Stud_Rayon" />
+		</INDEX>
+		<INDEX name="2" dupl="true">
+			<KEY name="Stud_Region" />
+			<KEY name="Stud_Rayon" />
+		</INDEX>
+		<COLUMN name="Stud_Region" />
+		<COLUMN name="Stud_Rayon" />
+		<COLUMN name="Stud_Sirota" />
+		<COLUMN name="Stud_CHAES" />
+		<COLUMN name="Stud_Shaht" />
+		<COLUMN name="Stud_ShahtStg" />
+		<COLUMN name="Stud_UBD" />
+		<COLUMN name="Stud_ATO" />
+		<COLUMN name="Stud_Revol" />
+		<COLUMN name="Stud_Moved" />
+		<COLUMN name="Stud_Social" />
+		<COLUMN name="Stud_Inv" />
+		<COLUMN name="Stud_Malozab" />
+	</DATASET>
+</STAYRESOURCE>

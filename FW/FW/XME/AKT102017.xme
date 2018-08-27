@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<STAYRESOURCE version="2.0">
+	<FIELD name="AK_ID" type="STAYUI2" comm="Ключ1, код таблиці" />
+	<FIELD name="AK_Code" type="STAYUI2" comm="Ключ2, код діапазону підвищення" />
+	<FIELD name="AK_Accounts" type="STAYUI4" comm="Кількість особових рахунків" />
+	<FIELD name="AK_SumBefore" type="STAYI6" scale="2" comm="Сума пенсій до перерахунку" />
+	<FIELD name="AK_SumAfter1" type="STAYI6" scale="2" comm="Сума пенсій після перерахунку, етап 1" />
+	<FIELD name="AK_SumDo2" type="STAYI6" scale="2" comm="Сума пенсій до перерахунку" />	
+	<FIELD name="AK_SumAfter2" type="STAYI6" scale="2" comm="Сума пенсій після перерахунку, етап 2" />
+	<FIELD name="AK_SumOver1" type="STAYI6" scale="2" comm="Сума додаткових витрат, етап 1" />
+	<FIELD name="AK_SumOver2" type="STAYI6" scale="2" comm="Сума додаткових витрат, етап 2" />
+	<FIELD name="AK_SumOver3" type="STAYI6" scale="2" comm="Сума додаткових витрат, загалом" />
+	<FIELD name="AK_SumDo3" type="STAYI6" scale="2" comm="Сума пенсій до перерахунку" />
+	<FIELD name="AK_SumAfter3" type="STAYI6" scale="2" comm="Сума пенсій після перерахунку, етап 1" />
+	<FIELD name="AK_StrPlace" type="STR" size="64" />
+	<FIELD name="AK_StrDiap" type="STR" size="20" />
+	<FIELD name="AK_StrVar" type="STR" size="24" />
+	<FIELD name="AK_Nls1" type="UI4" />
+	<FIELD name="AK_Nls2" type="UI4" />
+	<FIELD name="AK_Nls" type="UI4" />
+	<FIELD name="Dop_Nls" type="UI4" />
+	<FIELD name="Dop_Var" type="UI2" />
+	<FIELD name="Dop_SumOld" type="STAYI6" scale="2" />
+	<FIELD name="Dop_SumNew1" type="STAYI6" scale="2" />
+	<FIELD name="Dop_SumNew2" type="STAYI6" scale="2" />
+	<FIELD name="Dop_Delta1" type="STAYI6" scale="2" />
+	<FIELD name="Dop_Delta2" type="STAYI6" scale="2" />
+	<FIELD name="Dop_Delta3" type="STAYI6" scale="2" />
+	<FIELD name="AK_Account2" type="STAYUI4" />
+	<FIELD name="AK_Account3" type="STAYUI4" />
+	<DATASET name="AKT1017" type="DS_BBASE" qnt="100" file="SVODRES:AKT1017.DT">
+		<INDEX name="1" primary="true">
+			<KEY name="AK_ID" />
+			<KEY name="AK_Code" />
+		</INDEX>
+		<COLUMN name="AK_ID" />
+		<COLUMN name="AK_Code" />
+		<COLUMN name="AK_Accounts" />
+		<COLUMN name="AK_SumBefore" />
+		<COLUMN name="AK_SumAfter1" />
+		<COLUMN name="AK_SumOver1" />
+		<COLUMN name="AK_Account2" />
+		<COLUMN name="AK_SumDo2" />		
+		<COLUMN name="AK_SumAfter2" />
+		<COLUMN name="AK_SumOver2" />
+		<COLUMN name="AK_Account3" />
+		<COLUMN name="AK_SumDo3" />
+		<COLUMN name="AK_SumAfter3" />
+		<COLUMN name="AK_SumOver3" />
+	</DATASET>
+	<DATASET name="B_Nls" type="DS_BBASE" file="WORK:NLS.dt">
+		<INDEX name="1" dupl="true">
+			<KEY name="AK_Nls" />
+		</INDEX>
+		<COLUMN name="AK_Nls" />
+	</DATASET>
+	<DATASET name="B_Nls1" type="DS_BBASE" file="WORK:NLS1.DT">
+		<INDEX name="1" dupl="true">
+			<KEY name="AK_Nls1" />
+		</INDEX>
+		<COLUMN name="AK_Nls1" />
+	</DATASET>
+	<DATASET name="B_Nls2" type="DS_BBASE" file="WORK:NLS2.DT">
+		<INDEX name="1" dupl="true">
+			<KEY name="AK_Nls2" />
+		</INDEX>
+		<COLUMN name="AK_Nls2" />
+	</DATASET>
+	<DATASET name="B_Dop" type="DS_BBASE" qnt="100" file="WORK:AKTDOP10.DT">
+		<INDEX name="1">
+			<KEY name="Dop_Var" />
+			<KEY name="Dop_Nls" />
+		</INDEX>
+		<INDEX name="2" dupl="true">
+			<KEY name="Dop_Nls" />
+		</INDEX>
+		<INDEX name="3" dupl="true">
+			<KEY name="Dop_Delta1" />
+		</INDEX>
+		<INDEX name="4" dupl="true">
+			<KEY name="Dop_Delta2" />
+		</INDEX>
+		<INDEX name="5" dupl="true">
+			<KEY name="Dop_Delta3" />
+		</INDEX>
+		<COLUMN name="Dop_Nls" />
+		<COLUMN name="Dop_Var" />
+		<COLUMN name="Dop_SumOld" />
+		<COLUMN name="Dop_SumNew1" />
+		<COLUMN name="Dop_SumNew2" />
+		<COLUMN name="Dop_Delta1" />
+		<COLUMN name="Dop_Delta2" />
+		<COLUMN name="Dop_Delta3" />
+	</DATASET>
+</STAYRESOURCE>
